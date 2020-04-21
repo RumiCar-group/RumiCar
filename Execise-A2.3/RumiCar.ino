@@ -1,5 +1,15 @@
 // RumiCar Libraly
 
+// RumiCar delay:PWM 周波数変更しているためTimer0を調整
+void RC_delay(unsigned long tim)
+{
+#if defined ESP32
+  delay(tim);
+#else
+  delay(tim / 4);
+#endif
+}
+
 void RC_setup()
 {
   Serial.begin(9600);
@@ -93,6 +103,18 @@ BIN1 = 2;
 BIN2 = 3;
 
 #endif
+// Timer0 変更
+ TCCR0B &= B11111000;
+//  TCCR0B |= B00000001;                      // 1分周=   16M/   1/256=62.5kHz
+//  TCCR0B |= B00000010;                      // 8分周=   16M/   8/256=7.8kHz
+//  TCCR0B |= B00000011;                      // 64分周=  16M/  64/256=976Hz  #default
+  TCCR0B |= B00000100;                      // 256分周= 16M/ 256/256=244Hz
+//  TCCR0B |= B00000101;                      // 1024分周=16M/1024/256=61Hz
+
+// Arduino nano の場合
+// 分周比を変えてPWM周期を変える，Timer0のdelay()時間がずれるから注意
+// Timer1/2 はPWM周期変えてもdelay()に影響しない
+// RC_delay() を使うこと
 
   RC_analogWrite(AIN1, 0);
   RC_analogWrite(AIN2, 0);
