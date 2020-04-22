@@ -19,13 +19,17 @@ VL53L0X sensor2;
 
 void setup()
 {
-  RC_setup();
+//  Timer0 の周期変更しているため，RC_delay()を使うこと
+ RC_setup();
 }
 
 void loop()
 {
-  RC_drive(FORWARD,255);
-  delay(500);
-  RC_drive(REVERSE,255);
-  delay(500);
+//  始動後に低速へ
+  RC_drive(FORWARD,200);    RC_delay(20);
+  RC_drive(FORWARD,64);     RC_delay(500);
+  RC_drive(BRAKE,255);      RC_delay(200);
+  RC_drive(REVERSE,200);    RC_delay(20);
+  RC_drive(REVERSE,64);     RC_delay(500);
+  RC_drive(BRAKE,255);      RC_delay(200);
 }
