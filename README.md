@@ -10,6 +10,8 @@ Raspberry Pz ZwroWの場合はフォルダRasPiをお使いください。Raspi�
 
 資料：https://www.slideshare.net/ssuser4d5ccc/rumicar-handsonalgyan20200425202004242
 
+動画(YouTube):https://www.youtube.com/watch?v=WHXN_QWJtDU&list=PLizQwd7qivbjCSXyGGtFbZfkKpPRBjdZD&index=2
+
 
 These Exercises are used during online RumiCar hands-on event held on Saturday April 24th 2020.
 Exercise-A2.3 & A3.1 are advance level and not featured in the event. Try these if you want.
