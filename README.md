@@ -5,7 +5,7 @@ Exercise-A2.3とExercise-A3.1は上級編なので、イベント中には使い
 
 コンピュータモジュールの種類によりプログラムや使用コンピュータ言語が異なります。
 
-Arduino NanoとESP32の場内はフォルダArduinoAndESP32をお使いください
+Arduino NanoとESP32の場合はフォルダArduinoAndESP32をお使いください。
 Raspberry Pz ZwroWの場合はフォルダRasPiをお使いください。Raspiはコンピュータ言語はPythonです。
 
 資料：https://www.slideshare.net/ssuser4d5ccc/rumicar-handsonalgyan20200425202004242
