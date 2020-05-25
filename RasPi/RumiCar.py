@@ -82,22 +82,25 @@ def read_all_sensors():
     sensor1 = VL53L0X.VL53L0X(address=0x2D)
     sensor2 = VL53L0X.VL53L0X(address=0x2F)
 
-    # Set shutdown pin high for the first VL53L0X then 
-    # call to start ranging 
-    pi.write(SHDN0, 1)
+    # set SHDN0 to input in order to use VL53L0X's pull-up resistor
+    pi.set_mode(SHDN0, pigpio.INPUT)
     time.sleep(0.50)
+
+    # call to start ranging 
     sensor0.start_ranging(VL53L0X.VL53L0X_HIGH_SPEED_MODE)
 
-    # Set shutdown pin high for the second VL53L0X then 
-    # call to start ranging 
-    pi.write(SHDN1, 1)
+    # set SHDN1 to input in order to use VL53L0X's pull-up resistor
+    pi.set_mode(SHDN1, pigpio.INPUT)
     time.sleep(0.50)
+
+    # call to start ranging 
     sensor1.start_ranging(VL53L0X.VL53L0X_HIGH_SPEED_MODE)
 
-    # Set shutdown pin high for the second VL53L0X then 
-    # call to start ranging 
-    pi.write(SHDN2, 1)
+    # set SHDN2 to input in order to use VL53L0X's pull-up resistor
+    pi.set_mode(SHDN2, pigpio.INPUT)
     time.sleep(0.50)
+
+    # call to start ranging 
     sensor2.start_ranging(VL53L0X.VL53L0X_HIGH_SPEED_MODE)
 
     timing = sensor0.get_timing()
@@ -133,7 +136,7 @@ def read_all_sensors():
     sensor2.stop_ranging()
     pi.write(SHDN2, 0)
 
-def read_one_sensor():
+def readOneSensor():
 
     # Set all shutdown pins low to turn off each VL53L0X
     pi.write(SHDN1, 0)
@@ -144,10 +147,11 @@ def read_one_sensor():
     # Create one object per VL53L0X
     sensor1 = VL53L0X.VL53L0X(address=0x2D)
 
-    # Set shutdown pin high for the second VL53L0X then 
-    # call to start ranging 
-    pi.write(SHDN1, 1)
+    # set SHDN1 to input in order to use VL53L0X's pull-up resistor
+    pi.set_mode(SHDN1, pigpio.INPUT)
     time.sleep(0.50)
+
+    # call to start ranging 
     sensor1.start_ranging(VL53L0X.VL53L0X_HIGH_SPEED_MODE)
 
     timing = sensor1.get_timing()
