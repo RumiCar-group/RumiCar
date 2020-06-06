@@ -1,3 +1,6 @@
+#ifndef RumiCar_h
+#define RumiCar_h
+
 // RumiCar include
 //操舵用の設定
 #define LEFT   0
@@ -52,3 +55,7 @@ int BIN2 = 06;
 
 #define HIGH_SPEED
 //#define HIGH_ACCURACY
+
+
+
+#endif /* RumiCar_h */
