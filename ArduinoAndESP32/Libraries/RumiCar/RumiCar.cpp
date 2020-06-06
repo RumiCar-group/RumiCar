@@ -72,25 +72,25 @@ void RC_setup()
   sensor2.startContinuous();
 
 #if defined ESP32
-//ESP32の場合はピン番号ではなくチャンネルでPWMを行うのでチャンネルとして再設定
+  //ESP32の場合はピン番号ではなくチャンネルでPWMを行うのでチャンネルとして再設定
 #define PWM_level 8
-// 8の場合8bitの解像度でArduinoと同じESPは16bit迄行ける？
-//モータのPWMのチャンネル、周波数の設定
-ledcSetup(0, 490, PWM_level);
-ledcSetup(1, 490, PWM_level);
-ledcSetup(2, 960, PWM_level);
-ledcSetup(3, 960, PWM_level);
+  // 8の場合8bitの解像度でArduinoと同じESPは16bit迄行ける？
+  //モータのPWMのチャンネル、周波数の設定
+  ledcSetup(0, 490, PWM_level);
+  ledcSetup(1, 490, PWM_level);
+  ledcSetup(2, 960, PWM_level);
+  ledcSetup(3, 960, PWM_level);
 
-//モータのピンとチャンネルの設定
-ledcAttachPin(AIN1, 0);
-ledcAttachPin(AIN2, 1);
-ledcAttachPin(BIN1, 2);
-ledcAttachPin(BIN2, 3);
-//pin番号をチャンネル番号に上書き
-AIN1 = 0;
-AIN2 = 1;
-BIN1 = 2;
-BIN2 = 3;
+  //モータのピンとチャンネルの設定
+  ledcAttachPin(AIN1, 0);
+  ledcAttachPin(AIN2, 1);
+  ledcAttachPin(BIN1, 2);
+  ledcAttachPin(BIN2, 3);
+  //pin番号をチャンネル番号に上書き
+  AIN1 = 0;
+  AIN2 = 1;
+  BIN1 = 2;
+  BIN2 = 3;
 
 #endif
 
