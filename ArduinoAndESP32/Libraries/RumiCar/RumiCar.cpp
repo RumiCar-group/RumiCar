@@ -1,5 +1,12 @@
 // RumiCar Libraly
 
+#include "RumiCar.h"
+#include <Wire.h>
+
+VL53L0X sensor0;
+VL53L0X sensor1;
+VL53L0X sensor2;
+
 void RC_setup()
 {
   Serial.begin(9600);

@@ -56,6 +56,13 @@
 #define HIGH_SPEED
 //#define HIGH_ACCURACY
 
+#include <VL53L0X.h>
+extern VL53L0X sensor0;
+extern VL53L0X sensor1;
+extern VL53L0X sensor2;
 
+void RC_setup();  //RumiCarのセンサとモータの初期化
+int RC_steer (int direc );  //操舵の関数
+int RC_drive(int direc, int ipwm);  //走行の関数
 
 #endif /* RumiCar_h */
