@@ -1,3 +1,6 @@
+#ifndef RumiCar_h
+#define RumiCar_h
+
 // RumiCar include
 //操舵用の設定
 #define LEFT   0
@@ -17,10 +20,10 @@
 #define SHUT2 05
 
 //Aが操舵、Bが走行
-int AIN1 = 04;
-int AIN2 = 26;
-int BIN1 = 27;
-int BIN2 = 25;
+#define AIN1 04
+#define AIN2 26
+#define BIN1 27
+#define BIN2 25
 
 #else
 #define RC_analogWrite analogWrite
@@ -30,10 +33,10 @@ int BIN2 = 25;
 #define SHUT2 16
 
 //Aが操舵、Bが走行
-int AIN1 = 03;
-int AIN2 = 11;
-int BIN1 = 05;
-int BIN2 = 06;
+#define AIN1 03
+#define AIN2 11
+#define BIN1 05
+#define BIN2 06
 #endif
 
 // Uncomment this line to use long range mode. This
@@ -52,3 +55,14 @@ int BIN2 = 06;
 
 #define HIGH_SPEED
 //#define HIGH_ACCURACY
+
+#include <VL53L0X.h>
+extern VL53L0X sensor0;
+extern VL53L0X sensor1;
+extern VL53L0X sensor2;
+
+void RC_setup();  //RumiCarのセンサとモータの初期化
+int RC_steer (int direc );  //操舵の関数
+int RC_drive(int direc, int ipwm);  //走行の関数
+
+#endif /* RumiCar_h */
