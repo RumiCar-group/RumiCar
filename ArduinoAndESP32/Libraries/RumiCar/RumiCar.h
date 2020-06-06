@@ -20,10 +20,10 @@
 #define SHUT2 05
 
 //Aが操舵、Bが走行
-int AIN1 = 04;
-int AIN2 = 26;
-int BIN1 = 27;
-int BIN2 = 25;
+#define AIN1 04
+#define AIN2 26
+#define BIN1 27
+#define BIN2 25
 
 #else
 #define RC_analogWrite analogWrite
@@ -33,10 +33,10 @@ int BIN2 = 25;
 #define SHUT2 16
 
 //Aが操舵、Bが走行
-int AIN1 = 03;
-int AIN2 = 11;
-int BIN1 = 05;
-int BIN2 = 06;
+#define AIN1 03
+#define AIN2 11
+#define BIN1 05
+#define BIN2 06
 #endif
 
 // Uncomment this line to use long range mode. This
