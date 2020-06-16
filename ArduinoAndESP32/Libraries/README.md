@@ -1,7 +1,9 @@
 # RumiCarライブラリのArduino共通ライブラリ化
 
 RumiCarのArduino向けライブラリです．
-現時点ではArduino Nano版のExercise-1.1のみ動作確認をしています．その他のExerciseへの対応，ESP32版での動作確認をしていただける方を募集しています．
+
+現時点ではExercise, Exercise-1.1~3.2に対応しています．Arduino Nano版のCMでは動作確認済み，ESP32版では未確認です．    
+上級編のExerciseにも対応を計画中です．
 
 ## 導入方法
 
