@@ -16,18 +16,18 @@ void setup()
 
 void loop()
 {
-int ispeed = 255;
-int idist1;
-idist1=sensor1.readRangeSingleMillimeters();
-if ( idist1 < 300 ){
-  if ( idist1 > 120 ){
-    RC_drive(FORWARD,ispeed);
-  }else if (idist1 < 80){
-    RC_drive(REVERSE,ispeed);;
+  int ispeed = 255;
+  int idist1;
+  idist1=sensor1.readRangeSingleMillimeters();
+  if ( idist1 < 300 ){
+    if ( idist1 > 120 ){
+      RC_drive(FORWARD,ispeed);
+    }else if (idist1 < 80){
+      RC_drive(REVERSE,ispeed);;
     }else{
-    RC_drive(BRAKE,ispeed);  
+      RC_drive(BRAKE,ispeed);  
     }
-}else{
+  }else{
     RC_drive(FREE,ispeed);  
   }
 }
