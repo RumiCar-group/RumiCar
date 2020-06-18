@@ -1,4 +1,4 @@
-#　RumiCar　ESP32版用Bluetoothシリアル通信のサンプルプログラムです
+#　Exercise-1.2はRumiCar　ESP32版用Bluetoothシリアル通信のサンプルプログラムです
 
 1. Windos10とペアリング
 1.1 設定->デバイス->Bluetoothとその他のデバイス->Bluetoothまたはその他のデバイスを追加する->Bluetooth
