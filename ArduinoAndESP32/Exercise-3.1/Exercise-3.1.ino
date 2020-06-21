@@ -27,6 +27,7 @@ void loop()
 int ispeed = 255;
 int idist1;
 idist1=sensor1.readRangeSingleMillimeters();
+Serial.println(idist1);
 if ( idist1 < 300 ){
   if ( idist1 > 120 ){
     RC_drive(FORWARD,ispeed);
