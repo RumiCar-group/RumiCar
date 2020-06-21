@@ -23,6 +23,13 @@ s0=sensor0.readRangeSingleMillimeters();
 s1=sensor1.readRangeSingleMillimeters();
 s2=sensor2.readRangeSingleMillimeters();
 
+Serial.print("Sensor0:");
+Serial.print(s0);
+Serial.print("  Sensor1:");
+Serial.print(s1);
+Serial.print("  Sensor2:");
+Serial.println(s2);
+
 if(s1<100){
   RC_drive(REVERSE,150);
 }else if (s1<150){
