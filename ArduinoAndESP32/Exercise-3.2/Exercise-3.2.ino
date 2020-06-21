@@ -1,13 +1,5 @@
 //PullRequest用のテストブランチ
-#include <Wire.h>
-
-#include <VL53L0X.h>
-
-#include "RumiCar.h"
-
-VL53L0X sensor0;
-VL53L0X sensor1;
-VL53L0X sensor2;
+#include <RumiCar.h>
 
 void setup()
 {
@@ -17,11 +9,12 @@ void setup()
 void loop()
 {
 
-int ibound =250;
-int s0, s1, s2;
-s0=sensor0.readRangeSingleMillimeters();
-s1=sensor1.readRangeSingleMillimeters();
-s2=sensor2.readRangeSingleMillimeters();
+  int ibound =250;
+  int s0, s1, s2;
+  s0=sensor0.readRangeSingleMillimeters();
+  s1=sensor1.readRangeSingleMillimeters();
+  s2=sensor2.readRangeSingleMillimeters();
+
 
 Serial.print("Sensor0:");
 Serial.print(s0);

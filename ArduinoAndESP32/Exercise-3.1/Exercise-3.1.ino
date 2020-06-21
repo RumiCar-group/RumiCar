@@ -7,15 +7,7 @@
 
   The range readings are in units of mm. */
 
-#include <Wire.h>
-
-#include <VL53L0X.h>
-
-#include "RumiCar.h"
-
-VL53L0X sensor0;
-VL53L0X sensor1;
-VL53L0X sensor2;
+#include <RumiCar.h>
 
 void setup()
 {
@@ -24,6 +16,7 @@ void setup()
 
 void loop()
 {
+
 int ispeed = 255;
 int idist1;
 idist1=sensor1.readRangeSingleMillimeters();
@@ -34,9 +27,9 @@ if ( idist1 < 300 ){
   }else if (idist1 < 80){
     RC_drive(REVERSE,ispeed);;
     }else{
-    RC_drive(BRAKE,ispeed);  
+      RC_drive(BRAKE,ispeed);  
     }
-}else{
+  }else{
     RC_drive(FREE,ispeed);  
   }
 }
