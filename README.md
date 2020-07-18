@@ -12,7 +12,7 @@ Raspberry Pz ZwroWの場合はフォルダRasPiをお使いください。Raspi�
 
 動画(YouTube):https://www.youtube.com/watch?v=WHXN_QWJtDU&list=PLizQwd7qivbjCSXyGGtFbZfkKpPRBjdZD&index=2
 
-202年4月25日に開催されたRumiCarハンズオン中継の録画：https://www.youtube.com/watch?v=99zH73B8NUo&fbclid=IwAR1D7RJcull7MyaIADjT0x5RORKW06aF6h2eLwhffHzl7cQtubOmCBKtU4s
+2020年4月25日に開催されたRumiCarハンズオン中継の録画：https://www.youtube.com/watch?v=99zH73B8NUo&fbclid=IwAR1D7RJcull7MyaIADjT0x5RORKW06aF6h2eLwhffHzl7cQtubOmCBKtU4s
 
 
 These Exercises are used during online RumiCar hands-on event held on Saturday April 24th 2020.
