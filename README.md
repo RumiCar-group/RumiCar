@@ -9,4 +9,4 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 
 Slides (資料)：https://www.slideshare.net/ssuser4d5ccc/rumicar-handsonalgyan20200425202004242
 
-Video about online RumiCar hands-on event (RumiCarハンズオン中継の録画)：https://www.youtube.com/watch?v=99zH73B8NUo&fbclid=IwAR1D7RJcull7MyaIADjT0x5RORKW06aF6h2eLwhffHzl7cQtubOmCBKtU4s
+Video about online RumiCar hands-on event (RumiCarハンズオン中継の録画)：https://youtu.be/99zH73B8NUo
