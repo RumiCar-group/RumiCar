@@ -1,10 +1,12 @@
 # RumiCar
 
+Please check a type of Computer Module (CM) and programming languages. If you use Arduino Nano or ESP32, please go to an "ArduinoAndESP32" folder. If you use Raspberry Pi Zero W, please go to a "RasPi" folder. Python is used for programs in "RasPi."
+
 コンピュータモジュールの種類によりプログラムや使用コンピュータ言語が異なります。
 
-Arduino NanoとESP32の場合はフォルダArduinoAndESP32をお使いください。
-Raspberry Pz ZwroWの場合はフォルダRasPiをお使いください。Raspiはコンピュータ言語はPythonです。
+Arduino Nano と ESP32 の場合はフォルダArduinoAndESP32をお使いください。
+Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Raspiはコンピュータ言語はPythonです。
 
-資料：https://www.slideshare.net/ssuser4d5ccc/rumicar-handsonalgyan20200425202004242
+Slides (資料)：https://www.slideshare.net/ssuser4d5ccc/rumicar-handsonalgyan20200425202004242
 
-2020年4月25日に開催されたRumiCarハンズオン中継の録画：https://www.youtube.com/watch?v=99zH73B8NUo&fbclid=IwAR1D7RJcull7MyaIADjT0x5RORKW06aF6h2eLwhffHzl7cQtubOmCBKtU4s
+Video about online RumiCar hands-on event (RumiCarハンズオン中継の録画)：https://www.youtube.com/watch?v=99zH73B8NUo&fbclid=IwAR1D7RJcull7MyaIADjT0x5RORKW06aF6h2eLwhffHzl7cQtubOmCBKtU4s
