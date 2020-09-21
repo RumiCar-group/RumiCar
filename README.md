@@ -8,6 +8,7 @@ Arduino Nano と ESP32 の場合はフォルダArduinoAndESP32をお使いくだ
 Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Raspiはコンピュータ言語はPythonです。
 
 1. フォルダの説明
+
 |フォルダ|説明|詳細|
 |a|b|c|
 
