@@ -7,6 +7,13 @@ Please check a type of Computer Module (CM) and programming languages. If you us
 Arduino Nano と ESP32 の場合はフォルダArduinoAndESP32をお使いください。
 Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Raspiはコンピュータ言語はPythonです。
 
+1. aaaaa
+
+aaaaa
+  1. bbbb
+  bbb
+
+
 Slides (資料)：https://www.slideshare.net/ssuser4d5ccc/rumicar-handsonalgyan20200425202004242
 
 Video about online RumiCar hands-on event (RumiCarハンズオン中継の録画)：https://youtu.be/99zH73B8NUo
