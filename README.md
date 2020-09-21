@@ -9,7 +9,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 
 ### フォルダの説明
 
-- フォルダの説明<br>sfafdsdfaf
+- ArduinoAndESP32<br>RumiCarのコンピュータモジュールのArduino NanotoESP32版用のサンプルプrpグラム。<br>ハンズオンで使用するプログラムが保存されています。RumiCarハンズ用の資料はフォルダ**ハンズオン用テキスト**のしたに保存されていますのでご自由にお使いください。
   - test aaaaaaaaaaaaa
   - test2    aaaaaaa
     - aaaa  dfgdfg
