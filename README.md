@@ -7,8 +7,9 @@ Please check a type of Computer Module (CM) and programming languages. If you us
 Arduino Nano と ESP32 の場合はフォルダArduinoAndESP32をお使いください。
 Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Raspiはコンピュータ言語はPythonです。
 
-フォルダの説明
+1. フォルダの説明  aaaaa
 
+1. test
 
 
 Slides (資料)：https://www.slideshare.net/ssuser4d5ccc/rumicar-handsonalgyan20200425202004242
