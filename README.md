@@ -60,7 +60,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
   - **結線図フォルダ**
     - 結線図(ArduinoNano).jpg RumiCarの基本、Arduino Nano版コンピュータモジュールの結線図です。RumiCarをこれから始める人向け
     - 結線図(Raspberry Pi Zero W).png ラズパイZeroW版コンピュータモジュールの結線図です。Pythonを使いたい方、画像認識、AI等挑戦されたい方(上級者向け)
-    - 結線図RumiCarG3.1_ESP32.jpg ESP32版コンピュータモジュール結線図、WiFIyaBluetooth、NN(ニューラルネットワーク)等に挑戦されたいかた(上級者向け)
+    - 結線図RumiCarG3.1_ESP32.jpg ESP32版コンピュータモジュール結線図、WiFIやBluetooth接続、NN(ニューラルネットワーク)プログラム等に挑戦されたいかた(上級者向け)
     - 車体接続結線表.jpg RumiCar車体側の結線図。車体を自作されたい方はこのインターフェイスに合わせて作製ください
     - ピンアサインArduino-ESP32-RasPi-Obniz Rumicarの車体インターフェイスと、各コンピュータモジュールのArduino nano、ESP32、ラズパイ、Obnizのピンアサインを一つの表にまとめたものです
   - **RumiCarの作り方**<br>　RumiCarの車体の開発方法や各種コンピュータモジュールの作製方法が掲載されています。RumiCarの自作を考えられている方はこの資料を参考にぜひオリジナルのRumiCarを作製してみてください。作成したRumiCarは「RumiCarの動作確認方法.pdf」の内容に従って動作確認ができます。   
