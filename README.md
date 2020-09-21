@@ -25,8 +25,8 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
     - **Exercise-3.1 安全に停止する車**<br>　前方に障害物を発見して安全に停止する車を考えます。RumICarが直進中に前方に障害物を発見したら停止し、障害物が無くなったらまた走行再開します。障害物が近づいてきたら(?)、安全のために後進します。あなたの手を障害物と仮定してRumiCarがあなたの手にぶつからずに停止するか試してみましょう。RumICarが停止中にあなたの手をRumicarに近づけたら安全確保のためにRumiCarが後進しますか？
     - **Exercise-3.2 市街地を走る車**<br> この章では実際に走行コースを設置してRumiCarを走らせます。左右の壁や前方の障害物を検知しながらRumiCarが走行します。
 - **ESP32フォルダ**<br>　RumiCarのコンピュータモジュールのうち、ESP32はWiFiやBlueToothなどの通信機能を内蔵しています。ここではESP32のBlueTooth機能を使ってRumiCarのセンサ測距値を無線で取得して表示させたり、RumiCarをワイヤレスで制御するサンプルプログラムが入っています。
-     - **BLE**<BR>　Bluetooth Low Energy(BLE)での通信。RumiCarのESP32版コンピュータモジュールに搭載されているBLEを使ってスマホ(iPhone)と通信してみました。3個の測距モジュールでの距離計測値をiPhoneのBLEScannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらって自分のスマホで計測値を表示させて楽しんで頂くことなどが可能です。
-    - **Bluetooth**<br>　Exercise-1.2はRumiCar　ESP32版用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンにひょじしたりパソコンからコマンドを送ってRumiCarを操作することができます。
+     - **BLEフォルダ**<BR>　Bluetooth Low Energy(BLE)での通信。RumiCarのESP32版コンピュータモジュールに搭載されているBLEを使ってスマホ(iPhone)と通信してみました。3個の測距モジュールでの距離計測値をiPhoneのBLEScannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらって自分のスマホで計測値を表示させて楽しんで頂くことなどが可能です。
+    - **Bluetoothフォルダ**<br>　Exercise-1.2はRumiCar　ESP32版用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンにひょじしたりパソコンからコマンドを送ってRumiCarを操作することができます。
       - Windos10とペアリング
        - 設定->デバイス->Bluetoothとその他のデバイス->Bluetoothまたはその他のデバイスを追加する->Bluetooth
       - RumiCar_ESP32を選択
