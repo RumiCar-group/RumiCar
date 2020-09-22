@@ -12,7 +12,9 @@ Arduino Nano と ESP32 の場合はフォルダArduinoAndESP32をお使いくだ
 Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Raspiはコンピュータ言語はPythonです。
 
 [![RumiCar紹介動画](http://img.youtube.com/vi/DxaY2eCzJzo/0.jpg)](https://www.youtube.com/watch?v=DxaY2eCzJzo "RumiCar紹介動画")
-
+[![RumiCar衝突回避動画](http://img.youtube.com/vi/95pc_4Wf14U&t=3s/0.jpg)](https://www.youtube.com/watch?v=95pc_4Wf14U&t=3s "RumiCar衝突回避動画")
+[![RumiCarテスト走行動画](http://img.youtube.com/vi/oHujTh9AwAw/0.jpg)](https://www.youtube.com/watch?v=oHujTh9AwAw "RumiCarテスト走行動画")
+[![RumiCar車載カメラ視点動画](http://img.youtube.com/vi/16kOgLMo-Tg/0.jpg)](https://www.youtube.com/watch?v=16kOgLMo-Tg "RumiCar車載カメラ視点動画")
 ### フォルダの説明
 
 - **ArduinoAndESP32フォルダ**<br>　RumiCarのコンピュータモジュールのArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラムが保存されています。RumiCarハンズ用の資料は「**ハンズオン用テキスト**」フォルダの下に保存されていますのでまずそちらを参照ください。**ハンズオン用テキストはPDF形式で約１０MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。**　RumiCarをお持ちの方は以下のフォルダにある各サンプルプログラムをRumiCarにロードしてお楽しみください。
