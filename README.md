@@ -13,8 +13,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 
 （YouTubeへのリンクです）
 
-（RumiCar紹介動画）
-
+「RumiCar紹介動画、衝突回避テスト、テスト走行、車載カメラ視点」
 
 [![RumiCar紹介動画](http://img.youtube.com/vi/DxaY2eCzJzo/0.jpg)](https://www.youtube.com/watch?v=DxaY2eCzJzo "RumiCar紹介動画")
 [![RumiCar衝突回避動画](http://img.youtube.com/vi/95pc_4Wf14U/0.jpg)](https://youtu.be/95pc_4Wf14U "RumiCar衝突回避動画")
