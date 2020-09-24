@@ -1,6 +1,6 @@
 ![RumiCarロゴ](https://www.rumicar.com/wp-content/uploads/2020/08/IMG_0184.png "RumiCarロゴ")
 ![RumiCar写真](https://www.rumicar.com/wp-content/uploads/2020/05/rumicar_logo.jpg "RumiCar写真")
-![RumiCar写真](https://www.dropbox.com/s/p1s2a4ioewccrm1/GitHubCoverPhoto.jpg?dl=0 "RumiCar写真")
+![RumiCar写真](https://www.dropbox.com/s/p1s2a4ioewccrm1/GitHubCoverPhoto.jpg "RumiCar写真")
 
 # RumiCar
 
