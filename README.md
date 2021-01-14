@@ -9,7 +9,7 @@ If you prefer English, please read Readme English.
 Arduino Nano と ESP32 の場合はフォルダArduinoAndESP32をお使いください。
 Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Raspiはコンピュータ言語はPythonです。
 
-（画像はYouTubeへのリンクです。）
+画像はYouTubeへのリンクです。クリックしてご覧ください。
 
 - RumiCar紹介動画
 - 衝突回避
