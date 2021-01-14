@@ -15,7 +15,7 @@ Please check a type of Computer Module (CM) and programming languages. If you us
 [![RumiCar車載カメラ視点動画](http://img.youtube.com/vi/16kOgLMo-Tg/0.jpg)](https://www.youtube.com/watch?v=16kOgLMo-Tg "RumiCar車載カメラ視点動画")
 ### About folders
 
-- **ArduinoAndESP32 folder**<br>There are sample programs for RumiCar's Arduino Nano CM and ESP32 CM in this folder. These programs are used in hands-on events. Slides used in hands-on events are in a folder named **ハンズオン用テキスト**, and it is a 10 MB PDF. Browsing it on GitHub sometimes deos not work, so dowload it to read it. If you have a RumiCar, download sample programs, load them into RumiCar, and enjoy.
+- **ArduinoAndESP32 folder**<br>There are sample programs for RumiCar's Arduino Nano CM and ESP32 CM in this folder. These programs are used in hands-on events. Slides used in hands-on events are in a folder named **(Material for hands-on) ハンズオン用テキスト**, and it is a 10 MB PDF. Browsing it on GitHub sometimes deos not work, so dowload it to read it. If you have a RumiCar, download sample programs, load them into RumiCar, and enjoy.
 
   - **Exercise-1 Measure distance**<br>RumiCar has three laser distance measurement modules on front. Laser distance measurement modules determine distance by time of flight, which is hitting harmless lasers objects to calculate difference of ***time*** between when the module emits laser and when reflected laser comes back. Speed of sound is also called Mach, which is 1234.8 km/h (761.2 mph). Moreover, speed of light is 880,000 times as fast as sound of speed. It is incredible that measureing such a high speed of light.
   
@@ -29,9 +29,9 @@ Please check a type of Computer Module (CM) and programming languages. If you us
     - **Exercise-2.4 Zigzag drive**<br>In this exercise, RumiCar drives zigzag while driving forward. If there is not enough space for driving RumiCar, grab RumiCar and see RumiCar drives zigzag.
   - **Exercise-3 Basic of autonomous driving**<br>In Exercise 3, which is basic of autonomous driving, you will control RumiCar based onn sensor values. RumiCar detects distance among objects in front of RumiCar or walls on the right or left, and it stops or turns the steering to right or left.
     - **Exercise-3.1 Safety stop**<br>In this exercise, you will think about a vehicle which stops safely when it finds an obstacle in front. RumiCar drives straight, and if there is no more obstacles in front, RumiCar will drive again. When an obstacle abroaches RumiCar, it drives reverse for safety. Suppose your hand is an obstacle and place it in front of RumiCar, make sure RumiCar stops without collision. Does RumiCar drive reverse when your hand approach RumiCar while it stops?
-    - **Exercise-3.2 市街地を走る車**<br> この章では実際に走行コースを設置してRumiCarを走らせます。左右の壁や前方の障害物を検知しながらRumiCarが走行します。
-- **ESP32フォルダ**<br>　RumiCarのコンピュータモジュールのうち、ESP32はWiFiやBlueToothなどの通信機能を内蔵しています。ここではESP32のBlueTooth機能を使ってRumiCarのセンサ測距値を無線で取得して表示させたり、RumiCarをワイヤレスで制御するサンプルプログラムが入っています。
-     - **BLEフォルダ**<BR>　Bluetooth Low Energy(BLE)での通信。RumiCarのESP32版コンピュータモジュールに搭載されているBLEを使ってスマホ(iPhone)と通信してみました。3個の測距モジュールでの距離計測値をiPhoneのBLEScannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらって自分のスマホで計測値を表示させて楽しんで頂くことなどが可能です。
+    - **Exercise-3.2 A vehicle which drives in a town**<br>In this exercise, RumiCar will drive in a test course. RumiCar dirves by detecting walls on sides and obstacles in front of RumiCar.
+- **ESP32 folder**<br>ESP has wireless interference, such as WiFI and Blue Tooth. Therefore, an ESP CM, which is one of the RumiCar CMs, has WiFi and Blue Tooth. In this folder,there are sample programs for receiving sensor values from RumiCar via ESP32's Blue Tooth and wirelessly controlling RumiCar.
+     - **BLE folder**<BR>BLE stands for Bluetooth Low Energy. RumiCarのESP32版コンピュータモジュールに搭載されているBLEを使ってスマホ(iPhone)と通信してみました。3個の測距モジュールでの距離計測値をiPhoneのBLEScannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらって自分のスマホで計測値を表示させて楽しんで頂くことなどが可能です。
     - **Bluetoothフォルダ**<br>　Exercise-1.2はRumiCar　ESP32版用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンに表示したりパソコンからコマンドを送ってRumiCarを操作することができます。
       - Windos10とペアリング
        - 設定->デバイス->Bluetoothとその他のデバイス->Bluetoothまたはその他のデバイスを追加する->Bluetooth
