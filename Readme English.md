@@ -77,7 +77,7 @@ Four images are links to YouTube. Click them to watch.
 
   ### その他大事なこと
   - **RumiCar website**<br>RumiCarのwebisteです。今後このwebisteを発展させたいので、websiteの編集をしてくださる方は是非ご連絡ください!<br>https://www.rumicar.com
-  - **RumiCar Youtube**<br>RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などがアップロードされています。是非チャンネル登録をお願いします。また、動画編集をしてくださる方も是非ご連絡ください。<br>
+  - **RumiCar YouTube**<br>RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などがアップロードされています。是非チャンネル登録をお願いします。また、動画編集をしてくださる方も是非ご連絡ください。<br>
   https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg
   - **RumiCar group**<br>RumiCarのFaceBookグループです。皆様のご参加をお待ちしてます。<br>
   https://www.facebook.com/groups/rumicar
