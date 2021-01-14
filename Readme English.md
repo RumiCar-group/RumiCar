@@ -7,7 +7,7 @@ Please check a type of Computer Module (CM) and programming languages. If you us
 
 （An image is a link to YouTube.）
 
-1. Introduction of RumiCar, 2.RumiCar collision avoidance, 3.[Part 2 of 2] RumiCar on test course, 4.RumiCar car camera view at test drive on August 30, 2020
+1. Introduction of RumiCar<br>2.RumiCar collision avoidance<br>3.[Part 2 of 2] RumiCar on test course<br>4.RumiCar car camera view at test drive on August 30, 2020<br>
 
 [![RumiCar紹介動画](http://img.youtube.com/vi/DxaY2eCzJzo/0.jpg)](https://www.youtube.com/watch?v=DxaY2eCzJzo "RumiCar紹介動画")
 [![RumiCar衝突回避動画](http://img.youtube.com/vi/95pc_4Wf14U/0.jpg)](https://youtu.be/95pc_4Wf14U "RumiCar衝突回避動画")
@@ -34,7 +34,7 @@ Please check a type of Computer Module (CM) and programming languages. If you us
      - **BLE folder**<BR>BLE stands for Bluetooth Low Energy. RumiCarのESP32版コンピュータモジュールに搭載されているBLEを使ってスマホ(iPhone)と通信してみました。3個の測距モジュールでの距離計測値をiPhoneのBLEScannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらって自分のスマホで計測値を表示させて楽しんで頂くことなどが可能です。
     - **Bluetoothフォルダ**<br>　Exercise-1.2はRumiCar　ESP32版用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンに表示したりパソコンからコマンドを送ってRumiCarを操作することができます。
       - Windos10とペアリング
-       - 設定->デバイス->Bluetoothとその他のデバイス->Bluetoothまたはその他のデバイスを追加する->Bluetooth
+      - 設定->デバイス->Bluetoothとその他のデバイス->Bluetoothまたはその他のデバイスを追加する->Bluetooth
       - RumiCar_ESP32を選択
       - デバイスマネージャー->ポート(COMとLPT)で"Bluetooth リンク経由の標準シリアル(COMn)"　を確認する"n"は数字　(2個表示される)
       - Arduino IDEの設定でツール->シリアルポート:　で、上記COMnに合わせる
