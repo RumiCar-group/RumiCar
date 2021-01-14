@@ -11,7 +11,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 
 （画像はYouTubeへのリンクです。）
 
-1. RumiCar紹介動画<br>1. 衝突回避<br>1. [Part 2 of 2] RumiCar on test course<br>1. 車載カメラ視点
+1.RumiCar紹介動画 2.衝突回避 3.[Part 2 of 2] RumiCar on test course 4.車載カメラ視点
 
 [![RumiCar紹介動画](http://img.youtube.com/vi/DxaY2eCzJzo/0.jpg)](https://www.youtube.com/watch?v=DxaY2eCzJzo "RumiCar紹介動画")
 [![RumiCar衝突回避動画](http://img.youtube.com/vi/95pc_4Wf14U/0.jpg)](https://youtu.be/95pc_4Wf14U "RumiCar衝突回避動画")
@@ -71,18 +71,16 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
     - 結線図(ArduinoNano).jpg<br>RumiCarの基本である、Arduino Nano版CMの結線図です。RumiCarをこれから始める人向け。
     - 結線図(Raspberry Pi Zero W).png<br>ラズパイZero W版CMの結線図です。Pythonを使いたい方、画像認識、AI等挑戦されたい方向け(上級者向け)。
     - 結線図RumiCarG3.1_ESP32.jpg<br>ESP32版CM結線図です。WiFiやBluetooth接続、ニューラルネットワーク(NN)プログラム等に挑戦されたい方向け(上級者向け)。
-    - 車体接続結線表.jpg RumiCar車体側の結線図。車体を自作されたい方はこのインターフェイスに合わせて作製ください
-    - ピンアサインArduino-ESP32-RasPi-Obniz Rumicarの車体インターフェイスと、各コンピュータモジュールのArduino nano、ESP32、ラズパイ、Obnizのピンアサインを一つの表にまとめたものです
-  - **RumiCarの作り方**<br>　RumiCarの車体の開発方法や各種コンピュータモジュールの作製方法が掲載されています。RumiCarの自作を考えられている方はこの資料を参考にぜひオリジナルのRumiCarを作製してみてください。作成したRumiCarは「RumiCarの動作確認方法.pdf」の内容に従って動作確認ができます。   
-  - **RumiCarの動作確認方法**<br>　RumiCarを新規に作製した場合や、運送などにより故障が発生していないか、のためにRumICarが正常に動作するか確認するための手順をまとめた資料です。こちらを参考にRumiCarの動作確認をしましょう。
-  - **RumiCar Youtube** RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などが保存されています。ぜひチャンネル登録をお願いします<br>
-  https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg/videos?view_as=subscriber
-  - **FaceBook** RumiCarのfaceBookグループです。皆様のご参加をおまちしてます<br>
+    - 車体接続結線表.jpg<br>RumiCar車体側の結線図です。車体を自作されたい方は、このインターフェイスに合わせて作製ください。
+    - ピンアサインArduino-ESP32-RasPi-Obniz<br>Rumicar車体のインターフェイスと、各CMのArduino nano、ESP32、ラズパイ、Obnizのピンアサインを一つの表にまとめたものです。
+  - **RumiCarの作り方**<br>RumiCar車体の開発方法や各種CMの作製方法が掲載されています。RumiCarの自作を考えられている方は、この資料を参考に是非オリジナルのRumiCarを作製してみてください。作製したRumiCarは「RumiCarの動作確認方法.pdf」の内容に従って動作確認ができます。   
+  - **RumiCarの動作確認方法**<br>RumiCarを新規に作製した場合や、運送などにより故障が発生していないか、のためにRumiCarが正常に動作するか確認するための手順をまとめた資料です。こちらを参考にRumiCarの動作確認をしましょう。
+  - **RumiCar Youtube**<br>RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などがアップロードされています。是非チャンネル登録をお願いします<br>
+  https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg
+  - **RumiCar group**<br>RumiCarのFaceBookグループです。皆様のご参加をお待ちしてます。<br>
   https://www.facebook.com/groups/rumicar
   
-  - **connpass** RumiCarの走行会や開発教室、オンラインセミナーなどイベント告知や参加者募集のページです。RumiCarイベントへ参加ご希望の方はメンバー登録をお願いします<br> 
+  - **connpass**<br>RumiCarの走行会や開発教室、オンラインセミナーなどイベント告知や参加者募集のページです。RumiCarイベントに参加ご希望の方は是非メンバー登録をお願いいたします。<br> 
    https://rumicar.connpass.com/
-   
-Slides (資料)：https://www.slideshare.net/ssuser4d5ccc/rumicar-handsonalgyan20200425202004242
 
 Video about online RumiCar hands-on event (RumiCarハンズオン中継の録画)：https://youtu.be/99zH73B8NUo
