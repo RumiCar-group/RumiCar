@@ -32,7 +32,7 @@ Please check a type of Computer Module (CM) and programming languages. If you us
     - **Exercise-3.2 A vehicle which drives in a town**<br>In this exercise, RumiCar will drive in a test course. RumiCar dirves by detecting walls on sides and obstacles in front of RumiCar.
 - **ESP32 folder**<br>ESP has wireless interference, such as WiFI and Blue Tooth. Therefore, an ESP CM, which is one of the RumiCar CMs, has WiFi and Blue Tooth. In this folder,there are sample programs for receiving sensor values from RumiCar via ESP32's Blue Tooth and wirelessly controlling RumiCar.
      - **BLE folder**<BR>BLE stands for Bluetooth Low Energy. RumiCarのESP32版コンピュータモジュールに搭載されているBLEを使ってスマホ(iPhone)と通信してみました。3個の測距モジュールでの距離計測値をiPhoneのBLEScannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらって自分のスマホで計測値を表示させて楽しんで頂くことなどが可能です。
-    - **Bluetoothフォルダ**<br>　Exercise-1.2はRumiCar　ESP32版用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンに表示したりパソコンからコマンドを送ってRumiCarを操作することができます。
+    - **Bluetoothフォルダ**<br>Exercise-1.2はRumiCar ESP32版用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンに表示したりパソコンからコマンドを送ってRumiCarを操作することができます。
       - Windos10とペアリング
       - 設定->デバイス->Bluetoothとその他のデバイス->Bluetoothまたはその他のデバイスを追加する->Bluetooth
       - RumiCar_ESP32を選択
