@@ -33,14 +33,14 @@ Four images are links to YouTube. Click them to watch.
   - **Exercise-3 Basic of autonomous driving**<br>In Exercise 3, which is basic of autonomous driving, you will control RumiCar based onn sensor values. RumiCar detects distance among objects in front of RumiCar or walls on the right or left, and it stops or turns the steering to right or left.
     - **Exercise-3.1 Safety stop**<br>In this exercise, you will think about a vehicle which stops safely when it finds an obstacle in front. RumiCar drives straight, and if there is no more obstacles in front, RumiCar will drive again. When an obstacle abroaches RumiCar, it drives reverse for safety. Suppose your hand is an obstacle and place it in front of RumiCar, make sure RumiCar stops without collision. Does RumiCar drive reverse when your hand approach RumiCar while it stops?
     - **Exercise-3.2 A vehicle which drives in a town**<br>In this exercise, RumiCar will drive in a test course. RumiCar dirves by detecting walls on sides and obstacles in front of RumiCar.
-- **ESP32 folder**<br>ESP has wireless interference, such as WiFI and Blue Tooth. Therefore, an ESP CM, which is one of the RumiCar CMs, has WiFi and Blue Tooth. In this folder,there are sample programs for receiving sensor values from RumiCar via ESP32's Blue Tooth and wirelessly controlling RumiCar.
-    - **BLEフォルダ**<BR>Bluetooth Low Energy(BLE)での通信。RumiCarのESP32版CMに搭載されているBLEを使ってスマホ(iPhone)と通信してみましょう。3個の測距モジュールでの距離計測値をiPhoneのBLE Scannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらい、自分のスマホで計測値を表示させて楽しんでいただくことなどが可能です。
+- **ESP32 folder**<br>ESP has wireless interference, such as WiFi and Bluetooth. Therefore, an ESP CM, which is one of the RumiCar CMs, has WiFi and Blue Tooth. In this folder, there are sample programs for receiving sensor values from RumiCar via ESP32's Blue Tooth and wirelessly controlling RumiCar.
+    - **BLEフォルダ**<BR>BLE stands for Bluetooth Low Energy. Have iPhone telecommunicate with BLE inside RumiCar ESP32 CM. 3個の測距モジュールでの距離計測値をiPhoneのBLE Scannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらい、自分のスマホで計測値を表示させて楽しんでいただくことなどが可能です。
     - **Bluetoothフォルダ**<br>Exercise-1.2はRumiCar ESP32版CM用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンに表示したり、パソコンからコマンドを送ってRumiCarを操作することができます。
       - Windos10とペアリング
       - 設定->デバイス->Bluetoothとその他のデバイス->Bluetoothまたはその他のデバイスを追加する->Bluetooth
       - RumiCar_ESP32を選択
       - デバイスマネージャー->ポート(COMとLPT)で"Bluetooth リンク経由の標準シリアル(COM #)"　を確認する #は数字　(2個表示される)
-      - Arduino IDEの設定でツール->シリアルポート:　で、上記COMnに合わせる
+      - Arduino IDEの設定でツール->シリアルポート:　で、上記COM #に合わせる
       - ESP32が「ケーブルを繋いでいない」のに測距値がシリアルモニタに表示できます。
       - PC側からコマンドを送ってRumiCarをコントロールできます。
       - サンプルプログラムはコマンド「r」、「l」、「f」、「b」に対応しています。それぞれ右、左、前進、後進を0.5秒実行します。コマンドは全て小文字です。 Arduino IDEのシリアルモニタの送信でコマンドを送ります。
