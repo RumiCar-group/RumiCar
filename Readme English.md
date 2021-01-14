@@ -34,16 +34,16 @@ Four images are links to YouTube. Click them to watch.
     - **Exercise-3.1 Safety stop**<br>In this exercise, you will think about a vehicle which stops safely when it finds an obstacle in front. RumiCar drives straight, and if there is no more obstacles in front, RumiCar will drive again. When an obstacle abroaches RumiCar, it drives reverse for safety. Suppose your hand is an obstacle and place it in front of RumiCar, make sure RumiCar stops without collision. Does RumiCar drive reverse when your hand approach RumiCar while it stops?
     - **Exercise-3.2 A vehicle which drives in a town**<br>In this exercise, RumiCar will drive in a test course. RumiCar dirves by detecting walls on sides and obstacles in front of RumiCar.
 - **ESP32 folder**<br>ESP has wireless interference, such as WiFi and Bluetooth. Therefore, an ESP CM, which is one of the RumiCar CMs, has WiFi and Blue Tooth. In this folder, there are sample programs for receiving sensor values from RumiCar via ESP32's Blue Tooth and wirelessly controlling RumiCar.
-    - **BLEフォルダ**<BR>BLE stands for Bluetooth Low Energy. Have iPhone telecommunicate with BLE inside RumiCar ESP32 CM. Sensor values from three laser distance measurement modules are displayed on BLE Scanner, which is an iPhone's app. BLE enables multiple connection; in other words, there is no need to disconnect other devices, so マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらい、自分のスマホで計測値を表示させて楽しんでいただくことなどが可能です。
-    - **Bluetoothフォルダ**<br>Exercise-1.2はRumiCar ESP32版CM用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンに表示したり、パソコンからコマンドを送ってRumiCarを操作することができます。
-      - Windos10とペアリング
-      - 設定->デバイス->Bluetoothとその他のデバイス->Bluetoothまたはその他のデバイスを追加する->Bluetooth
-      - RumiCar_ESP32を選択
-      - デバイスマネージャー->ポート(COMとLPT)で"Bluetooth リンク経由の標準シリアル(COM #)"　を確認する #は数字　(2個表示される)
-      - Arduino IDEの設定でツール->シリアルポート:　で、上記COM #に合わせる
-      - ESP32が「ケーブルを繋いでいない」のに測距値がシリアルモニタに表示できます。
-      - PC側からコマンドを送ってRumiCarをコントロールできます。
-      - サンプルプログラムはコマンド「r」、「l」、「f」、「b」に対応しています。それぞれ右、左、前進、後進を0.5秒実行します。コマンドは全て小文字です。 Arduino IDEのシリアルモニタの送信でコマンドを送ります。
+    - **BLE folder**<BR>BLE stands for Bluetooth Low Energy. Have iPhone telecommunicate with BLE inside RumiCar ESP32 CM. Sensor values from three laser distance measurement modules are displayed on BLE Scanner, which is an iPhone's app. BLE can do multiple connection; in other words, there is no need to disconnect other devices. Therefore, multiple devices can connect with one RumiCar at the same time. At an exhibition, you can plan a performance; for instance, visitors install a BLE Scanner app and see sensor values on their smart phone.
+    - **Bluetooth folder**<br>Exercise-1.2 is a sample program for ESP32 CM's Bluetooth serial communication. This enables RumiCar to connect with a computer installed Windows and Bluetooth, display sensor values on a computer from laser distance measurement modules, and control RumiCar by sending commands from a computer.
+      - Pairing Windos10
+      - Settings ->Device ->Bluetooth and other devices->Bluetooth or add other devices ->Bluetooth
+      - Select RumiCar_ESP32
+      - Device manager ->On Port(COM & LPT), check "Standard Serial over Bluetooth link (COM #)" # is a number.　(There are two numbers.)
+      - On setting on Arduino IDE, tool ->On Serial ports, select COM # which you saw on device manager
+      - Now sensor values are displaed even though ESP32 is not connected.
+      - You can control RumiCar by sending commands from your computer.
+      - The sample program has commands, "r", "l", "f", and "b". それぞれ右、左、前進、後進を0.5秒実行します。コマンドは全て小文字です。 Arduino IDEのシリアルモニタの送信でコマンドを送ります。
       - ケーブル接続が不要なので、走行中に実際の測距データをPC側で取得したり、PC側からコマンドを送ってラジコンのような操作をすることができるようになります。
 
 - **RasPiフォルダ**<br>RumiCarのコンピュータモジュールのラズパイ版のサンプルプログラムです。Pythonで記述されています。ラズパイ版CMを使ってRumiCarを動かす場合にお使いください。
