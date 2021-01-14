@@ -83,4 +83,4 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
   - **connpass**<br>RumiCarの走行会や開発教室、オンラインセミナーなどイベント告知や参加者募集のページです。RumiCarイベントに参加ご希望の方は是非メンバー登録をお願いいたします。<br> 
    https://rumicar.connpass.com/
 
-Video about online RumiCar hands-on event (RumiCarハンズオン中継の録画)：https://youtu.be/99zH73B8NUo
+  - **RumiCarハンズオン中継の録画**<br>ALGYANとコラボしたRumiCarイベントのアーカイブです。イベント内でExerciseの解説やデモをしています。<br>https://youtu.be/99zH73B8NUo
