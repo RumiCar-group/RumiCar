@@ -5,7 +5,7 @@
 
 Please check a type of Computer Module (CM) and programming languages. If you use Arduino Nano or ESP32, please go to an "ArduinoAndESP32" folder. If you use Raspberry Pi Zero W, please go to a "RasPi" folder. Python is used for programs in "RasPi."
 
-（An image is a link to YouTube.）
+Four images are links to YouTube. Click them to watch.
 
 - Introduction of RumiCar
 - RumiCar collision avoidance
