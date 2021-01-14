@@ -7,7 +7,10 @@ Please check a type of Computer Module (CM) and programming languages. If you us
 
 （An image is a link to YouTube.）
 
-1. Introduction of RumiCar<br>2. RumiCar collision avoidance<br>3. [Part 2 of 2] RumiCar on test course<br>4. RumiCar car camera view at test drive on August 30, 2020<br>
+- 1. Introduction of RumiCar
+- 2. RumiCar collision avoidance
+- 3. [Part 2 of 2] RumiCar on test course
+- 4. RumiCar car camera view at test drive on August 30, 2020
 
 [![RumiCar紹介動画](http://img.youtube.com/vi/DxaY2eCzJzo/0.jpg)](https://www.youtube.com/watch?v=DxaY2eCzJzo "RumiCar紹介動画")
 [![RumiCar衝突回避動画](http://img.youtube.com/vi/95pc_4Wf14U/0.jpg)](https://youtu.be/95pc_4Wf14U "RumiCar衝突回避動画")
