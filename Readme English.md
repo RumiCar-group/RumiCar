@@ -85,3 +85,55 @@ Four images are links to YouTube. Click them to watch.
 Slides (資料)：https://www.slideshare.net/ssuser4d5ccc/rumicar-handsonalgyan20200425202004242
 
 Video about online RumiCar hands-on event (RumiCarハンズオン中継の録画)：https://youtu.be/99zH73B8NUo
+- **BLEフォルダ**<BR>Bluetooth Low Energy(BLE)での通信。RumiCarのESP32版CMに搭載されているBLEを使ってスマホ(iPhone)と通信してみましょう。3個の測距モジュールでの距離計測値をiPhoneのBLE Scannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらい、自分のスマホで計測値を表示させて楽しんでいただくことなどが可能です。
+    - **Bluetoothフォルダ**<br>Exercise-1.2はRumiCar ESP32版CM用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンに表示したり、パソコンからコマンドを送ってRumiCarを操作することができます。
+      - Windos10とペアリング
+      - 設定->デバイス->Bluetoothとその他のデバイス->Bluetoothまたはその他のデバイスを追加する->Bluetooth
+      - RumiCar_ESP32を選択
+      - デバイスマネージャー->ポート(COMとLPT)で"Bluetooth リンク経由の標準シリアル(COM #)"　を確認する #は数字　(2個表示される)
+      - Arduino IDEの設定でツール->シリアルポート:　で、上記COMnに合わせる
+      - ESP32が「ケーブルを繋いでいない」のに測距値がシリアルモニタに表示できます。
+      - PC側からコマンドを送ってRumiCarをコントロールできます。
+      - サンプルプログラムはコマンド「r」、「l」、「f」、「b」に対応しています。それぞれ右、左、前進、後進を0.5秒実行します。コマンドは全て小文字です。 Arduino IDEのシリアルモニタの送信でコマンドを送ります。
+      - ケーブル接続が不要なので、走行中に実際の測距データをPC側で取得したり、PC側からコマンドを送ってラジコンのような操作をすることができるようになります。
+
+- **RasPiフォルダ**<br>RumiCarのコンピュータモジュールのラズパイ版のサンプルプログラムです。Pythonで記述されています。ラズパイ版CMを使ってRumiCarを動かす場合にお使いください。
+  - **Exercise-1 距離を測ってみよう！**
+    - **Exercise-1.1 中央のセンサで測距しよう！**
+    - **Exercise-1.2 3つのセンサで測距だ！**   
+  - **Exercise-2 モータ制御**   
+    - **Exercise-2.1 ハンドルを切る**    
+    - **Exercise-2.2 速度制御**
+    - **Exercise-2.3 前進と後進**
+    - **Exercise-2.3 前進と後進**
+    - **Exercise-2.4 ジグザグ走行**  
+   - **Exercise-3 自律走行基礎**
+     - **Exercise-3.1 安全に停止する車**   
+     - **Exercise-3.2 市街地を走る車**
+ - **ハンズオン用テキストフォルダ**<br>RumiCarのハンズオン用テキストが保存されているフォルダです。RumiCarの歴史や仕組み、サンプルプログラムを使ってRumiCarを動作させる方法や例が載っています。**ハンズオン用テキストはPDF形式で約10MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。**
+- **教育機関向け追加課題フォルダ**<br>RumiCarを教材として教育機関にて授業や演習で利用する場合の追加課題です。Rumicarハンズオンの資料はRumiCarの仕組みや構成を学べるように作られています。学生が自ら更に深く考えて課題を克服し、より良いアルゴリズムを開発できるように研究課題の基礎やグループワークに使えるように追加の課題をまとめました。是非ご利用ください。
+- **開発用資料フォルダ**<br>RumiCarの車体やCMを自作する場合の開発用資料です。
+
+1. RumiCarを自作する場合はまず「RumiCarの作り方」をご覧いただき、RumiCarを作製後、作製したCMとRumiCarが正しく動作できているかの確認のために、「RumiCarの動作確認方法」の内容に従ってご確認ください。是非多くの人たちにオリジナルのRumiCarを作製いただき、RumiCarの世界を楽しんで頂けると嬉しいです<br>1.1 CMの作製においてArduino Nano以外のCM作製のための情報を追加しました。<br>1.2 ステアリングをサーボ化する場合のピンアサイン(13番ピン)を追加しました。
+1. RumiCarを受け取ったり、運送等により故障していないかを確認する場合は「RumiCarの動作確認方法」の内容に従ってRumiCarが正常動作するかご確認ください。
+1. 各CM別のピンアサイン表があります。プログラムの互換性確保のためCMを自作する場合の結線はそれに従ってください。
+  - **結線図フォルダ**
+    - 結線図(ArduinoNano).jpg<br>RumiCarの基本である、Arduino Nano版CMの結線図です。RumiCarをこれから始める人向け。
+    - 結線図(Raspberry Pi Zero W).png<br>ラズパイZero W版CMの結線図です。Pythonを使いたい方、画像認識、AI等挑戦されたい方向け(上級者向け)。
+    - 結線図RumiCarG3.1_ESP32.jpg<br>ESP32版CM結線図です。WiFiやBluetooth接続、ニューラルネットワーク(NN)プログラム等に挑戦されたい方向け(上級者向け)。
+    - 車体接続結線表.jpg<br>RumiCar車体側の結線図です。車体を自作されたい方は、このインターフェイスに合わせて作製ください。
+    - ピンアサインArduino-ESP32-RasPi-Obniz<br>Rumicar車体のインターフェイスと、各CMのArduino nano、ESP32、ラズパイ、Obnizのピンアサインを一つの表にまとめたものです。
+  - **RumiCarの作り方**<br>RumiCar車体の開発方法や各種CMの作製方法が掲載されています。RumiCarの自作を考えられている方は、この資料を参考に是非オリジナルのRumiCarを作製してみてください。作製したRumiCarは「RumiCarの動作確認方法.pdf」の内容に従って動作確認ができます。   
+  - **RumiCarの動作確認方法**<br>RumiCarを新規に作製した場合や、運送などにより故障が発生していないか、のためにRumiCarが正常に動作するか確認するための手順をまとめた資料です。こちらを参考にRumiCarの動作確認をしましょう。
+
+  ### その他大事なこと
+  - **RumiCar website**<br>RumiCarのwebisteです。今後このwebisteを発展させたいので、websiteの編集をしてくださる方は是非ご連絡ください!<br>https://www.rumicar.com
+  - **RumiCar Youtube**<br>RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などがアップロードされています。是非チャンネル登録をお願いします。また、動画編集をしてくださる方も是非ご連絡ください。<br>
+  https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg
+  - **RumiCar group**<br>RumiCarのFaceBookグループです。皆様のご参加をお待ちしてます。<br>
+  https://www.facebook.com/groups/rumicar
+  
+  - **connpass**<br>RumiCarの走行会や開発教室、オンラインセミナーなどイベント告知や参加者募集のページです。RumiCarイベントに参加ご希望の方は是非メンバー登録をお願いいたします。<br> 
+   https://rumicar.connpass.com/
+
+  - **RumiCarハンズオン中継の録画**<br>ALGYANとコラボしたRumiCarイベントのアーカイブです。イベント内でExerciseの解説やデモをしています。<br>https://youtu.be/99zH73B8NUo
