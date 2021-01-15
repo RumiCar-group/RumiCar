@@ -69,19 +69,19 @@ Four images are links to YouTube. Click them to watch.
     - Wiring diagram(ArduinoNano).jpg<br>This wiring diagram for Arduino Nano CM is basic of RumiCar. This is recommended for beginners.
     - Wiring diagram(Raspberry Pi Zero W).png<br>This wiring diagram is for a Raspberry Pi Zero W CM. This is recommended for advaned level who want to code in Python or try image recognition and AI.
     - Wiring diagram RumiCarG3.1_ESP32.jpg<br>This wiring diagram is for an ESP32 CM. This is recommended for advanced level who want to try WiFi, Bluetooth connection, and neural network (NN).
-    - 車体接続結線表.jpg<br>RumiCar車体側の結線図です。車体を自作されたい方は、このインターフェイスに合わせて作製ください。
-    - ピンアサインArduino-ESP32-RasPi-Obniz<br>Rumicar車体のインターフェイスと、各CMのArduino nano、ESP32、ラズパイ、Obnizのピンアサインを一つの表にまとめたものです。
-  - **RumiCarの作り方**<br>RumiCar車体の開発方法や各種CMの作製方法が掲載されています。RumiCarの自作を考えられている方は、この資料を参考に是非オリジナルのRumiCarを作製してみてください。作製したRumiCarは「RumiCarの動作確認方法.pdf」の内容に従って動作確認ができます。   
-  - **RumiCarの動作確認方法**<br>RumiCarを新規に作製した場合や、運送などにより故障が発生していないか、のためにRumiCarが正常に動作するか確認するための手順をまとめた資料です。こちらを参考にRumiCarの動作確認をしましょう。
+    - Wiring diagram for a car body.jpg<br>This wiring diagram is for inside a RumiCar car body. If you build your own RumiCar car, please follow this interface.
+    - Pin assignment Arduino-ESP32-RasPi-Obniz<br>This is a summary of interface of a RumiCar car and pin assignment for each CM, Arduino Nano, ESP32, Raspberry Pi Zero W, and Obniz.
+  - **How to make RumiCar**<br>There are processes of making a RumiCar car for those who build RumiCar on your own. Check up your RumiCar by following "How to verify operation of RumiCar."   
+  - **How to verify operation of RumiCar**<br>In this folder, there are materials to check up RumiCar you build or make sure RumiCar works properly after delivery.
 
-  ### その他大事なこと
-  - **RumiCar website**<br>RumiCarのwebisteです。今後このwebisteを発展させたいので、websiteの編集をしてくださる方は是非ご連絡ください!<br>https://www.rumicar.com
-  - **RumiCar YouTube**<br>RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などがアップロードされています。是非チャンネル登録をお願いします。また、動画編集をしてくださる方も是非ご連絡ください。<br>
+  ### Other important information
+  - **RumiCar website**<br>This is a RumiCar website. If you would like to edit the website, contact us!<br>https://www.rumicar.com
+  - **RumiCar YouTube**<br>This is a RumiCar YouTube channel. There are videos about introductions, events archive, scenery of developing RumiCar. Please subscribe to it. If you can edit videos, please contact us.<br>
   https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg
-  - **RumiCar group**<br>RumiCarのFaceBookグループです。皆様のご参加をお待ちしてます。<br>
+  - **RumiCar group**<br>This is a Facebook group of RumiCar. Join in a RumiCar community.<br>
   https://www.facebook.com/groups/rumicar
   
-  - **connpass**<br>RumiCarの走行会や開発教室、オンラインセミナーなどイベント告知や参加者募集のページです。RumiCarイベントに参加ご希望の方は是非メンバー登録をお願いいたします。<br> 
+  - **connpass**<br>Connpass is an event page for RumiCar test drive, hands-on events, or advertisements for events. If you are interested in attending those events, plase register for a member.<br> 
    https://rumicar.connpass.com/
 
-  - **RumiCarハンズオン中継の録画**<br>ALGYANとコラボしたRumiCarイベントのアーカイブです。イベント内でExerciseの解説やデモをしています。<br>https://youtu.be/99zH73B8NUo
+  - **Event archive for online ALGYAN & RumiCarRumiCar hands-on**<br>This YouTube video is an archive when RumiCar collaborated with ALGYAN to hold an event. In this video, there are explanation for Exercise and demonstration for RumiCar.<br>https://youtu.be/99zH73B8NUo
