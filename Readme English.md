@@ -47,18 +47,17 @@ Four images are links to YouTube. Click them to watch.
       - There is no need to connect by cables, so it is possible to recieve sensor values while RumiCar is driving or operate RumiCar like radio controlled cars by commands from a computer.
 
 - **RasPi folder**<br>In this folder, there are sample programs written in Python for RumiCar RasPi CMs. This folder is for when using a Raspberry Pi verison of CM. 
-  - **Exercise-1 距離を測ってみよう！**
-    - **Exercise-1.1 中央のセンサで測距しよう！**
-    - **Exercise-1.2 3つのセンサで測距だ！**   
-  - **Exercise-2 モータ制御**   
-    - **Exercise-2.1 ハンドルを切る**    
-    - **Exercise-2.2 速度制御**
-    - **Exercise-2.3 前進と後進**
-    - **Exercise-2.3 前進と後進**
-    - **Exercise-2.4 ジグザグ走行**  
-   - **Exercise-3 自律走行基礎**
-     - **Exercise-3.1 安全に停止する車**   
-     - **Exercise-3.2 市街地を走る車**
+  - **Exercise-1 Measure distance**
+    - **Exercise-1.1 Measure by a center sensor**
+    - **Exercise-1.2 Measure by three sensors**   
+  - **Exercise-2 Motor control**   
+    - **Exercise-2.1 Turn the steering**    
+    - **Exercise-2.2 Speed control**
+    - **Exercise-2.3 Drive forward and reverse**
+    - **Exercise-2.4 Zigzag drive**  
+   - **Exercise-3 Basic of autonomous driving**
+     - **Exercise-3.1 Safety stop**   
+     - **Exercise-3.2 A vehicle which drives in a town**
  - **ハンズオン用テキストフォルダ**<br>RumiCarのハンズオン用テキストが保存されているフォルダです。RumiCarの歴史や仕組み、サンプルプログラムを使ってRumiCarを動作させる方法や例が載っています。**ハンズオン用テキストはPDF形式で約10MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。**
 - **教育機関向け追加課題フォルダ**<br>RumiCarを教材として教育機関にて授業や演習で利用する場合の追加課題です。Rumicarハンズオンの資料はRumiCarの仕組みや構成を学べるように作られています。学生が自ら更に深く考えて課題を克服し、より良いアルゴリズムを開発できるように研究課題の基礎やグループワークに使えるように追加の課題をまとめました。是非ご利用ください。
 - **開発用資料フォルダ**<br>RumiCarの車体やCMを自作する場合の開発用資料です。
