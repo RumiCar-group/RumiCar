@@ -58,9 +58,9 @@ Four images are links to YouTube. Click them to watch.
    - **Exercise-3 Basic of autonomous driving**
      - **Exercise-3.1 Safety stop**   
      - **Exercise-3.2 A vehicle which drives in a town**
- - **ハンズオン用テキストフォルダ**<br>RumiCarのハンズオン用テキストが保存されているフォルダです。RumiCarの歴史や仕組み、サンプルプログラムを使ってRumiCarを動作させる方法や例が載っています。**ハンズオン用テキストはPDF形式で約10MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。**
-- **教育機関向け追加課題フォルダ**<br>RumiCarを教材として教育機関にて授業や演習で利用する場合の追加課題です。Rumicarハンズオンの資料はRumiCarの仕組みや構成を学べるように作られています。学生が自ら更に深く考えて課題を克服し、より良いアルゴリズムを開発できるように研究課題の基礎やグループワークに使えるように追加の課題をまとめました。是非ご利用ください。
-- **開発用資料フォルダ**<br>RumiCarの車体やCMを自作する場合の開発用資料です。
+ - **Hands-on materials folder**<br>In this folder, there are materials used at hands-on events. You can learn history and machanism of RumiCar, and instructions how to control RumiCar by sample programs. **The size of the materials which are PDF file format is about 10 MB. If you see them on GitHub, it sometimes does not work properly. Dowload them before you read them.**
+- **Additional materials for educational institutions folder**<br>In this folder, there are materials in case that RumiCar is used at class or lectures. While RumiCar hands-on materials are designed to learn mechanism or systems of RumiCar, the materials in this folder are for additional assignment for students in research or group works to think more deeply, complete assignment, and develop better algorithms.
+- **Materials for development folder**<br>In this folder, there are materials for building RumiCar car bodies and CMs.
 
 1. RumiCarを自作する場合はまず「RumiCarの作り方」をご覧いただき、RumiCarを作製後、作製したCMとRumiCarが正しく動作できているかの確認のために、「RumiCarの動作確認方法」の内容に従ってご確認ください。是非多くの人たちにオリジナルのRumiCarを作製いただき、RumiCarの世界を楽しんで頂けると嬉しいです<br>1.1 CMの作製においてArduino Nano以外のCM作製のための情報を追加しました。<br>1.2 ステアリングをサーボ化する場合のピンアサイン(13番ピン)を追加しました。
 1. RumiCarを受け取ったり、運送等により故障していないかを確認する場合は「RumiCarの動作確認方法」の内容に従ってRumiCarが正常動作するかご確認ください。
