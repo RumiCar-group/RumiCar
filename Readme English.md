@@ -62,13 +62,13 @@ Four images are links to YouTube. Click them to watch.
 - **Additional materials for educational institutions folder**<br>In this folder, there are materials in case that RumiCar is used at class or lectures. While RumiCar hands-on materials are designed to learn mechanism or systems of RumiCar, the materials in this folder are for additional assignment for students in research or group works to think more deeply, complete assignment, and develop better algorithms.
 - **Materials for development folder**<br>In this folder, there are materials for building RumiCar car bodies and CMs.
 
-1. RumiCarを自作する場合はまず「RumiCarの作り方」をご覧いただき、RumiCarを作製後、作製したCMとRumiCarが正しく動作できているかの確認のために、「RumiCarの動作確認方法」の内容に従ってご確認ください。是非多くの人たちにオリジナルのRumiCarを作製いただき、RumiCarの世界を楽しんで頂けると嬉しいです<br>1.1 CMの作製においてArduino Nano以外のCM作製のための情報を追加しました。<br>1.2 ステアリングをサーボ化する場合のピンアサイン(13番ピン)を追加しました。
-1. RumiCarを受け取ったり、運送等により故障していないかを確認する場合は「RumiCarの動作確認方法」の内容に従ってRumiCarが正常動作するかご確認ください。
-1. 各CM別のピンアサイン表があります。プログラムの互換性確保のためCMを自作する場合の結線はそれに従ってください。
-  - **結線図フォルダ**
-    - 結線図(ArduinoNano).jpg<br>RumiCarの基本である、Arduino Nano版CMの結線図です。RumiCarをこれから始める人向け。
-    - 結線図(Raspberry Pi Zero W).png<br>ラズパイZero W版CMの結線図です。Pythonを使いたい方、画像認識、AI等挑戦されたい方向け(上級者向け)。
-    - 結線図RumiCarG3.1_ESP32.jpg<br>ESP32版CM結線図です。WiFiやBluetooth接続、ニューラルネットワーク(NN)プログラム等に挑戦されたい方向け(上級者向け)。
+1. If you build a RumiCar car on your own, please read "How to make RumiCar," build RumiCar, and verify operation your RumiCar by following an instruction, "How to verify operation of RumiCar." I would be grateful if many people could develop their own RumiCar and enjoy them.<br>1.1 Added the information of processes how to make CM except Arduino Nano<br>1.2 Added pin assignment 13 in case of replacing sterring with a servomotor
+1. If you recieve RumiCar as delivery, follow "How to verify operation of RumiCar" to inspect RumiCar.
+1. There are pin assignment talbes for each CM. When you make your own CM, please follow pin assignment due to interchangability in programs.
+  - **Wiring diagram folder**
+    - Wiring diagram(ArduinoNano).jpg<br>This wiring diagram for Arduino Nano CM is basic of RumiCar. This is recommended for beginners.
+    - Wiring diagram(Raspberry Pi Zero W).png<br>This wiring diagram is for a Raspberry Pi Zero W CM. This is recommended for advaned level who want to code in Python or try image recognition and AI.
+    - Wiring diagram RumiCarG3.1_ESP32.jpg<br>This wiring diagram is for an ESP32 CM. This is recommended for advanced level who want to try WiFi, Bluetooth connection, and neural network (NN).
     - 車体接続結線表.jpg<br>RumiCar車体側の結線図です。車体を自作されたい方は、このインターフェイスに合わせて作製ください。
     - ピンアサインArduino-ESP32-RasPi-Obniz<br>Rumicar車体のインターフェイスと、各CMのArduino nano、ESP32、ラズパイ、Obnizのピンアサインを一つの表にまとめたものです。
   - **RumiCarの作り方**<br>RumiCar車体の開発方法や各種CMの作製方法が掲載されています。RumiCarの自作を考えられている方は、この資料を参考に是非オリジナルのRumiCarを作製してみてください。作製したRumiCarは「RumiCarの動作確認方法.pdf」の内容に従って動作確認ができます。   
