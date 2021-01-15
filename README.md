@@ -58,7 +58,6 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
     - **Exercise-2.1 ハンドルを切る**    
     - **Exercise-2.2 速度制御**
     - **Exercise-2.3 前進と後進**
-    - **Exercise-2.3 前進と後進**
     - **Exercise-2.4 ジグザグ走行**  
    - **Exercise-3 自律走行基礎**
      - **Exercise-3.1 安全に停止する車**   
