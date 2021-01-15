@@ -43,10 +43,10 @@ Four images are links to YouTube. Click them to watch.
       - On setting on Arduino IDE, tool ->On Serial ports, select COM # which you saw on device manager
       - Now sensor values are displaed even though ESP32 is not connected.
       - You can control RumiCar by sending commands from your computer.
-      - The sample program has commands, "r", "l", "f", and "b". それぞれ右、左、前進、後進を0.5秒実行します。コマンドは全て小文字です。 Arduino IDEのシリアルモニタの送信でコマンドを送ります。
-      - ケーブル接続が不要なので、走行中に実際の測距データをPC側で取得したり、PC側からコマンドを送ってラジコンのような操作をすることができるようになります。
+      - The sample program has commands, "r", "l", "f", and "b". Each command conducts right, left, forward, and reverse, for 0.5 seconds. All comands are small letters. Send commands via serial monitor in Arduino IDE.
+      - There is no need to connect by cables, so it is possible to recieve sensor values while RumiCar is driving or operate RumiCar like radio controlled cars by commands from a computer.
 
-- **RasPiフォルダ**<br>RumiCarのコンピュータモジュールのラズパイ版のサンプルプログラムです。Pythonで記述されています。ラズパイ版CMを使ってRumiCarを動かす場合にお使いください。
+- **RasPi folder**<br>In this folder, there are sample programs written in Python for RumiCar RasPi CMs. This folder is for when using a Raspberry Pi verison of CM. 
   - **Exercise-1 距離を測ってみよう！**
     - **Exercise-1.1 中央のセンサで測距しよう！**
     - **Exercise-1.2 3つのセンサで測距だ！**   
