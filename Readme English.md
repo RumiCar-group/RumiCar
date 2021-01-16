@@ -82,6 +82,6 @@ Four images are links to YouTube. Click them to watch.
   https://www.facebook.com/groups/rumicar
   
   - **connpass**<br>This connpass is an event page for RumiCar test drive, hands-on events, or advertisements for events. If you are interested in attending those events, please join the group.<br> 
-   https://rumicar.connpass.com/
+   https://rumicar.connpass.com
 
   - **Event archive for online ALGYAN & RumiCarRumiCar hands-on**<br>This YouTube video is an archive when RumiCar collaborated with ALGYAN to hold an event. In this video, there are explanation for Exercises and demonstration for RumiCar.<br>https://youtu.be/99zH73B8NUo
