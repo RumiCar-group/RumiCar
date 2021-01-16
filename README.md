@@ -22,7 +22,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 [![RumiCar車載カメラ視点動画](http://img.youtube.com/vi/16kOgLMo-Tg/0.jpg)](https://www.youtube.com/watch?v=16kOgLMo-Tg "RumiCar車載カメラ視点動画")
 ### フォルダの説明
 
-- **ArduinoAndESP32フォルダ**<br>RumiCarのコンピュータモジュール(CM)のArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラムが保存されています。RumiCarハンズ用の資料は[ハンズオン用テキスト](https://github.com/RumiCar-group/RumiCar/tree/master/%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E7%94%A8%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88)フォルダの下に保存されていますのでまずそちらを参照ください。
+- **[ArduinoAndESP32](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)フォルダ**<br>RumiCarのコンピュータモジュール(CM)のArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラムが保存されています。RumiCarハンズ用の資料は[ハンズオン用テキスト](https://github.com/RumiCar-group/RumiCar/tree/master/%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E7%94%A8%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88)フォルダの下に保存されていますのでまずそちらを参照ください。
 
   - **Exercise-1 距離を測ってみよう！**<br>RumiCarには車体の前方に3個のレーザー測距モジュールを搭載しています。レーザー測距モジュールは人体に無害のレーザー光線を対象物に当て、その反射光が戻ってくるまでの***時間***を計測することによって距離を測定します。音速はマッハと呼ばれ時速1000km以上の速度ですが、光の速さはその音速の***88万倍***も速いです。その光が反射して返ってくるまでのとても短い時間を計って距離を計測するなんて凄いですね。
   
