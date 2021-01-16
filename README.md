@@ -3,7 +3,7 @@
 
 # RumiCar
 
-If you prefer English, please read Readme English.
+If you prefer English, please read [Readme English](https://github.com/RumiCar-group/RumiCar/blob/master/Readme%20English.md).
 
 コンピュータモジュールの種類によりプログラムや使用コンピュータ言語が異なります。
 Arduino Nano と ESP32 の場合はフォルダArduinoAndESP32をお使いください。
