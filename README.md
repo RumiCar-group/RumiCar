@@ -79,13 +79,8 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
   - **RumiCarの動作確認方法**<br>RumiCarを新規に作製した場合や、運送などにより故障が発生していないか、のためにRumiCarが正常に動作するか確認するための手順をまとめた資料です。こちらを参考にRumiCarの動作確認をしましょう。
 
   ### その他大事なこと
-  - **RumiCar website**<br>RumiCarのwebisteです。今後このwebisteを発展させたいので、websiteの編集をしてくださる方は是非ご連絡ください!<br>https://www.rumicar.com
-  - **RumiCar YouTube**<br>RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などがアップロードされています。是非チャンネル登録をお願いします。また、動画編集をしてくださる方も是非ご連絡ください。<br>
-  https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg
-  - **RumiCar group**<br>RumiCarのFaceBookグループです。皆様のご参加をお待ちしてます。<br>
-  https://www.facebook.com/groups/rumicar
-  
-  - **connpass**<br>RumiCarの走行会や開発教室、オンラインセミナーなどイベント告知や参加者募集のページです。RumiCarイベントに参加ご希望の方は是非メンバー登録をお願いいたします。<br> 
-   https://rumicar.connpass.com/
-
-  - **RumiCarハンズオン中継の録画**<br>ALGYANとコラボしたRumiCarイベントのアーカイブです。イベント内でExerciseの解説やデモをしています。<br>https://youtu.be/99zH73B8NUo
+  - [**RumiCar website**](https://www.rumicar.com)<br>RumiCarのwebisteです。今後このwebisteを発展させたいので、websiteの編集をしてくださる方は是非ご連絡ください!
+  - [**RumiCar YouTube**](https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg)<br>RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などがアップロードされています。是非チャンネル登録をお願いします。また、動画編集をしてくださる方も是非ご連絡ください。
+  - [**RumiCar group**](https://www.facebook.com/groups/rumicar)<br>RumiCarのFaceBookグループです。皆様のご参加をお待ちしてます。
+  - [**connpass**](https://rumicar.connpass.com)<br>RumiCarの走行会や開発教室、オンラインセミナーなどイベント告知や参加者募集のページです。RumiCarイベントに参加ご希望の方は是非メンバー登録をお願いいたします。
+  - [**RumiCarハンズオン中継の録画**](https://youtu.be/99zH73B8NUo)<br>ALGYANとコラボしたRumiCarイベントのアーカイブです。イベント内でExerciseの解説やデモをしています。
