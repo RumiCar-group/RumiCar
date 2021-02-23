@@ -2,15 +2,14 @@
 ![RumiCar写真](https://www.rumicar.com/wp-content/uploads/2020/05/rumicar_logo.jpg "RumiCar写真")
 
 # RumiCar
+The program and the computer language used will vary depending on the type of computer module; please be sure to use the corresponding programming language. If you use Arduino Nano or ESP32, please go to the "ArduinoAndESP32" folder. If you use Raspberry Pi Zero W, please go to the "RasPi" folder (RasPi uses Python).
 
-Please check a type of Computer Module (CM) and programming languages. If you use Arduino Nano or ESP32, please go to an "ArduinoAndESP32" folder. If you use Raspberry Pi Zero W, please go to a "RasPi" folder. Python is used for programs in "RasPi."
-
-Four images are links to YouTube. Click them to watch.
+The following are links to YouTube videos:
 
 - Introduction of RumiCar
 - RumiCar collision avoidance
-- [Part 2 of 2] RumiCar on test course
-- RumiCar car camera view at test drive on August 30, 2020
+- RumiCar test drive footage
+- RumiCar test drive footage, camera view
 
 [![RumiCar紹介動画](http://img.youtube.com/vi/DxaY2eCzJzo/0.jpg)](https://www.youtube.com/watch?v=DxaY2eCzJzo "RumiCar紹介動画")
 [![RumiCar衝突回避動画](http://img.youtube.com/vi/95pc_4Wf14U/0.jpg)](https://youtu.be/95pc_4Wf14U "RumiCar衝突回避動画")
@@ -18,7 +17,7 @@ Four images are links to YouTube. Click them to watch.
 [![RumiCar車載カメラ視点動画](http://img.youtube.com/vi/16kOgLMo-Tg/0.jpg)](https://www.youtube.com/watch?v=16kOgLMo-Tg "RumiCar車載カメラ視点動画")
 ### About folders
 
-- **ArduinoAndESP32 folder**<br>There are sample programs for RumiCar's Arduino Nano CM and ESP32 CM in this folder. These programs are used in hands-on events. Slides used in hands-on events are in a folder named **(Material for hands-on) ハンズオン用テキスト**.
+- **ArduinoAndESP32 folder**<br>This folder includes sample programs for RumiCar's Arduino Nano CM and ESP32 versions, for use at hands-on events. Presentation slides for such events are in the folder named **ハンズオン用テキスト(Material for hands-on)**.
 
   - **Exercise-1 Measure distance**<br>RumiCar has three laser distance measurement modules on the front. Laser distance measurement modules determine distance by time of flight (ToF), which hit harmless lasers objects to calculate difference of ***time*** between when the module emits laser and when reflected laser comes back. Speed of sound is also called Mach, which is 1234.8 km/h (761.2 mph). Moreover, speed of light is 880,000 times as fast as sound of speed. It is incredible that measureing such a high speed, isn't it?
   
