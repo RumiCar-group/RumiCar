@@ -70,8 +70,8 @@ The following are links to YouTube videos:
     - Wiring diagram RumiCarG3.1_ESP32.jpg<br>This wiring diagram is for an ESP32 CM. This is recommended for advanced users who want to try WiFi and Bluetooth connections, and neural network (NN) programming, etc.
     - Car Body Connection Diagram.jpg<br>This wiring diagram for the RumiCar car body. If you build your own RumiCar, please use this interface.
     - Pin assignment Arduino-ESP32-RasPi-Obniz<br>This is a table showing the interface of RumiCar and the pin assignment for the Arduino Nano, ESP32, RasPi, and Obniz versions.
-  - **How to make RumiCar**<br>Tthis document will help you build a RumiCar on your own. Once it is complete, check its functionality by following "How to Verify Operation of RumiCar."   
-  - **How to verify operation of RumiCar**<br> This is a document that outlines the steps to check if your RumiCar is working properly when you build a new one, or if it has been damaged due to transportation. Please refer to this document to make sure your RumiCar is working properly.
+  - [**How to make RumiCar**](https://github.com/RumiCar-group/RumiCar/blob/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99/RumiCar%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9.pdf)<br>Tthis document will help you build a RumiCar on your own. Once it is complete, check its functionality by following "How to Verify Operation of RumiCar."   
+  - [**How to verify operation of RumiCar**](https://github.com/RumiCar-group/RumiCar/blob/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99/RumiCar%E3%81%AE%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D%E6%96%B9%E6%B3%95.pdf)<br> This is a document that outlines the steps to check if your RumiCar is working properly when you build a new one, or if it has been damaged due to transportation. Please refer to this document to make sure your RumiCar is working properly.
 
   ### Other important information
   - **RumiCar website**<br>This is the website for RumiCar. We would like to develop this website in the future, so if you are interested in editing the website, please contact us!<br>https://www.rumicar.com
