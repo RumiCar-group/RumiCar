@@ -26,7 +26,7 @@ The following are links to YouTube videos:
     - **Exercise-1.3 Using the Serial Plotter**<br>Arduino IDE has a Serial Plottor, which generates a graph from sensor values, in which each line indicates each sensor's values in a different color. Wave your hand in front of the sensors like you did in Exercise-1.2, and see how it works. Note which color shows which sensor's values. There is no specific program for this exercise because you will use the same code as Exercise-1.2.
   - **Exercise-2 Speed Control**<br>RumiCar uses motors when turning and driving. A computer inside CM on RumiCar turns the steering and spins motors by following a program. Let's control RumiCar's motors by using a CM.
     - **Exercise-2.1 Steering**<br>In this exercise, RumiCar repeats the motions of turning its steering wheel, then maintaining its position for 0.5 seconds. In other words, RumiCar repeats turning left for 0.5 seconds and turning right for 0.5 seconds.
-    - **Exercise-2.2 Speed control**<br>This is an exercise that controls driving speed. The Computer Module's commands should make the back wheels spin. Changing the tire's rotation speed should also change driving speed. This program controls the rational speed of the tire in steps. You will also notice differences in the motor's sound.
+    - **Exercise-2.2 Speed Control**<br>This is an exercise that controls driving speed. The Computer Module's commands should make the back wheels spin. Changing the tire's rotation speed should also change driving speed. This program controls the rational speed of the tire in steps. You will also notice differences in the motor's sound.
     - **Exercise-2.3 Driving Forward and Reverse**<br>As a public car drives forward and reverse, so does RumiCar in this exercise. If there is not enough space for driving RumiCar, grab RumiCar by your hand and see how RumiCar's motor drives forward and reverse.
     - **Exercise-2.4 Zigzagging**<br>In this exercise, RumiCar drives forward in a zig-zagging pattern while driving forward. If there is not enough space to RumiCar, grab RumiCar by your hand and make sure it is making the expected motions.
   - **Exercise-3 Basics of Autonomous Driving**<br>In these exercises, you will control RumiCar based on sensor values. When RumiCar detects distance among objects in front of RumiCar or walls on the right or left, it stops or turns the steering to right or left.
@@ -48,12 +48,12 @@ The following are links to YouTube videos:
 - [**RasPi**](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi) folder<br>This is a sample program for the RasPi version of the RumiCar computer module, written in Python. The program is written in Python and can be used to run RumiCar using RasPi CM. 
   - **Exercise-1 Measuring distance**
     - **Exercise-1.1 Using the Central Sensor**
-    - **Exercise-1.2 Using Triple Sensor**   
+    - **Exercise-1.2 Using the Triple Sensor**   
   - **Exercise-2 Speed control**   
     - **Exercise-2.1 Steering**    
     - **Exercise-2.2 Speed Control**
     - **Exercise-2.3 Driving Forward and Reverse**
-    - **Exercise-2.4 Zigzagging drive**  
+    - **Exercise-2.4 Zigzagging**  
    - **Exercise-3 Basics of Autonomous Driving**
      - **Exercise-3.1 Stopping the Car Safely**   
      - **Exercise-3.2 Driving in Urban Areas**
