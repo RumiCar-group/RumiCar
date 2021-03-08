@@ -29,58 +29,58 @@ The following are links to YouTube videos:
     - **Exercise-2.2 Speed control**<br>This is an exercise that controls driving speed. The Computer Module's commands should make the back wheels spin. Changing the tire's rotation speed should also change driving speed. This program controls the rational speed of the tire in steps. You will also notice differences in the motor's sound.
     - **Exercise-2.3 Driving Forward and Reverse**<br>As a public car drives forward and reverse, so does RumiCar in this exercise. If there is not enough space for driving RumiCar, grab RumiCar by your hand and see how RumiCar's motor drives forward and reverse.
     - **Exercise-2.4 Zigzagging drive**<br>In this exercise, RumiCar drives forward in a zig-zagging pattern while driving forward. If there is not enough space to RumiCar, grab RumiCar by your hand and make sure it is making the expected motions.
-  - **Exercise-3 Basic of autonomous driving**<br>In this Exercise 3 which is basic of autonomous driving, you will control RumiCar based on sensor values. When RumiCar detects distance among objects in front of RumiCar or walls on the right or left, it stops or turns the steering to right or left.
-    - **Exercise-3.1 Safety stop**<br>In this exercise, you will think about a vehicle which stops safely when it finds an obstacle on the front. RumiCar drives straight, and if there is no more obstacles in front, RumiCar will drive again. When an obstacle abroaches RumiCar, it drives reverse for safety. Suppose your hand is an obstacle and place it in front of RumiCar, make sure RumiCar stops without collision. Does RumiCar drive reverse when your hand approach RumiCar while it stops?
-    - **Exercise-3.2 A vehicle which drives in a town**<br>In this exercise, RumiCar will drive in a test course. RumiCar dirves by detecting walls on sides and obstacles in front of RumiCar.
-- **ESP32 folder**<br>ESP has wireless interference, such as WiFi and Bluetooth. Therefore, an ESP CM, which is one of the RumiCar CMs, has WiFi and Bluetooth. In this folder, there are sample programs to receive sensor values from RumiCar via ESP32's Bluetooth and wirelessly control RumiCar.
-    - **BLE folder**<BR>BLE stands for Bluetooth Low Energy. Let's have a smartphone (iPhone) telecommunicate with BLE inside a RumiCar ESP32 CM. Sensor values from three laser distance measurement modules are displayed on BLE Scanner, which is an iPhone's app. BLE can do multiple connection; in other words, there is no need to disconnect other devices. Therefore, multiple devices can connect with one RumiCar at the same time. At an exhibition, you can plan a performance; for instance, visitors install a BLE Scanner app and see sensor values on their smart phone.
-    - **Bluetooth folder**<br>Exercise-1.2 is a sample program for ESP32 CM's Bluetooth serial communication. This enables RumiCar to connect with a computer installed Windows and Bluetooth, display sensor values on a computer from laser distance measurement modules, and control RumiCar by sending commands from a computer.
-      - Pairing Windos10
-      - Settings ->Device ->Bluetooth and other devices->Bluetooth or add other devices ->Bluetooth
+  - **Exercise-3 Basics of Autonomous Driving**<br>In this exercise, you will control RumiCar based on sensor values. When RumiCar detects distance among objects in front of RumiCar or walls on the right or left, it stops or turns the steering to right or left.
+    - **Exercise-3.1 Stopping the Car safely**<br>This exercise imagines a vehicle which stops safely when it finds an obstacle in front of it. When an obstacle approaches RumiCar, it drives in reverse for safety. If there are no more obstacles in front, RumiCar will drive straight again. Use your hand as an obstacle and place it in front of RumiCar. Make sure RumiCar stops without collision. Does the RumiCar drive in reverse when your hand approaches?
+    - **Exercise-3.2 Driving in Urban Areas**<br>In this exercise, RumiCar will drive in a test course, while detecting walls on sides and obstacles in front of it.
+- **ESP32 folder**<br>Out of RumiCar's CMs, ESP32 has built-in communication functions such as WiFi and Bluetooth In this folder, there are sample programs to receive sensor values from RumiCar via the ESP32's Bluetooth function, and wirelessly control RumiCar.
+    - **BLE folder**<BR>Let's have a smartphone (iPhone) telecommunicate with BLE (BLE stands for Bluetooth Low Energy.) inside a RumiCar ESP32 CM. Sensor values from three laser distance measurement modules are displayed on BLE Scanner, which is an iPhone app. BLE can make multiple connections; there is no need to disconnect other devices. Therefore, multiple devices can connect with one RumiCar at the same time. At an exhibition, you can plan a performance; for instance, visitors install a BLE Scanner app and see sensor values on their smartphone.
+    - **Bluetooth folder**<br>Exercise-1.2 is a sample program for ESP32 CM's Bluetooth serial communication. This enables RumiCar to connect with a Windows PC via Bluetooth, to display the values from the laser distance measurement modules, and control RumiCar by sending commands.
+      - Pairing with Windos10
+      - Settings ->Device ->Bluetooth and Other Devices->Add Bluetooth or Other Devices ->Bluetooth
       - Select RumiCar_ESP32
-      - Device manager ->On Port(COM & LPT), check "Standard Serial over Bluetooth link (COM #)" # is a number.　(There are two numbers.)
-      - On setting on Arduino IDE, tool ->On Serial ports, select COM # which you saw at device manager
-      - Now sensor values are displayed even though ESP32 is not connected by physical cables.
+      - In Device Manager ->Port(COM & LPT), check "Standard Serial over Bluetooth link (COM #)" (Substitute # for the numbers displayed here; there should be two of them.)
+      - Now go to Arduino IDE setting and select. Tool ->Serial Ports, then select the same numbers as the COM #
+      - Now the distance measurement values should be displayed even though ESP32 is not connected by physical cables.
       - You can control RumiCar by sending commands from your computer.
-      - The sample program has commands, "r", "l", "f", and "b". Each command conducts right, left, forward, and reverse, for 0.5 seconds. All comands are small letters. Send commands via serial monitor in Arduino IDE.
-      - There is no need to connect by cables, so it is possible to recieve sensor values while RumiCar is driving or operate RumiCar like radio controlled cars by commands from a computer.
+      - The sample program supports the commands, "r", "l", "f", and "b". Each command conducts right, left, forward, and reverse, for 0.5 seconds. All commands are case-sensitive, and use lower-case letters. The commands are sent by sending the serial monitor of the Arduino IDE.
+      - No cable connection is required, so it is possible to recieve data while RumiCar is driving, or send commands from the PC side to operate the system like a radio controller.
 
-- **RasPi folder**<br>In this folder, there are sample programs written in Python for RumiCar RasPi CMs. This folder is for the purpose of using a Raspberry Pi CM. 
+- **RasPi folder**<br>This is a sample program for the RasPi version of the RumiCar computer module, written in Python. The program is written in Python and can be used to run RumiCar using RasPi CM. 
   - **Exercise-1 Measure distance**
-    - **Exercise-1.1 Measure by a center sensor**
-    - **Exercise-1.2 Measure by three sensors**   
+    - **Exercise-1.1 Measuring by a center sensor**
+    - **Exercise-1.2 Measuring by three sensors**   
   - **Exercise-2 Motor control**   
-    - **Exercise-2.1 Turn the steering**    
+    - **Exercise-2.1 Steering**    
     - **Exercise-2.2 Speed control**
-    - **Exercise-2.3 Drive forward and reverse**
-    - **Exercise-2.4 Zigzag drive**  
-   - **Exercise-3 Basic of autonomous driving**
-     - **Exercise-3.1 Safety stop**   
+    - **Exercise-2.3 Forward and Reverse**
+    - **Exercise-2.4 Zigzagging**  
+   - **Exercise-3 Basics of Autonomous Driving**
+     - **Exercise-3.1 Stopping the Car Safely**   
      - **Exercise-3.2 A vehicle which drives in a town**
- - **Hands-on materials folder**<br>In this folder, there are materials used at hands-on events. You can learn history and machanism of RumiCar, and instructions how to control RumiCar by sample programs. **The size of the materials which are PDF file format is about 10 MB. If you see them on GitHub, it sometimes does not work properly. Dowload them before you read them.**
-- **Additional materials for educational institutions folder**<br>In this folder, there are materials in case that RumiCar is used at class or lectures. While RumiCar hands-on materials are designed to learn mechanism or systems of RumiCar, the materials in this folder are for additional assignment for students in research or group works to think more deeply, work on assignment, and develop better algorithms.
-- **Materials for development folder**<br>In this folder, there are materials for building RumiCar car bodies and CMs.
+ - **Hands-on materials**<br>In this folder, there are materials used at hands-on events. You can learn the history and machanism of RumiCar, and sample programs of how to control RumiCar. **The PDF file is about 10 MB, so if you try to directly access them on GitHub, you may not be able to view them properly. Please download the file before reading it.**
+- **Additional Materials for Educational Institutions**<br>In this folder, there are materials for educational institutions using RumiCar as a teaching tool in their classes or lectures. These are designed to help students learn mechanisms and systems of RumiCar, and are for additional assignments such as research projects and group work, so students can think more deeply, overcome challenges, and develop better algorithms.
+- **Development Documents Folder**<br>This folder contains materials for building your own RumiCar body and CMs.
 
-1. If you build a RumiCar car on your own, please read "How to make RumiCar," build RumiCar, and verify operation your RumiCar by following an instruction, "How to verify operation of RumiCar." I would be grateful if many people could develop their own RumiCar and enjoy them.<br>1.1 Added the information of processes how to make CMs except Arduino Nano<br>1.2 Added pin assignment 13 in case of replacing sterring with a servomotor
-1. If you recieve RumiCar as delivery, follow "How to verify operation of RumiCar" to inspect RumiCar.
-1. There are pin assignment talbes for each CM. When you make your own CM, please follow pin assignment due to interchangability of programs.
-  - **Wiring diagram folder**
-    - Wiring diagram(ArduinoNano).jpg<br>This wiring diagram for Arduino Nano CM is basic of RumiCar. This is recommended for beginners.
-    - Wiring diagram(Raspberry Pi Zero W).png<br>This wiring diagram is for a Raspberry Pi Zero W CM. This is recommended for advaned level who want to code in Python or try image recognition, and AI.
-    - Wiring diagram RumiCarG3.1_ESP32.jpg<br>This wiring diagram is for an ESP32 CM. This is recommended for advanced level who want to try WiFi, Bluetooth connection, and neural network (NN).
-    - Wiring diagram for a car body.jpg<br>This wiring diagram is for inside a RumiCar car body. If you build your own RumiCar car, please follow this interface.
-    - Pin assignment Arduino-ESP32-RasPi-Obniz<br>This is a summary of interface of a RumiCar's car and pin assignment for each CM, Arduino Nano, ESP32, Raspberry Pi Zero W, and Obniz.
-  - **How to make RumiCar**<br>There are processes of making a RumiCar car for those who build RumiCar on your own. Check up your RumiCar by following "How to verify operation of RumiCar."   
-  - **How to verify operation of RumiCar**<br>In this folder, there are materials to check up RumiCar you build or make sure RumiCar works properly after delivery.
+1. If you build a RumiCar car on your own, please read "How to make RumiCar" first, and after making build RumiCar, verify its operation by following "How to verify operation of RumiCar." We hope many people will develop their own original RumiCars and enjoy them.<br>1.1 Added the information of processes how to make CMs other than Arduino Nano<br>1.2 Added pin assignment 13 for steering with a servomotor
+1. If you receive RumiCar as delivery, follow "How to verify operation of RumiCar" to inspect if RumiCar has been damaged due to transportation.
+1. There are pin assignment tables for each CM. When you make your own CM, please follow the tables to ensure compatibility.
+  - **Wiring Diagram Folder**
+    - Wiring diagram(ArduinoNano).jpg<br>This is the basic wiring diagram for the Arduino Nano CM version of RumiCar, recommended for beginners.
+    - Wiring diagram(Raspberry Pi Zero W).png<br>This wiring diagram is for the Raspberry Pi Zero W version CM. This is recommended for advanced users who want to code in Python or use image recognition and AI.
+    - Wiring diagram RumiCarG3.1_ESP32.jpg<br>This wiring diagram is for an ESP32 CM. This is recommended for advanced users who want to try WiFi and Bluetooth connections, and neural network (NN) programming, etc.
+    - Car Body Connection Diagram.jpg<br>This wiring diagram for the RumiCar car body. If you build your own RumiCar, please use this interface.
+    - Pin assignment Arduino-ESP32-RasPi-Obniz<br>This is a table showing the interface of RumiCar and the pin assignment for the Arduino Nano, ESP32, RasPi, and Obniz versions.
+  - **How to make RumiCar**<br>Tthis document will help you build a RumiCar on your own. Once it is complete, check its functionality by following "How to Verify Operation of RumiCar."   
+  - **How to verify operation of RumiCar**<br> This is a document that outlines the steps to check if your RumiCar is working properly when you build a new one, or if it has been damaged due to transportation. Please refer to this document to make sure your RumiCar is working properly.
 
   ### Other important information
-  - **RumiCar website**<br>This is a RumiCar website. If you would like to edit the website, contact us!<br>https://www.rumicar.com
-  - **RumiCar YouTube**<br>This is a RumiCar YouTube channel. There are videos about introductions, event archives, scenery of developing RumiCar. Please subscribe to it. If you can edit videos, please contact us.<br>
+  - **RumiCar website**<br>This is the website for RumiCar. We would like to develop this website in the future, so if you are interested in editing the website, please contact us!<br>https://www.rumicar.com
+  - **RumiCar YouTube**<br>RumiCar's YouTube channel, with videos of the car's introduction, various driving videos, and videos of various tests during development. Subscriptions are appreciated! If you are interested in editing our videos, please contact us.<br>
   https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg
-  - **RumiCar group**<br>This is a Facebook group of RumiCar. Join in a RumiCar community.<br>
+  - **RumiCar group**<br>This is a Facebook group of RumiCar. We look forward to your participation.<br>
   https://www.facebook.com/groups/rumicar
   
-  - **connpass**<br>This connpass is an event page for RumiCar test drive, hands-on events, or advertisements for events. If you are interested in attending those events, please join the group.<br> 
+  - **connpass**<br>This connpass is an event page for RumiCar test drive, hands-on events, or advertisements for events. Please join if you are interested in attending.<br> 
    https://rumicar.connpass.com
 
-  - **Event archive for online ALGYAN & RumiCarRumiCar hands-on**<br>This YouTube video is an archive when RumiCar collaborated with ALGYAN to hold an event. In this video, there are explanation for Exercises and demonstration for RumiCar.<br>https://youtu.be/99zH73B8NUo
+  - **Event archive for online ALGYAN & RumiCarRumiCar hands-on**<br>This YouTube video is an archive of the RumiCar even in collaboration with ALGYAN. Watch this for explanation and demonstrationsfor RumiCar exercises.<br>https://youtu.be/99zH73B8NUo
