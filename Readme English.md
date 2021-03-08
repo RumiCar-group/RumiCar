@@ -45,7 +45,7 @@ The following are links to YouTube videos:
       - The sample program supports the commands, "r", "l", "f", and "b". Each command conducts right, left, forward, and reverse, for 0.5 seconds. All commands are case-sensitive, and use lower-case letters. The commands are sent by sending the serial monitor of the Arduino IDE.
       - No cable connection is required, so it is possible to receive data while RumiCar is driving, or send commands from the PC side to operate the system like a radio controller.
 
-- [**RasPi folder**](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi)<br>This is a sample program for the RasPi version of the RumiCar computer module, written in Python. The program is written in Python and can be used to run RumiCar using RasPi CM. 
+- [**RasPi**](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi) folder<br>This is a sample program for the RasPi version of the RumiCar computer module, written in Python. The program is written in Python and can be used to run RumiCar using RasPi CM. 
   - **Exercise-1 Measuring distance**
     - **Exercise-1.1 Using the Central Sensor**
     - **Exercise-1.2 Using Triple Sensor**   
