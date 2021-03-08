@@ -46,17 +46,17 @@ The following are links to YouTube videos:
       - No cable connection is required, so it is possible to recieve data while RumiCar is driving, or send commands from the PC side to operate the system like a radio controller.
 
 - **RasPi folder**<br>This is a sample program for the RasPi version of the RumiCar computer module, written in Python. The program is written in Python and can be used to run RumiCar using RasPi CM. 
-  - **Exercise-1 Measure distance**
-    - **Exercise-1.1 Measuring by a center sensor**
-    - **Exercise-1.2 Measuring by three sensors**   
-  - **Exercise-2 Motor control**   
+  - **Exercise-1 Measuring distance**
+    - **Exercise-1.1 Using the Central Sensor**
+    - **Exercise-1.2 Using Triple Sensor**   
+  - **Exercise-2 Motor's speed control**   
     - **Exercise-2.1 Steering**    
-    - **Exercise-2.2 Speed control**
-    - **Exercise-2.3 Forward and Reverse**
-    - **Exercise-2.4 Zigzagging**  
+    - **Exercise-2.2 Speed Control**
+    - **Exercise-2.3 Driving Forward and Reverse**
+    - **Exercise-2.4 Zigzagging drive**  
    - **Exercise-3 Basics of Autonomous Driving**
      - **Exercise-3.1 Stopping the Car Safely**   
-     - **Exercise-3.2 A vehicle which drives in a town**
+     - **Exercise-3.2 Driving in Urban Areas**
  - **Hands-on materials**<br>In this folder, there are materials used at hands-on events. You can learn the history and machanism of RumiCar, and sample programs of how to control RumiCar. **The PDF file is about 10 MB, so if you try to directly access them on GitHub, you may not be able to view them properly. Please download the file before reading it.**
 - **Additional Materials for Educational Institutions**<br>In this folder, there are materials for educational institutions using RumiCar as a teaching tool in their classes or lectures. These are designed to help students learn mechanisms and systems of RumiCar, and are for additional assignments such as research projects and group work, so students can think more deeply, overcome challenges, and develop better algorithms.
 - **Development Documents Folder**<br>This folder contains materials for building your own RumiCar body and CMs.
