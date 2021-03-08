@@ -17,7 +17,7 @@ The following are links to YouTube videos:
 [![RumiCar車載カメラ視点動画](http://img.youtube.com/vi/16kOgLMo-Tg/0.jpg)](https://www.youtube.com/watch?v=16kOgLMo-Tg "RumiCar車載カメラ視点動画")
 ### About folders
 
-- [**ArduinoAndESP32 folder**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)<br>This folder includes sample programs for RumiCar's Arduino Nano CM and ESP32 versions, for use at hands-on events. Presentation slides for such events are in the folder named **ハンズオン用テキスト(Material for hands-on)**.
+- [**ArduinoAndESP32**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)folder<br>This folder includes sample programs for RumiCar's Arduino Nano CM and ESP32 versions, for use at hands-on events. Presentation slides for such events are in the folder named **ハンズオン用テキスト(Material for hands-on)**.
 
   - **Exercise-1 Measuring distance**<br>RumiCar has three laser distance measurement modules on the front. Laser distance measurement modules determine distance by time of flight (ToF), which emits harmless lasers towards objects to calculate the  ***time*** between the laser's emission and return. The speed of sound is also called Mach, which is a unit of 1234.8 km/h (761.2 mph). Meanwhile, the speed of light is 880,000 times as fast as the speed of sound; it is an incredible thing, one must say, that such high speeds can be recorded.
   
