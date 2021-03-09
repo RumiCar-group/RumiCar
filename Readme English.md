@@ -2,7 +2,7 @@
 ![RumiCar写真](https://www.rumicar.com/wp-content/uploads/2020/05/rumicar_logo.jpg "RumiCar写真")
 
 Translation Assistance: Emi Ito
-翻訳協力: 伊藤　江美
+<br>翻訳協力: 伊藤　江美
 
 # RumiCar
 The program and the computer language used will vary depending on the type of computer module; please be sure to use the corresponding programming language. If you use Arduino Nano or ESP32, please go to the [ArduinoAndESP32](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32) folder. If you use Raspberry Pi Zero W, please go to the [RasPi](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi) folder (RasPi uses Python).
