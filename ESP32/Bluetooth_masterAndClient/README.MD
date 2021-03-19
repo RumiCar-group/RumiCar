@@ -1,4 +1,4 @@
-#　RumiCar同士のBluetooth通信です。
+#RumiCar同士のBluetooth通信です。
 
 1. 必要なもの
 
