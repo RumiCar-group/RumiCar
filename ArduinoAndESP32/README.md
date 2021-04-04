@@ -1,4 +1,6 @@
 # Arduino Nano, ESP32版CM
+画像はYouTubeへのリンクです。動画ではExerciseをデモンストレーションしています。クリックしてご覧ください。
+[【オンライン開催】RumiCarハンズオン中継！自動運転アルゴリズムを楽しく手軽に体感しよう！](https://youtu.be/99zH73B8NUo)
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/99zH73B8NUo/0.jpg)](http://www.youtube.com/watch?v=99zH73B8NUo)<br>
 Arduino NanoおよびESP32のCMに対応したRumiCarのExercise集です。
 
