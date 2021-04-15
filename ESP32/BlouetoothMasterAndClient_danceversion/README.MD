@@ -1,5 +1,7 @@
 # RumiCar同士のBluetooth通信(ダンスバージョン)
-
+画像はYouTubeへのリンクです。動画ではプログラムのデモンストレーションしています。クリックしてご覧ください。<br>
+[Dancing RumiCar ダンス](https://youtu.be/5YwYaJGJPpA)<br>
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/5YwYaJGJPpA/0.jpg)](http://www.youtube.com/watch?v=5YwYaJGJPpA)<br>
 1. 必要なもの
 
 1.1 ESP32のCMとRumiCarそれぞれ2セット
