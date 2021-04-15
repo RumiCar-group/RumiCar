@@ -1,5 +1,7 @@
 # RumiCar同士のBluetooth通信
 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/xaCT1QFA_2w/0.jpg)](http://www.youtube.com/watch?v=xaCT1QFA_2w)
+
 1. 必要なもの
 
 1.1 ESP32のCMとRumiCarそれぞれ2セット
