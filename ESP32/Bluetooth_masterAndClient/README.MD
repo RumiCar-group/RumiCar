@@ -1,6 +1,6 @@
 # RumiCar同士のBluetooth通信
 画像はYouTubeへのリンクです。動画ではプログラムのデモンストレーションしています。クリックしてご覧ください。<br>
-[Synchronized RumiCar シンクロ ESP32&Bluetooth](https://youtu.be/xaCT1QFA_2w)<br>
+[YouTube video: Synchronized RumiCar シンクロ ESP32&Bluetooth](https://youtu.be/xaCT1QFA_2w)<br>
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/xaCT1QFA_2w/0.jpg)](http://www.youtube.com/watch?v=xaCT1QFA_2w)<br>
 
 1. 必要なもの
