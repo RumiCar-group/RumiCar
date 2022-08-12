@@ -136,7 +136,7 @@ def read_all_sensors():
     sensor2.stop_ranging()
     pi.write(SHDN2, 0)
 
-def readOneSensor():
+def read_one_sensor():
 
     # Set all shutdown pins low to turn off each VL53L0X
     pi.write(SHDN1, 0)
