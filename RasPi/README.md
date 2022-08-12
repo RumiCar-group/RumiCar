@@ -1,7 +1,39 @@
 # RumiCar
 2020年4月25日(土)に開催された「RumiCarハンズオン中継！自動運転アルゴリズムを楽しく手軽に体感しよう！#2 」で使用されたExerciseのラズパイ版です。
 
-# ラズパイZeroW GPIO
+## Setup
+
+If you don't have RasPi monitor and keyboard, please check [Remote Access](docs/RemoteAccess.md).
+
+### [pigpio](https://abyz.me.uk/rpi/pigpio/download.html)
+```
+sudo apt-get update
+sudo apt-get install pigpio python3-pigpio  # python-pigpio - python2 deprecated
+
+sudo systemctl enable --now pigpiod
+```
+
+### SMBus (I2C)
+```
+sudo apt install python3-smbus
+
+sudo raspi-config
+# Interface Options -> I2C -> Yes
+```
+
+## Exercises
+
+```
+cd ~/RasPi/Exercise-1.1
+python Exercise-1.1.py
+
+cd ~/RasPi/Exercise-1.2
+python Exercise-1.2.py
+
+# ...
+```
+
+## ラズパイZeroW GPIO
 
 [pigpio library](http://abyz.me.uk/rpi/pigpio/index.html) 使用。  
 以下主要なGPIOをライブラリサイトより一部抜粋。
