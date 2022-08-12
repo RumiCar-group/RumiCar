@@ -105,27 +105,27 @@ def read_all_sensors():
 
     timing = sensor0.get_timing()
     if (timing < 20000):
-      timing = 20000
+        timing = 20000
     print ("Timing %d ms" % (timing/1000))
 
     for count in range(1,101):
-      distance = sensor0.get_distance()
-      if (distance > 0):
-          print ("sensor %d - %d mm" % (sensor0.my_object_number, distance))
-      else:
-          print ("%d - Error" % sensor0.my_object_number)
+        distance = sensor0.get_distance()
+        if (distance > 0):
+            print ("sensor %d: %d mm" % (sensor0.my_object_number, distance), end = ", ")
+        else:
+            print ("sensor %d - Error" % sensor0.my_object_number, end = ", ")
 
-    distance = sensor1.get_distance()
-    if (distance > 0):
-        print ("sensor %d - %d mm" % (sensor1.my_object_number, distance))
-    else:
-        print ("%d - Error" % sensor1.my_object_number)
+        distance = sensor1.get_distance()
+        if (distance > 0):
+            print ("sensor %d: %d mm" % (sensor1.my_object_number, distance), end = ", ")
+        else:
+            print ("sensor %d - Error" % sensor1.my_object_number, end = ", ")
 
-    distance = sensor2.get_distance()
-    if (distance > 0):
-        print ("sensor %d - %d mm" % (sensor2.my_object_number, distance))
-    else:
-        print ("%d - Error" % sensor2.my_object_number)
+        distance = sensor2.get_distance()
+        if (distance > 0):
+            print ("sensor %d: %d mm" % (sensor2.my_object_number, distance))
+        else:
+            print ("sensor %d - Error" % sensor2.my_object_number)
 
     time.sleep(timing/1000000.00)
 
