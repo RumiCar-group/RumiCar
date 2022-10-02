@@ -50,7 +50,7 @@ pi.set_mode(BIN1, pigpio.OUTPUT)
 pi.set_mode(BIN2, pigpio.OUTPUT)
 pi.set_mode(SHDN1, pigpio.OUTPUT)
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
 
 if __name__ == "__main__":
 
@@ -79,6 +79,10 @@ if __name__ == "__main__":
 
     while True:
         ret, frame = cap.read()
+        if (not ret):
+            print("failed to get image, please enable camera")
+            break
+
         distance = sensor1.get_distance()
         if (distance < 100):
             now = datetime.now()
