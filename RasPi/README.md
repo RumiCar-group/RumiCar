@@ -64,21 +64,30 @@ python Exercise-1.2.py
 ```
 
 ## Video Streaming
+To enable camera, edit `/boot/firmware/config.txt` (or `/boot/config.txt`):
+```
+camera_auto_detect=0
+start_x=1
+```
+
+Check camera specs:
+```
+sudo apt install v4l-utils
+v4l2-ctl --all
+```
+
+On robot:
+```
+sudo apt-get install gstreamer1.0-tools gstreamer1.0-plugins-good
+
+gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw, format=YUY2, width=640, height=480, framerate=30/1 ! jpegenc ! rtpjpegpay ! udpsink host=<ubuntu>.local port=1234
+```
+, where the `<ubuntu>` is hostname of your PC from the same LAN.
+
+On PC:
+```
+gst-launch-1.0 -v udpsrc port=1234 ! "application/x-rtp, payload=26" ! rtpjpegdepay ! jpegdec ! autovideosink sync=false
+```
+
+General camera info:
 * https://www.raspberrypi.com/documentation/accessories/camera.html
-* https://wiki.marcluerssen.de/index.php?title=Raspberry_Pi/Camera_streaming
-* https://onlinelibrary.wiley.com/doi/pdf/10.1002/9781119415572.app2
-* https://github.com/george-hawkins/pololu-romi-jetbot/blob/master/pi-camera-notes.md
-
-On RasPi:
-```
-raspivid -a 1023 -md 5 -fps 10 -t 0 -n -l -o tcp://0.0.0.0:5000
-# -a 1023 : enable all annotations
-# -md 5 : 1296x730, 1-49fps, full FoV, 2x2 binning
-# -t 0 : no timeout
-# -n : no preview window
-# -l : listen for tcp connection
-# -o : output to
-```
-
-On PC with SMPlayer (or similar): 
-* Open → URL: `tcp://rcar.local:5000`
