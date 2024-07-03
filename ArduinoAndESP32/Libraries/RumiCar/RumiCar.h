@@ -25,6 +25,18 @@
 #define BIN1 27
 #define BIN2 25
 
+#elif defined (ARDUINO_ARCH_SPRESENSE)
+#define RC_analogWrite analogWrite
+#define SHUT0 2
+#define SHUT1 7
+#define SHUT2 41
+
+//Aが操舵、Bが走行
+#define AIN1 6
+#define AIN2 5
+#define BIN1 9
+#define BIN2 3
+
 #else
 #define RC_analogWrite analogWrite
 //SHUTはディジタルピン,A0はD14,以降同じ、注意すること
