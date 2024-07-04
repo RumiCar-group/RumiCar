@@ -9,7 +9,12 @@ VL53L0X sensor2;
 
 void RC_setup()
 {
+#if defined (ARDUINO_ARCH_SPRESENSE)
+  Serial.begin(115200);
+#else
   Serial.begin(9600);
+#endif
+
   pinMode(AIN1, OUTPUT);
   pinMode(AIN2, OUTPUT);
   pinMode(BIN1, OUTPUT);
@@ -99,13 +104,16 @@ void RC_setup()
   BIN1 = 2;
   BIN2 = 3;
 
+#elif defined (ARDUINO_ARCH_SPRESENSE)
+
+  analogWriteSetDefaultFreq(10000);
+
 #endif
 
   RC_analogWrite(AIN1, 0);
   RC_analogWrite(AIN2, 0);
   RC_analogWrite(BIN1, 0);
   RC_analogWrite(BIN2, 0);
-
 
 }
 //操舵の関数
@@ -122,6 +130,7 @@ int RC_steer (int direc ){
   }else{
     return 0;
   }
+  return 1;
 }
 
 //走行の関数
@@ -141,4 +150,5 @@ int RC_drive(int direc, int ipwm){
   }else{
     return 0;
   }
+  return 1;
 }
