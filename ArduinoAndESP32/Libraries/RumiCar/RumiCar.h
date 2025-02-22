@@ -37,6 +37,25 @@
 #define BIN1 9
 #define BIN2 3
 
+#elif defined ARDUINO_RASPBERRY_PI_PICO_W
+#define RC_analogWrite analogWrite
+// LRF
+#define SCL0   13
+#define SDA0   12
+#define SHUT0  8
+#define SHUT1  7
+#define SHUT2  6
+
+// unused
+#define SERVO1 5
+#define SERVO2 4
+
+// steering & drive
+#define AIN1   21
+#define AIN2   22
+#define BIN1   26
+#define BIN2   27
+
 #else
 #define RC_analogWrite analogWrite
 //SHUTはディジタルピン,A0はD14,以降同じ、注意すること
