@@ -1,4 +1,4 @@
-// RumiCar Libraly
+// RumiCar Library
 
 #include "RumiCar.h"
 #include <Wire.h>
@@ -6,6 +6,52 @@
 VL53L0X sensor0;
 VL53L0X sensor1;
 VL53L0X sensor2;
+
+namespace
+{
+VL53L0X& getSensor(uint8_t pin)
+{
+  return pin == SHUT0 ? sensor0 : pin == SHUT1 ? sensor1 : sensor2;
+}
+
+void setSensorAddress(uint8_t pin, uint8_t address)
+{
+  // turn on the device via INPUT, which enables XSHUT pull-up resistor
+  // , so it is equivalent to digitalWrite(pin, HIGH);
+  pinMode(pin, INPUT);
+  delay(150);
+
+  auto& sensor = getSensor(pin);
+  sensor.init(true);
+  delay(100);
+
+  // set address which stays until next reboot
+  sensor.setAddress(address);
+  sensor.setTimeout(500);
+
+  // next device won't overwrite it
+}
+
+void initI2C()
+{
+  // turn off VL53L0X, so later turn them on one by one and set address
+  digitalWrite(SHUT0, LOW);
+  digitalWrite(SHUT1, LOW);
+  digitalWrite(SHUT2, LOW);
+  delay(150);
+
+#if defined SDA0 && defined SCL0
+  Wire.setSDA(SDA0);
+  Wire.setSCL(SCL0);
+#endif
+  Wire.begin();
+
+  // address needs to be set on each boot
+  setSensorAddress(SHUT0, 20);
+  setSensorAddress(SHUT1, 21);
+  setSensorAddress(SHUT2, 22);
+}
+}
 
 void RC_setup()
 {
@@ -23,35 +69,7 @@ void RC_setup()
   pinMode(SHUT1, OUTPUT);
   pinMode(SHUT2, OUTPUT);
 
-  digitalWrite(SHUT0, LOW);
-  digitalWrite(SHUT1, LOW);
-  digitalWrite(SHUT2, LOW);
-  delay(150);
-  Wire.begin();
-  //sensor0
-  pinMode(SHUT0, INPUT);
-  delay(150);
-  sensor0.init(true);
-  delay(100);
-  sensor0.setAddress((uint8_t)20);
-  sensor0.setTimeout(500);
-  //sensor1
-  pinMode(SHUT1, INPUT);
-  delay(150);
-  sensor1.init(true);
-  delay(100);
-  sensor1.setAddress((uint8_t)21);
-  sensor1.setTimeout(500);
-  //sensor2
-  pinMode(SHUT2, INPUT);
-  delay(150);
-  sensor2.init(true);
-  delay(100);
-  sensor2.setAddress((uint8_t)22);
-  sensor2.setTimeout(500);
-
-  //  sensor.init();
-  //  sensor.setTimeout(500);
+  initI2C();
 
 #if defined LONG_RANGE
   // lower the return signal rate limit (default is 0.25 MCPS)
