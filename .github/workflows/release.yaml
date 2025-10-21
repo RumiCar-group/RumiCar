@@ -1,0 +1,46 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Branch or tag for release"
+        required: true
+        default: "master"
+      new_tag:
+        description: "If branch is selected above, this will create a new tag at HEAD"
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: new_tag if set, otherwise fall back to ref
+        id: version
+        run: |
+          VERSION="${{ github.event.inputs.new_tag }}"
+          REF="${{ github.event.inputs.ref }}"
+          if [ -z "$VERSION" ]; then
+            VERSION="$REF"
+          fi
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.ref }}
+          fetch-depth: 1  # last commit. Change to 0 to get all git history
+
+      - name: Create zip from RumiCar folder
+        run: |
+          cd ArduinoAndESP32/Libraries/
+          zip -r RumiCar.zip RumiCar
+
+      - name: Create Release ${{ steps.version.outputs.version}}
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: Release ${{ steps.version.outputs.version }}
+          files: ArduinoAndESP32/Libraries/RumiCar.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
