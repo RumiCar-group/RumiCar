@@ -1,34 +1,36 @@
 name: Release
 
+# Triggers with their parameters
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Manual run from Actions/Release
     inputs:
       ref:
-        description: "Branch or tag for release"
+        description: "Branch or Tag (ref)"
         required: true
         default: "master"
       new_tag:
-        description: "If branch is selected above, this will create a new tag at HEAD"
+        description: "New Tag (is created at HEAD, if branch is selected above"
 
+# Steps to execute on triggers
 jobs:
   create-release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # docker image to run on
 
     steps:
-      - name: new_tag if set, otherwise fall back to ref
+      - name: version = new_tag if set, otherwise fall back to ref
         id: version
         run: |
-          VERSION="${{ github.event.inputs.new_tag }}"
-          REF="${{ github.event.inputs.ref }}"
+          VERSION="${{github.event.inputs.new_tag}}"
           if [ -z "$VERSION" ]; then
-            VERSION="$REF"
+            VERSION="${{github.event.inputs.ref}}"
           fi
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          # the above line creates "steps.version.outputs.version"
 
-      - name: Checkout the repository
+      - name: Checkout the repository at ref
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.inputs.ref }}
+          ref: ${{github.event.inputs.ref}}
           fetch-depth: 1  # last commit. Change to 0 to get all git history
 
       - name: Create zip from RumiCar folder
@@ -36,11 +38,11 @@ jobs:
           cd ArduinoAndESP32/Libraries/
           zip -r RumiCar.zip RumiCar
 
-      - name: Create Release ${{ steps.version.outputs.version}}
+      - name: Create Release ${{steps.version.outputs.version}}
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.version.outputs.version }}
-          name: Release ${{ steps.version.outputs.version }}
+          tag_name: ${{steps.version.outputs.version}}
+          name: Release ${{steps.version.outputs.version}}
           files: ArduinoAndESP32/Libraries/RumiCar.zip
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
