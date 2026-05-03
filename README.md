@@ -3,6 +3,21 @@
 
 # RumiCar
 
+> [!IMPORTANT]
+> ## 📢 お知らせ / Announcement
+>
+> **Arduino IDE用のRumiCarライブラリは、Arduino公式のLibrary Managerに登録されました。**
+> 今後はLibrary Managerからのインストールをご利用ください（リポジトリ: [RumiCar-group/RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib)）。
+>
+> Arduino IDEのメニューから「スケッチ」→「ライブラリをインクルード」→「ライブラリを管理...」を開き、検索ボックスに `RumiCar` と入力してインストールできます。
+>
+> このリポジトリ内にある `ArduinoAndESP32/Libraries/` 配下の旧ライブラリ（`.zip`形式）は将来削除される予定です。
+>
+> ---
+>
+> **The RumiCar Arduino library has been published to the Arduino Library Manager.**
+> Please install it via Library Manager (repository: [RumiCar-group/RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib)). The local copy under `ArduinoAndESP32/Libraries/` is scheduled for removal in the future.
+
 **If you prefer English, please read** [**Readme English**](https://github.com/RumiCar-group/RumiCar/blob/master/Readme%20English.md).
 
 コンピュータモジュールの種類によりプログラムや使用コンピュータ言語が異なります。
