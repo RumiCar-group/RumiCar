@@ -3,15 +3,32 @@
 > [!IMPORTANT]
 > ## 📢 重要なお知らせ / Important Notice
 >
-> **RumiCarライブラリはArduino公式のLibrary Managerに登録されました．**  
-> 今後は**Library Manager経由でのインストールを推奨**します．リポジトリ: [RumiCar-group/RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib)
+> **RumiCarライブラリはArduino公式のLibrary Managerに登録されました．**
+>
+> インストール手順（Arduino IDE 内で完結します）:
+>
+> 1. Arduino IDEのメニューから「スケッチ」→「ライブラリをインクルード」→「ライブラリを管理...」を開く
+> 2. 検索ボックスに `RumiCar` と入力
+> 3. 表示された `RumiCar` を選び「インストール」をクリック
+> 4. 依存ライブラリ（VL53L0X）のインストール確認が表示されたら「Install all」を選択
+>
+> ライブラリのソースコード（参考）: [RumiCar-group/RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib)
 >
 > このディレクトリにある `RumiCar.zip` および `RumiCar/` フォルダ内のローカル版ライブラリは，**将来削除される予定**です．
 >
 > ---
 >
-> **The RumiCar library has been published to the Arduino Library Manager.**  
-> Please use Library Manager-based installation. Repository: [RumiCar-group/RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib).
+> **The RumiCar library has been published to the Arduino Library Manager.**
+>
+> Installation steps (all done inside Arduino IDE):
+>
+> 1. Open **Sketch → Include Library → Manage Libraries...** in Arduino IDE
+> 2. Type `RumiCar` in the search box
+> 3. Click **Install** on the `RumiCar` entry
+> 4. When prompted to install the dependency (VL53L0X), choose **Install all**
+>
+> Library source code (for reference): [RumiCar-group/RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib)
+>
 > The `RumiCar.zip` and `RumiCar/` folder in this directory are scheduled for removal in the future.
 
 > [!NOTE]
@@ -28,6 +45,7 @@ RumiCarのArduino向けライブラリです．
 1. メニューの「スケッチ」→「ライブラリをインクルード」→「ライブラリを管理...」を選択
 1. 検索ボックスに `RumiCar` と入力
 1. RumiCar by RumiCar-group を選択して「インストール」をクリック
+1. 依存ライブラリ（VL53L0X）のインストール確認が表示されたら「Install all」を選択
 
 ## 旧来の導入方法 (.ZIPライブラリ，将来削除予定)
 
