@@ -1,3 +1,5 @@
+#warning "This local RumiCar library is deprecated. Please install RumiCar via Arduino Library Manager (Sketch > Include Library > Manage Libraries... > search for 'RumiCar'). This local copy is scheduled for removal in the future. See https://github.com/RumiCar-group/RumiCar-lib"
+
 #ifndef RumiCar_h
 #define RumiCar_h
 
