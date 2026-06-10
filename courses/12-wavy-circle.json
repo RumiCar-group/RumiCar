@@ -1,0 +1,17 @@
+{
+  "name": "うねりと円",
+  "kind": "annulus",
+  "samples": 140,
+  "startAngle": 0,
+  "outer": {
+    "type": "lobed",
+    "rBase": 1.28,
+    "amp": 0.17,
+    "lobes": 5
+  },
+  "inner": {
+    "type": "circle",
+    "r": 0.6
+  },
+  "desc": "外周がうねり・内壁は円。外側のうねりへの追従と道幅変化の確認用。"
+}

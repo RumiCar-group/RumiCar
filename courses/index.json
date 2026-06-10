@@ -1,0 +1,182 @@
+[
+  {
+    "file": "courses/01-oval.json",
+    "name": "オーバル",
+    "kind": "track",
+    "desc": "基本: 一定半径コーナーと短い直線。アルゴリズムの素直さの確認用。"
+  },
+  {
+    "file": "courses/02-speedway.json",
+    "name": "スピードウェイ",
+    "kind": "track",
+    "desc": "高速: 長い直線と緩い180度コーナー。最高速と直進安定性の確認用。"
+  },
+  {
+    "file": "courses/03-hairpin.json",
+    "name": "ヘアピン",
+    "kind": "track",
+    "desc": "長い直線と両端の180度ヘアピン。手前の減速と立ち上がりの確認用。"
+  },
+  {
+    "file": "courses/04-90deg-circuit.json",
+    "name": "90度サーキット",
+    "kind": "track",
+    "desc": "直角コーナー4つの矩形コース (RCカーペットコース風)。コーナー処理の安定性の確認用。"
+  },
+  {
+    "file": "courses/05-s-chicane.json",
+    "name": "S字シケイン",
+    "kind": "track",
+    "desc": "連続する左右の切り返し (S字/シケイン) を1周に内蔵した閉廊下。応答性と荷重移動の確認用。"
+  },
+  {
+    "file": "courses/06-compound-corner.json",
+    "name": "複合コーナー",
+    "kind": "track",
+    "desc": "半径が変化する複合コーナー (片側がきつい)。適応的な操舵の確認用。"
+  },
+  {
+    "file": "courses/07-narrow-gate.json",
+    "name": "ナローゲート",
+    "kind": "track",
+    "desc": "道幅が周期的に狭まる4つのゲート。狭所での減速と正確な通過の確認用。"
+  },
+  {
+    "file": "courses/08-bottleneck.json",
+    "name": "ボトルネック",
+    "kind": "track",
+    "desc": "一周の一部だけ極端に狭い区間。狭所通過の限界の確認用。"
+  },
+  {
+    "file": "courses/09-square-in-circle.json",
+    "name": "丸の中の四角",
+    "kind": "annulus",
+    "desc": "外周は円・内壁は四角。コーナーで道幅が大きく変化。内外で異なる壁への追従の確認用。"
+  },
+  {
+    "file": "courses/10-circle-in-square.json",
+    "name": "四角の中の丸",
+    "kind": "annulus",
+    "desc": "外周は直角の四角・内壁は円。外側の鋭角コーナーの確認用。"
+  },
+  {
+    "file": "courses/11-hexagon-triangle.json",
+    "name": "六角と三角",
+    "kind": "annulus",
+    "desc": "六角形の外周と三角形の内壁。多角形ミックスで道幅が大きく変化。"
+  },
+  {
+    "file": "courses/12-wavy-circle.json",
+    "name": "うねりと円",
+    "kind": "annulus",
+    "desc": "外周がうねり・内壁は円。外側のうねりへの追従と道幅変化の確認用。"
+  },
+  {
+    "file": "courses/13-suzuka-simple.json",
+    "name": "鈴鹿風 (簡易)",
+    "kind": "track",
+    "desc": "うねる連続コーナーの技術系レイアウト (鈴鹿サーキット風の簡易版)。総合的な追従の確認用。"
+  },
+  {
+    "file": "courses/14-monaco-simple.json",
+    "name": "モナコ風 (簡易)",
+    "kind": "track",
+    "desc": "狭く技術的な低速コース (モナコ風の簡易版)。低速精度と狭所の確認用。"
+  },
+  {
+    "file": "courses/15-indy-oval.json",
+    "name": "インディオーバル風",
+    "kind": "track",
+    "desc": "長方形オーバルの4つのコーナー (インディ風)。高速での連続コーナーの確認用。"
+  },
+  {
+    "file": "courses/16-octagon.json",
+    "name": "オクタゴン",
+    "kind": "track",
+    "desc": "八角形の緩い連続コーナー。直線とコーナーの繰り返しの確認用。"
+  },
+  {
+    "file": "courses/17-triangle.json",
+    "name": "トライアングル",
+    "kind": "track",
+    "desc": "3つの鋭角コーナー。鋭い切り返しでの挙動の確認用。"
+  },
+  {
+    "file": "courses/18-monza.json",
+    "name": "モンツァ・レイアウト",
+    "kind": "track",
+    "desc": "高速コース (モンツァ風)。長い直線を2つのシケインで分け、最終はパラボリカの大きな複合コーナー。加減速の切替の確認用。"
+  },
+  {
+    "file": "courses/19-suzuka.json",
+    "name": "鈴鹿・レイアウト",
+    "kind": "track",
+    "desc": "技術系レイアウト (鈴鹿風)。S字 (esse) の連続・スプーン・最終の高速コーナーを盛り込んだ総合コース。"
+  },
+  {
+    "file": "courses/20-monaco.json",
+    "name": "モナコ・レイアウト",
+    "kind": "track",
+    "desc": "市街地ストリートコース (モナコ風)。極端に狭く低速・タイトコーナーと有名なヘアピンを再現。低速精度の確認用。"
+  },
+  {
+    "file": "courses/21-silverstone.json",
+    "name": "シルバーストン・レイアウト",
+    "kind": "track",
+    "desc": "高速フローイングコース (シルバーストン風)。マゴッツ/ベケッツの連続esseとロングコーナー。荷重移動の連続性の確認用。"
+  },
+  {
+    "file": "courses/22-spa.json",
+    "name": "スパ・レイアウト",
+    "kind": "track",
+    "desc": "長距離・高低差コース (スパ風)。オールージュ風の登りesse・長いストレート・バスストップシケインを再現。"
+  },
+  {
+    "file": "courses/23-fuji.json",
+    "name": "富士スピードウェイ・レイアウト",
+    "kind": "track",
+    "desc": "超ロングストレート＋テクニカルセクション (富士風)。最高速からの大減速とヘアピンの組合せ。"
+  },
+  {
+    "file": "courses/24-interlagos.json",
+    "name": "インテルラゴス・レイアウト",
+    "kind": "track",
+    "desc": "反時計回りのコンパクトコース (インテルラゴス風)。セナのS・低速インフィールド・ジュンソンからの登り立ち上がり。"
+  },
+  {
+    "file": "courses/25-hungaroring.json",
+    "name": "ハンガロリンク・レイアウト",
+    "kind": "track",
+    "desc": "ツイスティな低中速コース (ハンガロリンク風)。直線が短くコーナーが連続する『ゴーカート的』レイアウト。"
+  },
+  {
+    "file": "courses/26-redbull-ring.json",
+    "name": "レッドブルリンク・レイアウト",
+    "kind": "track",
+    "desc": "短く高速なコース (レッドブルリンク風)。少ないコーナー数・登りの急ブレーキングゾーンが特徴。"
+  },
+  {
+    "file": "courses/27-cota.json",
+    "name": "アメリカズ・レイアウト",
+    "kind": "track",
+    "desc": "現代的サーキット (COTA風)。急登の1コーナー・マゴッツ風の連続esse・長いバックストレート末のヘアピン。"
+  },
+  {
+    "file": "courses/28-motegi.json",
+    "name": "もてぎ・レイアウト",
+    "kind": "track",
+    "desc": "ストップ＆ゴー型コース (もてぎ風)。短い直線とタイトヘアピンの繰返し。強い減速と立ち上がりの確認用。"
+  },
+  {
+    "file": "courses/29-nurburgring-gp.json",
+    "name": "ニュルブルクリンクGP・レイアウト",
+    "kind": "track",
+    "desc": "現代GPレイアウト (ニュルブルクリンクGP風)。低速シケイン群とシューマッハS字の高速複合コーナーを併設。"
+  },
+  {
+    "file": "courses/30-zandvoort.json",
+    "name": "ザントフォールト・レイアウト",
+    "kind": "track",
+    "desc": "海岸の起伏コース (ザントフォールト風)。バンク付き高速コーナー風の大Rと連続するブラインドコーナー。"
+  }
+]

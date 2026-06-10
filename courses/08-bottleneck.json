@@ -1,0 +1,14 @@
+{
+  "name": "ボトルネック",
+  "kind": "track",
+  "shape": "stadium",
+  "L": 1.6,
+  "rr": 0.85,
+  "width": 0.64,
+  "widthVary": {
+    "amp": 0.22,
+    "freq": 2,
+    "phase": 1.57
+  },
+  "desc": "一周の一部だけ極端に狭い区間。狭所通過の限界の確認用。"
+}

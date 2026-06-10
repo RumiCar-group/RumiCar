@@ -1,0 +1,15 @@
+{
+  "name": "ナローゲート",
+  "kind": "track",
+  "shape": "ellipse",
+  "rx": 1.25,
+  "ry": 0.82,
+  "width": 0.6,
+  "samples": 100,
+  "widthVary": {
+    "amp": 0.17,
+    "freq": 4,
+    "phase": 0
+  },
+  "desc": "道幅が周期的に狭まる4つのゲート。狭所での減速と正確な通過の確認用。"
+}

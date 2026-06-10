@@ -1,0 +1,15 @@
+{
+  "name": "丸の中の四角",
+  "kind": "annulus",
+  "samples": 120,
+  "startAngle": 0,
+  "outer": {
+    "type": "circle",
+    "r": 1.25
+  },
+  "inner": {
+    "type": "square",
+    "s": 0.55
+  },
+  "desc": "外周は円・内壁は四角。コーナーで道幅が大きく変化。内外で異なる壁への追従の確認用。"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "複合コーナー",
+  "kind": "track",
+  "shape": "lobed",
+  "rBase": 1,
+  "amp": 0.34,
+  "lobes": 1,
+  "width": 0.5,
+  "samples": 100,
+  "desc": "半径が変化する複合コーナー (片側がきつい)。適応的な操舵の確認用。"
+}

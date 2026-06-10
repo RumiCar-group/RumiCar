@@ -1,0 +1,17 @@
+{
+  "name": "六角と三角",
+  "kind": "annulus",
+  "samples": 120,
+  "startAngle": 0,
+  "outer": {
+    "type": "ngon",
+    "R": 1.4,
+    "n": 6
+  },
+  "inner": {
+    "type": "ngon",
+    "R": 0.62,
+    "n": 3
+  },
+  "desc": "六角形の外周と三角形の内壁。多角形ミックスで道幅が大きく変化。"
+}

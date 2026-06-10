@@ -1,0 +1,15 @@
+{
+  "name": "四角の中の丸",
+  "kind": "annulus",
+  "samples": 120,
+  "startAngle": 0,
+  "outer": {
+    "type": "square",
+    "s": 1.2
+  },
+  "inner": {
+    "type": "circle",
+    "r": 0.62
+  },
+  "desc": "外周は直角の四角・内壁は円。外側の鋭角コーナーの確認用。"
+}
