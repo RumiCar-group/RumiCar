@@ -109,6 +109,10 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
   - **RumiCarの作り方**<br>RumiCar車体の開発方法や各種CMの作製方法が掲載されています。RumiCarの自作を考えられている方は、この資料を参考に是非オリジナルのRumiCarを作製してみてください。作製したRumiCarは「RumiCarの動作確認方法.pdf」の内容に従って動作確認ができます。   
   - **RumiCarの動作確認方法**<br>RumiCarを新規に作製した場合や、運送などにより故障が発生していないか、のためにRumiCarが正常に動作するか確認するための手順をまとめた資料です。こちらを参考にRumiCarの動作確認をしましょう。
 
+- **RumiCar Simulator(ブラウザ版シミュレータ)**<br>ブラウザ上で RumiCar の走行プログラムを書いて試せるシミュレータです → [**RumiCar Simulator**](https://cpo.tokyo/rumicar/)。実機が無くてもプログラムの動作を確認でき、車種(FF/FR/4WD × ノーマル/ドリフト)ごとの挙動の違いも体験できます。ここで作った Arduino C++ のプログラムは**そのまま実機 RumiCar でも動作**します。
+  - **[programs](https://github.com/RumiCar-group/RumiCar/tree/master/programs)フォルダ**<br>シミュレータ用の走行プログラム集です。車種別に最適化した「Fable Racing Line」6種と、その**設計思想・各定数の意味・実車でのチューニング手順**を [programs/README.md](https://github.com/RumiCar-group/RumiCar/tree/master/programs) に解説しています(各 .ino の冒頭にも「なぜこの設定にしたか」を記載)。利用者が改変したプログラムは [programs/community](https://github.com/RumiCar-group/RumiCar/tree/master/programs/community) に別名で投稿でき(プルリクエスト方式)、シミュレータの「🌐 みんなの投稿」から誰でも再利用できます。
+  - **[courses](https://github.com/RumiCar-group/RumiCar/tree/master/courses)フォルダ**<br>シミュレータ用のコースデータです。30種のテストコースと、利用者が投稿したコース([courses/community](https://github.com/RumiCar-group/RumiCar/tree/master/courses/community))が入っています。投稿方法は [courses/README.md](https://github.com/RumiCar-group/RumiCar/tree/master/courses) を参照してください。
+
   ### その他大事なこと
   - [**RumiCar website**](https://www.rumicar.com)<br>RumiCarのwebisteです。今後このwebisteを発展させたいので、websiteの編集をしてくださる方は是非ご連絡ください!
   - [**RumiCar YouTube**](https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg)<br>RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などがアップロードされています。是非チャンネル登録をお願いします。また、動画編集をしてくださる方も是非ご連絡ください。
