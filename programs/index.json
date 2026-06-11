@@ -6,16 +6,16 @@
     "label": "ノーマル FR"
   },
   {
-    "file": "programs/normal_ff-steady-nose.ino",
-    "name": "Steady Nose",
-    "carType": "normal_ff",
-    "label": "ノーマル FF"
-  },
-  {
     "file": "programs/normal_awd-quattro-blitz.ino",
     "name": "Quattro Blitz",
     "carType": "normal_awd",
     "label": "ノーマル 4WD"
+  },
+  {
+    "file": "programs/normal_ff-steady-nose.ino",
+    "name": "Steady Nose",
+    "carType": "normal_ff",
+    "label": "ノーマル FF"
   },
   {
     "file": "programs/drift_fr-grip-reaper.ino",

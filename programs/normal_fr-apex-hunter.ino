@@ -1,54 +1,35 @@
-// Apex Hunter — ノーマル FR 用 最速プログラム  [Fable Racing Line]  tuned by Fable 5
-// 戦略: バランス型FR。素直な回頭を活かし、やや早めの減速で向きを変えて立ち上がる。
-// 前方の空き具合で速度を3段に変え、詰まれば広い方へ全力で切る適応走行。
-// 旋回中は TCAP まで自動でアクセルを抜き、巻き込み(オーバーステア)を抑える。
-// 単純コースは直線で全開、カーブ主体コースは早めの減速で破綻を防ぐ。
+// Apex Hunter — ノーマル FR 用  [Fable Racing Line / Lv1 基準]  by Fable 5
+// ★学習の出発点★ FRは駆動(後輪)と操舵(前輪)が分かれるので最も素直に曲がる(us=0.10)。
+// だから小細工なしの「素直なギャップフォロワー」がそのまま良く走る。まずこれで基本を掴もう。
 //
-// 【なぜこの設定にしたか — ノーマル FR の物理特性 (config.js の DRIVE) を踏まえて】
-//   FRは駆動(後輪)と操舵(前輪)が分かれるため最も素直に曲がる。回頭力が高い(yawGain 1.05)。
-//   ただしアクセルONで後輪が滑りやすくパワーオーバーステア気味(powerOs 0.40)。コーナーで全開だと
-//   リアが巻き込んで内側へ切れ込み、結果アウト側の壁にぶつかる。
-//   → TCAP=195 に設定: 旋回中はアクセルを少しだけ抜き、巻き込みを抑える。FRは元々曲がるので
-//      抜きすぎず中庸にし、回頭の良さで速さを稼ぐ。CRUISE/TOP は高め(220/252)で直線は速い。
-//   D_TURN=372 とやや早めに減速判定: ブレーキで前荷重を作りつつ向きを変える「FRらしい」走り。
-// この設定の狙い: 回頭の良さを活かして高い平均速度。巻き込みだけ TCAP で軽く抑える、攻めと安定のバランス型。
+// 全車に共通する土台ロジック(3つ):
+//   (1) 前方センサー C の空き具合で速度を3段に変える(直線=速い / 中速 / コーナー=遅い)
+//   (2) 前が詰まったら左右で「広い方」へ全力で曲げる
+//   (3) 側方の壁が近ければ離れる方向へ補正する
+// 他の車種は「この土台に何を足すか/引くか」で特性を引き出す。FRは足す必要が少ない=基準。
+// ※FRはアクセルONで少しリアが出る(powerOs=0.40)ので、旋回中だけ上限PWM(TCAP)で軽く抑える。
 
-int TOP = 252;      // 直線の最高 PWM
-int CRUISE = 220;   // 中速域の PWM
-int SLOW = 130;     // コーナーの PWM
-int TCAP = 195;     // 旋回中の上限 PWM (低いほどアクセルを抜く)
-int D_OPEN = 620;   // 前方[mm] これ以上=直線とみなし全開
-int D_MID = 405;    // 前方[mm] これ以上=中速、未満=減速
-int D_TURN = 372;   // 前方[mm] これ未満=広い方へ曲げる
-int D_SIDE = 180;   // 側方[mm] これ未満=壁から離れる
+int TOP=250, CRUISE=215, SLOW=130, TCAP=195;       // 速度: 直線/中速/コーナー/旋回中の上限
+int D_OPEN=620, D_MID=405, D_TURN=375, D_SIDE=180; // 判定距離[mm]
 
-void setup() {
-  RC_setup();
-}
+void setup() { RC_setup(); }
 
 void loop() {
-  int L = sensor0.readRangeSingleMillimeters(); // 左
-  int C = sensor1.readRangeSingleMillimeters(); // 中央
-  int R = sensor2.readRangeSingleMillimeters(); // 右
+  int L = sensor0.readRangeSingleMillimeters();
+  int C = sensor1.readRangeSingleMillimeters();
+  int R = sensor2.readRangeSingleMillimeters();
 
-  // 操舵 (左右3値): 前が詰まれば広い方へ全力、側方が近ければ離れる
+  // (2)(3) 操舵: 前が詰まれば広い方へ、側方が近ければ離れる
   int turning = 1;
-  if (C < D_TURN) {
-    if (L > R) RC_steer(LEFT);
-    else       RC_steer(RIGHT);
-  } else if (R < D_SIDE) {
-    RC_steer(LEFT);
-  } else if (L < D_SIDE) {
-    RC_steer(RIGHT);
-  } else {
-    RC_steer(CENTER);
-    turning = 0;
-  }
+  if (C < D_TURN) { if (L > R) RC_steer(LEFT); else RC_steer(RIGHT); }
+  else if (R < D_SIDE) RC_steer(LEFT);
+  else if (L < D_SIDE) RC_steer(RIGHT);
+  else { RC_steer(CENTER); turning = 0; }
 
-  // 速度: 前方が開けているほど速く。旋回中は TCAP までアクセルを抜く。
+  // (1) 速度: 前方が開けているほど速く
   int pwm = SLOW;
-  if (C > D_OPEN)      pwm = TOP;
-  else if (C > D_MID)  pwm = CRUISE;
-  if (turning == 1 && pwm > TCAP) pwm = TCAP;
+  if (C > D_OPEN) pwm = TOP;
+  else if (C > D_MID) pwm = CRUISE;
+  if (turning == 1 && pwm > TCAP) pwm = TCAP;  // 旋回中は軽く抑え巻き込みを防ぐ
   RC_drive(FORWARD, pwm);
 }
