@@ -1,5 +1,6 @@
 {
   "name": "ボトルネック",
+  "name_en": "Bottleneck",
   "kind": "track",
   "shape": "stadium",
   "L": 1.6,
@@ -10,5 +11,8 @@
     "freq": 2,
     "phase": 1.57
   },
-  "desc": "一周の一部だけ極端に狭い区間。狭所通過の限界の確認用。"
+  "desc": "一周の一部だけ極端に狭い区間。狭所通過の限界の確認用。",
+  "desc_en": "A single extremely narrow section in an otherwise open lap. For checking the limit of squeezing through a tight spot.",
+  "diff": 1,
+  "beginner": true
 }

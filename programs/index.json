@@ -18,21 +18,111 @@
     "label": "ノーマル FF"
   },
   {
-    "file": "programs/drift_fr-grip-reaper.ino",
-    "name": "Grip Reaper",
+    "file": "programs/drift_fr-drift-maestro.ino",
+    "name": "Drift Maestro",
     "carType": "drift_fr",
     "label": "ドリフト FR"
   },
   {
-    "file": "programs/drift_awd-rally-tamer.ino",
-    "name": "Rally Tamer",
+    "file": "programs/drift_awd-rally-maestro.ino",
+    "name": "Rally Maestro",
     "carType": "drift_awd",
     "label": "ドリフト 4WD"
   },
   {
-    "file": "programs/drift_ff-lift-whisper.ino",
-    "name": "Lift Whisper",
+    "file": "programs/drift_ff-lift-maestro.ino",
+    "name": "Lift Maestro",
     "carType": "drift_ff",
     "label": "ドリフト FF"
+  },
+  {
+    "file": "programs/normal_fr-apex-hunter-python.ino",
+    "name": "Apex Hunter (Python)",
+    "carType": "normal_fr",
+    "label": "ノーマル FR (Python)"
+  },
+  {
+    "file": "programs/normal_awd-quattro-blitz-python.ino",
+    "name": "Quattro Blitz (Python)",
+    "carType": "normal_awd",
+    "label": "ノーマル 4WD (Python)"
+  },
+  {
+    "file": "programs/normal_ff-steady-nose-python.ino",
+    "name": "Steady Nose (Python)",
+    "carType": "normal_ff",
+    "label": "ノーマル FF (Python)"
+  },
+  {
+    "file": "programs/drift_fr-drift-showtime.ino",
+    "name": "Drift Showtime",
+    "carType": "drift_fr",
+    "label": "ドリフト FR"
+  },
+  {
+    "file": "programs/drift_fr-zero-counter-drift.ino",
+    "name": "Zero-Counter Drift",
+    "carType": "drift_fr",
+    "label": "ドリフト FR"
+  },
+  {
+    "file": "programs/normal_fr-spin-lock-demo.ino",
+    "name": "Spin & Lock Demo",
+    "carType": "normal_fr",
+    "label": "競技 FR"
+  },
+  {
+    "file": "programs/normal_fr-launch-lab.ino",
+    "name": "Launch Lab",
+    "carType": "normal_fr",
+    "label": "競技 FR"
+  },
+  {
+    "file": "programs/normal_fr-brake-lab.ino",
+    "name": "Brake Lab",
+    "carType": "normal_fr",
+    "label": "競技 FR"
+  },
+  {
+    "file": "programs/normal_ff-circuit-racer.ino",
+    "name": "Circuit Racer",
+    "carType": "normal_ff",
+    "label": "競技 FF"
+  },
+  {
+    "file": "programs/drift_fr-sustained-drift.ino",
+    "name": "Sustained Drift",
+    "carType": "drift_fr",
+    "label": "競技 ドリフトFR"
+  },
+  {
+    "file": "programs/drift_fr-slip-attack.ino",
+    "name": "Slip Attack",
+    "carType": "drift_fr",
+    "label": "競技 ドリフトFR"
+  },
+  {
+    "file": "programs/normal_ff-range-flow-estimator.ino",
+    "name": "Range-Flow Estimator",
+    "carType": "normal_ff",
+    "label": "競技 FF"
+  },
+  {
+    "file": "programs/normal_ff-recon-racer.ino",
+    "name": "Recon Racer",
+    "carType": "normal_ff",
+    "label": "競技 FF"
+  },
+  {
+    "file": "programs/normal_ff-self-locator.ino",
+    "name": "Self-Locator",
+    "carType": "normal_ff",
+    "label": "競技 FF"
+  },
+  {
+    "file": "programs/normal_ff-apex-strategist.ino",
+    "name": "Apex Strategist",
+    "carType": "normal_ff",
+    "label": "競技 FF"
   }
 ]

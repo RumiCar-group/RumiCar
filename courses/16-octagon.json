@@ -1,10 +1,13 @@
 {
   "name": "オクタゴン",
+  "name_en": "Octagon",
   "kind": "track",
   "shape": "ellipse",
   "rx": 1.15,
   "ry": 1.15,
   "width": 0.55,
   "samples": 8,
-  "desc": "八角形の緩い連続コーナー。直線とコーナーの繰り返しの確認用。"
+  "desc": "八角形の緩い連続コーナー。直線とコーナーの繰り返しの確認用。",
+  "desc_en": "Gentle continuous corners of an octagon. For checking repeated straight-then-corner sequences.",
+  "diff": 2
 }

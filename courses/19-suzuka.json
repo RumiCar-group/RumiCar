@@ -1,10 +1,12 @@
 {
   "name": "鈴鹿・レイアウト",
+  "name_en": "Suzuka Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
   "desc": "技術系レイアウト (鈴鹿風)。S字 (esse) の連続・スプーン・最終の高速コーナーを盛り込んだ総合コース。",
+  "desc_en": "A technical layout (Suzuka style). An all-round course featuring the Esses, the Spoon, and a fast final corner.",
   "centerline": [
     [
       0.725,
@@ -74,5 +76,6 @@
       0.434,
       0.872
     ]
-  ]
+  ],
+  "diff": 2
 }

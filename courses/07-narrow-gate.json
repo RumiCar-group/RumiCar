@@ -1,5 +1,6 @@
 {
   "name": "ナローゲート",
+  "name_en": "Narrow Gate",
   "kind": "track",
   "shape": "ellipse",
   "rx": 1.25,
@@ -11,5 +12,7 @@
     "freq": 4,
     "phase": 0
   },
-  "desc": "道幅が周期的に狭まる4つのゲート。狭所での減速と正確な通過の確認用。"
+  "desc": "道幅が周期的に狭まる4つのゲート。狭所での減速と正確な通過の確認用。",
+  "desc_en": "Four gates where the track periodically narrows. For checking braking and precise passage through tight spots.",
+  "diff": 2
 }

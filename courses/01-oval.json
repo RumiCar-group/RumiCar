@@ -1,10 +1,14 @@
 {
   "name": "オーバル",
+  "name_en": "Oval",
   "kind": "track",
   "shape": "ellipse",
   "rx": 1.2,
   "ry": 0.75,
   "width": 0.55,
   "samples": 80,
-  "desc": "基本: 一定半径コーナーと短い直線。アルゴリズムの素直さの確認用。"
+  "desc": "基本: 一定半径コーナーと短い直線。アルゴリズムの素直さの確認用。",
+  "desc_en": "Basics: constant-radius corners and short straights. For checking how cleanly your algorithm drives.",
+  "beginner": true,
+  "diff": 1
 }

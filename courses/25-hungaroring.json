@@ -1,10 +1,12 @@
 {
   "name": "ハンガロリンク・レイアウト",
+  "name_en": "Hungaroring Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 3,
   "desc": "ツイスティな低中速コース (ハンガロリンク風)。直線が短くコーナーが連続する『ゴーカート的』レイアウト。",
+  "desc_en": "A twisty low-to-mid-speed course (Hungaroring style). A 'go-kart-like' layout with short straights and continuous corners.",
   "centerline": [
     [
       0.832,
@@ -82,5 +84,6 @@
       0.793,
       1.589
     ]
-  ]
+  ],
+  "diff": 4
 }

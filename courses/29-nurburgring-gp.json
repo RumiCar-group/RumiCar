@@ -1,10 +1,12 @@
 {
   "name": "ニュルブルクリンクGP・レイアウト",
+  "name_en": "Nürburgring GP Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 3,
   "desc": "現代GPレイアウト (ニュルブルクリンクGP風)。低速シケイン群とシューマッハS字の高速複合コーナーを併設。",
+  "desc_en": "A modern GP layout (Nürburgring GP style). Combines slow chicanes with the fast Schumacher S compound corners.",
   "centerline": [
     [
       0.709,
@@ -78,5 +80,6 @@
       0.898,
       1.009
     ]
-  ]
+  ],
+  "diff": 4
 }

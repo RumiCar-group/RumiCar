@@ -1,0 +1,44 @@
+{
+  "name": "競技グラウンド (フルスケール)",
+  "name_en": "Competition Ground (Full-Scale)",
+  "kind": "raw",
+  "bounds": {
+    "w": 200,
+    "h": 100
+  },
+  "walls": [
+    {
+      "x1": 8,
+      "y1": 8,
+      "x2": 192,
+      "y2": 8
+    },
+    {
+      "x1": 192,
+      "y1": 8,
+      "x2": 192,
+      "y2": 92
+    },
+    {
+      "x1": 192,
+      "y1": 92,
+      "x2": 8,
+      "y2": 92
+    },
+    {
+      "x1": 8,
+      "y1": 92,
+      "x2": 8,
+      "y2": 8
+    }
+  ],
+  "start": {
+    "x": 20,
+    "y": 50,
+    "theta": 0
+  },
+  "desc": "競技(フルスケール)用の広い開けたグラウンド。フルスケール領域+競技サンプル(トラクション制御/ABS)で、ローンチの空転・ブレーキのロックを実演します。「車輪エンコーダ(任意)」をONにすると前後輪速からスリップを測れます。通常の壁回避プログラムには不向き(開けすぎ)。",
+  "desc_en": "A wide, open ground for competition (full-scale). With the full-scale regime and the competition samples (traction control / ABS), it demonstrates launch wheelspin and brake lockup. Turn on the optional 'Wheel Encoder' to measure slip from front/rear wheel speeds. Not suited to normal wall-avoidance programs (too open).",
+  "noRace": true,
+  "diff": 5
+}

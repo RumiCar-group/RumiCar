@@ -12,13 +12,17 @@
 
 int TOP=250, CRUISE=215, SLOW=130, TCAP=195;       // 速度: 直線/中速/コーナー/旋回中の上限
 int D_OPEN=620, D_MID=405, D_TURN=375, D_SIDE=180; // 判定距離[mm]
+int CONF=640, OPEN=9999;   // 信頼区間[mm]: これを超える/範囲外(-3)の測距は「遠い/開放」とみなす。
+// 実機 VL53L0X は地面拘束・低信号で ~250mm 超を信頼しにくい。本シム卓上コースは実機模型の約2.5倍
+// 広い(廊下~550mm)ため実スケール換算 ~640mm(=250×2.56) を既定にする。★実機へ移すときは自機の
+// 車体/搭載高に合わせて下げ(目安250mm)、併せて速度も落とすこと。fullscale は 250×領域スケール。
 
 void setup() { RC_setup(); }
 
 void loop() {
-  int L = sensor0.readRangeSingleMillimeters();
-  int C = sensor1.readRangeSingleMillimeters();
-  int R = sensor2.readRangeSingleMillimeters();
+  int L = sensor0.readRangeSingleMillimeters(); if (L < 0 || L > CONF) L = OPEN;  // 信頼区間外/範囲外=開放
+  int C = sensor1.readRangeSingleMillimeters(); if (C < 0 || C > CONF) C = OPEN;
+  int R = sensor2.readRangeSingleMillimeters(); if (R < 0 || R > CONF) R = OPEN;
 
   // (2)(3) 操舵: 前が詰まれば広い方へ、側方が近ければ離れる
   int turning = 1;

@@ -1,10 +1,12 @@
 {
   "name": "スパ・レイアウト",
+  "name_en": "Spa Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
   "desc": "長距離・高低差コース (スパ風)。オールージュ風の登りesse・長いストレート・バスストップシケインを再現。",
+  "desc_en": "A long course with elevation changes (Spa style). Recreates an Eau Rouge-style uphill esse, a long straight, and the Bus Stop chicane.",
   "centerline": [
     [
       0.575,
@@ -70,5 +72,6 @@
       0.412,
       1.273
     ]
-  ]
+  ],
+  "diff": 2
 }

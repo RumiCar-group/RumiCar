@@ -1,10 +1,12 @@
 {
   "name": "アメリカズ・レイアウト",
+  "name_en": "Americas Layout (COTA)",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
   "desc": "現代的サーキット (COTA風)。急登の1コーナー・マゴッツ風の連続esse・長いバックストレート末のヘアピン。",
+  "desc_en": "A modern circuit (COTA style). A steep uphill Turn 1, Maggotts-style continuous esses, and a hairpin at the end of a long back straight.",
   "centerline": [
     [
       0.616,
@@ -78,5 +80,6 @@
       1.418,
       0.507
     ]
-  ]
+  ],
+  "diff": 2
 }

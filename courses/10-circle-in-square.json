@@ -1,5 +1,6 @@
 {
   "name": "四角の中の丸",
+  "name_en": "Circle-in-Square",
   "kind": "annulus",
   "samples": 120,
   "startAngle": 0,
@@ -11,5 +12,8 @@
     "type": "circle",
     "r": 0.62
   },
-  "desc": "外周は直角の四角・内壁は円。外側の鋭角コーナーの確認用。"
+  "desc": "外周は直角の四角・内壁は円。外側の鋭角コーナーの確認用。",
+  "desc_en": "Right-angled square outer wall, circular inner wall. For checking the sharp outer corners.",
+  "diff": 1,
+  "beginner": true
 }

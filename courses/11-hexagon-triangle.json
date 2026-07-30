@@ -1,5 +1,6 @@
 {
   "name": "六角と三角",
+  "name_en": "Hexagon & Triangle",
   "kind": "annulus",
   "samples": 120,
   "startAngle": 0,
@@ -13,5 +14,7 @@
     "R": 0.62,
     "n": 3
   },
-  "desc": "六角形の外周と三角形の内壁。多角形ミックスで道幅が大きく変化。"
+  "desc": "六角形の外周と三角形の内壁。多角形ミックスで道幅が大きく変化。",
+  "desc_en": "A hexagonal outer wall with a triangular inner wall. A polygon mix where the track width changes greatly.",
+  "diff": 2
 }

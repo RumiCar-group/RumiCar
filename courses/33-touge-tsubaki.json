@@ -1,5 +1,6 @@
 {
   "name": "峠③椿風 (高速下り)",
+  "name_en": "Touge 3: Tsubaki-style (Fast Descent)",
   "kind": "touge",
   "rows": 3,
   "xL": 0.35,
@@ -7,7 +8,9 @@
   "dy": 0.96,
   "yTop": 2.6,
   "hw": 0.3,
-  "downhill": 0.3,
-  "desc": "長い直線と大Rヘアピンの高速下り。直線でパワー/最高速が効くため重い高出力4WDが速い。FFは前輪アンダーで不利。",
-  "elev": 55
+  "downhill": 1.49,
+  "desc": "長い直線と大Rヘアピンの高速下り。直線で速度が乗り、パワーのある4WDと軽量FRがほぼ互角で速い。低出力FFは立ち上がりで離され不利。",
+  "desc_en": "A fast downhill with long straights and large-radius hairpins. Speed builds on the straights, where a powerful AWD and a light FR are roughly on par and fast. The low-power FF loses out on corner exit.",
+  "elev": 36,
+  "diff": 5
 }

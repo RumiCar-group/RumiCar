@@ -10,13 +10,16 @@
 
 int TOP=250, CRUISE=205, SLOW=120, TURN_PWM=120;   // TURN_PWM=操舵中に抜く先の低PWM
 int D_OPEN=600, D_MID=440, D_TURN=400, D_SIDE=190;
+int CONF=640, OPEN=9999;   // 信頼区間[mm]: >CONF/範囲外(-3)=「遠い/開放」。実機 VL53L0X は地面拘束で
+// ~250mm 超を信頼しにくい。本シム卓上は実機模型の約2.5倍広いので実スケール換算 ~640mm を既定にする。
+// ★実機へ移すときは自機の車体/搭載高に合わせて下げ(目安250mm)速度も落とす。fullscale は 250×領域スケール。
 
 void setup() { RC_setup(); }
 
 void loop() {
-  int L = sensor0.readRangeSingleMillimeters();
-  int C = sensor1.readRangeSingleMillimeters();
-  int R = sensor2.readRangeSingleMillimeters();
+  int L = sensor0.readRangeSingleMillimeters(); if (L < 0 || L > CONF) L = OPEN;  // 信頼区間外/範囲外=開放
+  int C = sensor1.readRangeSingleMillimeters(); if (C < 0 || C > CONF) C = OPEN;
+  int R = sensor2.readRangeSingleMillimeters(); if (R < 0 || R > CONF) R = OPEN;
 
   int steering = 1;   // 1=今ハンドルを切っている, 0=まっすぐ
   if (C < D_TURN) { if (L > R) RC_steer(LEFT); else RC_steer(RIGHT); }

@@ -1,10 +1,12 @@
 {
   "name": "インテルラゴス・レイアウト",
+  "name_en": "Interlagos Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
   "desc": "反時計回りのコンパクトコース (インテルラゴス風)。セナのS・低速インフィールド・ジュンソンからの登り立ち上がり。",
+  "desc_en": "A compact, counter-clockwise course (Interlagos style). The Senna S, the slow infield, and the uphill exit out of Juncão.",
   "centerline": [
     [
       0.647,
@@ -70,5 +72,6 @@
       0.534,
       1.299
     ]
-  ]
+  ],
+  "diff": 3
 }

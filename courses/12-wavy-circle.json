@@ -1,5 +1,6 @@
 {
   "name": "うねりと円",
+  "name_en": "Waves & Circle",
   "kind": "annulus",
   "samples": 140,
   "startAngle": 0,
@@ -13,5 +14,8 @@
     "type": "circle",
     "r": 0.6
   },
-  "desc": "外周がうねり・内壁は円。外側のうねりへの追従と道幅変化の確認用。"
+  "desc": "外周がうねり・内壁は円。外側のうねりへの追従と道幅変化の確認用。",
+  "desc_en": "A wavy outer wall with a circular inner wall. For checking how you follow the outer waves as the track width changes.",
+  "diff": 1,
+  "beginner": true
 }

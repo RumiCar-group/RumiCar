@@ -1,10 +1,12 @@
 {
   "name": "レッドブルリンク・レイアウト",
+  "name_en": "Red Bull Ring Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
   "desc": "短く高速なコース (レッドブルリンク風)。少ないコーナー数・登りの急ブレーキングゾーンが特徴。",
+  "desc_en": "A short, fast course (Red Bull Ring style). Characterized by few corners and uphill heavy-braking zones.",
   "centerline": [
     [
       0.636,
@@ -58,5 +60,7 @@
       0.375,
       1.032
     ]
-  ]
+  ],
+  "diff": 1,
+  "beginner": true
 }

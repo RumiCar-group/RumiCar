@@ -1,5 +1,6 @@
 {
   "name": "丸の中の四角",
+  "name_en": "Square-in-Circle",
   "kind": "annulus",
   "samples": 120,
   "startAngle": 0,
@@ -11,5 +12,7 @@
     "type": "square",
     "s": 0.55
   },
-  "desc": "外周は円・内壁は四角。コーナーで道幅が大きく変化。内外で異なる壁への追従の確認用。"
+  "desc": "外周は円・内壁は四角。コーナーで道幅が大きく変化。内外で異なる壁への追従の確認用。",
+  "desc_en": "Circular outer wall, square inner wall. The track width changes greatly through the corners. For checking how you follow walls of different shapes inside and out.",
+  "diff": 3
 }

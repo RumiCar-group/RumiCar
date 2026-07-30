@@ -1,5 +1,6 @@
 {
   "name": "ウェット鈴鹿風 (雨)",
+  "name_en": "Wet Suzuka-style (Rain)",
   "kind": "track",
   "shape": "lobed",
   "rBase": 1.05,
@@ -9,5 +10,7 @@
   "samples": 120,
   "smooth": 2,
   "grip": 0.5,
-  "desc": "路面ウェット(grip0.5)。攻めるとテールの出る車(ドリフトFR等)はスピンして飛ぶ。アンダーで安全なFFや安定した車が生き残って勝つ——雨は飛ばし屋が自滅する。"
+  "desc": "路面ウェット(grip0.5)。攻めるとテールの出る車(ドリフトFR等)はスピンして飛ぶ。アンダーで安全なFFや安定した車が生き残って勝つ——雨は飛ばし屋が自滅する。",
+  "desc_en": "Wet surface (grip 0.5). Push too hard and a tail-happy car (e.g. a drift FR) spins off. A safe, understeering FF or a stable car survives and wins — in the rain, the chargers take themselves out.",
+  "diff": 3
 }

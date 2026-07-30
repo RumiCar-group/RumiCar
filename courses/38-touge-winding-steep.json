@@ -1,5 +1,6 @@
 {
   "name": "架空峠 ロング・ワインディング(激坂)",
+  "name_en": "Fictional Touge: Long Winding (Steep Slope)",
   "kind": "touge",
   "style": "winding",
   "spanX": 6.6,
@@ -7,7 +8,9 @@
   "waves": 5,
   "yMid": 1.2,
   "hw": 0.44,
-  "downhill": 0.52,
-  "elev": 75,
-  "desc": "長い連続カーブ+激坂(高低差75m相当)の架空峠。重力で勝手に速度が乗るため、ブレーキングと姿勢管理が最重要。重い車ほど苦しい。"
+  "downhill": 1.44,
+  "elev": 30,
+  "desc": "長い連続カーブ+激坂(高低差30m相当)の架空峠。重力で速度が乗るため、ブレーキングと姿勢管理が最重要。軽量FRが速く、立ち上がりの鈍い低出力FFが最も苦しい。",
+  "desc_en": "A fictional touge of long continuous curves plus a steep slope (about 30 m of elevation change). Gravity piles on speed, so braking and attitude management matter most. A light FR is fast, while the low-power FF — sluggish on corner exit — struggles the most.",
+  "diff": 5
 }

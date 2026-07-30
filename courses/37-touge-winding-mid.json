@@ -1,5 +1,6 @@
 {
   "name": "架空峠 ロング・ワインディング(中斜面)",
+  "name_en": "Fictional Touge: Long Winding (Medium Slope)",
   "kind": "touge",
   "style": "winding",
   "spanX": 6,
@@ -7,7 +8,9 @@
   "waves": 4,
   "yMid": 1.1,
   "hw": 0.44,
-  "downhill": 0.34,
-  "elev": 45,
-  "desc": "長い連続カーブの架空峠。中斜面(高低差45m相当)。下りで速度が乗るぶん、各カーブ手前の減速とラインの選択がタイムを分ける。"
+  "downhill": 1.22,
+  "elev": 21,
+  "desc": "長い連続カーブの架空峠。中斜面(高低差21m相当)。下りで速度が乗るぶん、各カーブ手前の減速とラインの選択がタイムを分ける。",
+  "desc_en": "A fictional touge of long continuous curves. Medium slope (about 21 m of elevation change). Since you pick up speed downhill, braking before each curve and your choice of line decide your time.",
+  "diff": 5
 }

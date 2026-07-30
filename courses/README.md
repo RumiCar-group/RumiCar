@@ -1,6 +1,6 @@
 # RumiCar Simulator — コースカタログ
 
-このフォルダは [RumiCar Simulator](https://cpo.tokyo/rumicar/) のコースデータです。
+このフォルダは [RumiCar Simulator](https://www.rumicar.com/simulator/) のコースデータです。
 
 ## 構成
 - `courses/*.json` — 公式テストコース (1 コース 1 ファイル, スペック形式)

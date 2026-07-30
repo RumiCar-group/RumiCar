@@ -1,5 +1,6 @@
 {
   "name": "ウェットS字 (雨)",
+  "name_en": "Wet S-Curve (Rain)",
   "kind": "track",
   "shape": "ellipse",
   "rx": 1.2,
@@ -7,5 +8,7 @@
   "width": 0.5,
   "samples": 90,
   "grip": 0.55,
-  "desc": "路面ウェット(grip0.55)。低グリップではオーバーステアがスピンに直結。アクセル雑でも押すだけのFFが事故りにくい。条件が変われば有利な車種も変わる。"
+  "desc": "路面ウェット(grip0.55)。低グリップではオーバーステアがスピンに直結。アクセル雑でも押すだけのFFが事故りにくい。条件が変われば有利な車種も変わる。",
+  "desc_en": "Wet surface (grip 0.55). At low grip, oversteer leads straight to a spin. An FF that just pushes on is hard to crash even with sloppy throttle. Change the conditions and which car type wins changes too.",
+  "diff": 3
 }

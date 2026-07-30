@@ -1,9 +1,12 @@
 {
   "name": "ヘアピン",
+  "name_en": "Hairpin",
   "kind": "track",
   "shape": "stadium",
   "L": 1.7,
   "rr": 0.55,
   "width": 0.48,
-  "desc": "長い直線と両端の180度ヘアピン。手前の減速と立ち上がりの確認用。"
+  "desc": "長い直線と両端の180度ヘアピン。手前の減速と立ち上がりの確認用。",
+  "desc_en": "Long straights with a 180° hairpin at each end. For checking braking on entry and acceleration on exit.",
+  "diff": 2
 }

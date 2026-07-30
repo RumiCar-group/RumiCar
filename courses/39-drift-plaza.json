@@ -1,5 +1,6 @@
 {
   "name": "ドリフト広場 (ショー会場)",
+  "name_en": "Drift Plaza (Show Arena)",
   "kind": "raw",
   "bounds": {
     "w": 4.4,
@@ -36,5 +37,7 @@
     "y": 1.7,
     "theta": 0
   },
-  "desc": "ドリフトショー用の開けた広場。『Drift Showtime』プログラム+ドリフト車でドーナツ/8の字が楽しめます。通常の走行プログラムには不向き(内壁が無く壁に向かうだけ)。"
+  "desc": "ドリフトショー用の開けた広場。『Drift Showtime』プログラム+ドリフト車でドーナツ/8の字が楽しめます。通常の走行プログラムには不向き(内壁が無く壁に向かうだけ)。",
+  "desc_en": "An open plaza for drift shows. Enjoy donuts and figure-eights with the 'Drift Showtime' program and a drift car. Not suited to normal driving programs (there is no inner wall, so they just head for the outer wall).",
+  "diff": 4
 }

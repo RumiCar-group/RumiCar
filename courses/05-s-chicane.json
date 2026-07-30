@@ -1,5 +1,6 @@
 {
   "name": "S字シケイン",
+  "name_en": "S-Chicane",
   "kind": "track",
   "shape": "lobed",
   "rBase": 1.12,
@@ -7,5 +8,7 @@
   "lobes": 5,
   "width": 0.46,
   "samples": 140,
-  "desc": "連続する左右の切り返し (S字/シケイン) を1周に内蔵した閉廊下。応答性と荷重移動の確認用。"
+  "desc": "連続する左右の切り返し (S字/シケイン) を1周に内蔵した閉廊下。応答性と荷重移動の確認用。",
+  "desc_en": "A closed corridor with continuous left-right flicks (S-curves / chicanes) built into each lap. For checking responsiveness and weight transfer.",
+  "diff": 2
 }

@@ -1,5 +1,6 @@
 {
   "name": "90度サーキット",
+  "name_en": "90° Circuit",
   "kind": "track",
   "shape": "superellipse",
   "rx": 1.15,
@@ -7,5 +8,7 @@
   "k": 0.5,
   "width": 0.55,
   "samples": 100,
-  "desc": "直角コーナー4つの矩形コース (RCカーペットコース風)。コーナー処理の安定性の確認用。"
+  "desc": "直角コーナー4つの矩形コース (RCカーペットコース風)。コーナー処理の安定性の確認用。",
+  "desc_en": "A rectangular course with four right-angle corners (RC carpet-track style). For checking the stability of your corner handling.",
+  "diff": 2
 }

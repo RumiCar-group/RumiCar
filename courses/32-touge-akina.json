@@ -1,5 +1,6 @@
 {
   "name": "峠②秋名風 (タイト下り)",
+  "name_en": "Touge 2: Akina-style (Tight Descent)",
   "kind": "touge",
   "rows": 4,
   "xL": 0.35,
@@ -7,7 +8,9 @@
   "dy": 0.7,
   "yTop": 2.7,
   "hw": 0.265,
-  "downhill": 0.22,
-  "desc": "急ヘアピンの連続する下り。グリップ限界付近の小半径。コーナー速度を保てれば軽量FRが有利、重い4WDは膨らみやすい。",
-  "elev": 35
+  "downhill": 1.4,
+  "desc": "急ヘアピンの連続する下り。グリップ限界付近の小半径。軽量FRとパワーのある4WDがほぼ互角で速く、立ち上がりの鈍い低出力FFが大きく離される。",
+  "desc_en": "A downhill with a run of tight hairpins. Small radii near the grip limit. A light FR and a powerful AWD are roughly on par and quick, while the low-power FF — sluggish on corner exit — drops well back.",
+  "elev": 35,
+  "diff": 5
 }

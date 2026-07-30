@@ -1,0 +1,18 @@
+{
+  "key": "custom_lightweight_fr",
+  "name": "軽量ライトウェイトFR (投稿例)",
+  "mass": 900,
+  "accel": 1.18,
+  "brake": 1.12,
+  "maxSpeed": 0.96,
+  "spin": 0.1,
+  "yawGain": 1.05,
+  "us": 0.04,
+  "os": 0.12,
+  "powerUs": 0,
+  "powerOs": 0.34,
+  "liftOffOs": 0.05,
+  "brakeOs": 0.22,
+  "slide": 0.1,
+  "drift": null
+}

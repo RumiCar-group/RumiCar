@@ -1,6 +1,6 @@
 # programs/community — 利用者が投稿した走行プログラム
 
-[RumiCar Simulator](https://cpo.tokyo/rumicar/) で改変したプログラムを **別名で** ここに
+[RumiCar Simulator](https://www.rumicar.com/simulator/) で改変したプログラムを **別名で** ここに
 投稿する場所です。シミュレータは起動時にこのフォルダを読み込み、各車の「走行」メニューの
 **「🌐 みんなの投稿」** に並べます。誰でも選んで走らせ、再利用できます。
 

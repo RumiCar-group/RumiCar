@@ -1,10 +1,12 @@
 {
   "name": "モンツァ・レイアウト",
+  "name_en": "Monza Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
   "desc": "高速コース (モンツァ風)。長い直線を2つのシケインで分け、最終はパラボリカの大きな複合コーナー。加減速の切替の確認用。",
+  "desc_en": "A high-speed course (Monza style). Long straights split by two chicanes, ending in a large Parabolica-style compound corner. For checking transitions between acceleration and braking.",
   "centerline": [
     [
       0.65,
@@ -66,5 +68,7 @@
       0.532,
       0.67
     ]
-  ]
+  ],
+  "diff": 1,
+  "beginner": true
 }

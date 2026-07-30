@@ -1,0 +1,15 @@
+{
+  "name": "競技サーキット (フルスケール)",
+  "name_en": "Competition Circuit (Full-Scale)",
+  "kind": "track",
+  "shape": "superellipse",
+  "rx": 360,
+  "ry": 230,
+  "k": 0.55,
+  "width": 28,
+  "samples": 160,
+  "noRace": true,
+  "desc": "フルスケール(実車2.6m)で『3センサー先読みレース』が成立する実寸サーキット。1周約1.9km・道幅28m・大Rの角丸四角(直線×4+コーナー×4)。フルスケール領域で『Circuit Racer』(ノーマルFF)を選ぶと、直線で250km/h級まで踏み、コーナー手前で先読みブレーキ→旋回、を周回します。狙い: 実車スケールでは速度=グリップ(ダウンフォース)/弱アンダーのFFは安定して周回できるが、オーバーステアのFR/4WDは同じ操舵で巻き込んでスピンする——という安定性の体感。卓上の通常コースとは別物(必ずフルスケール領域で)。",
+  "desc_en": "A real-scale circuit where '3-sensor look-ahead racing' works at full scale (real 2.6 m car). About 1.9 km per lap, 28 m wide, a large-radius rounded square (4 straights + 4 corners). In the full-scale regime, pick 'Circuit Racer' (Normal FF) and it laps the circuit, flooring it to around 250 km/h on the straights, then look-ahead braking before each corner and turning in. Aim: at real scale, speed means grip (downforce) — a mildly understeering FF can lap stably, while an oversteering FR/AWD snaps into a spin with the same steering. A different beast from the tabletop courses (always use the full-scale regime).",
+  "diff": 5
+}

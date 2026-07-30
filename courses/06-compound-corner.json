@@ -1,5 +1,6 @@
 {
   "name": "複合コーナー",
+  "name_en": "Compound Corner",
   "kind": "track",
   "shape": "lobed",
   "rBase": 1,
@@ -7,5 +8,7 @@
   "lobes": 1,
   "width": 0.5,
   "samples": 100,
-  "desc": "半径が変化する複合コーナー (片側がきつい)。適応的な操舵の確認用。"
+  "desc": "半径が変化する複合コーナー (片側がきつい)。適応的な操舵の確認用。",
+  "desc_en": "A compound corner with a changing radius (tighter on one side). For checking adaptive steering.",
+  "diff": 3
 }

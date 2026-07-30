@@ -1,9 +1,13 @@
 {
   "name": "スピードウェイ",
+  "name_en": "Speedway",
   "kind": "track",
   "shape": "stadium",
   "L": 2,
   "rr": 0.85,
   "width": 0.72,
-  "desc": "高速: 長い直線と緩い180度コーナー。最高速と直進安定性の確認用。"
+  "desc": "高速: 長い直線と緩い180度コーナー。最高速と直進安定性の確認用。",
+  "desc_en": "High speed: long straights and gentle 180° corners. For checking top speed and straight-line stability.",
+  "diff": 1,
+  "beginner": true
 }
