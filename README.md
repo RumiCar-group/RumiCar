@@ -17,7 +17,7 @@
 >
 > ライブラリのソースコード（参考）: [RumiCar-group/RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib)
 >
-> このリポジトリ内にある `ArduinoAndESP32/Libraries/` 配下の旧ライブラリ（`.zip`形式）は将来削除される予定です。
+> このリポジトリ内にあった `ArduinoAndESP32/Libraries/` 配下の旧ライブラリ（`.zip` と `RumiCar/` フォルダ）は**削除しました**。古い資料に残る「RumiCar.zip を選択」という手順はもう使えません。上記の Library Manager をご利用ください。
 >
 > ---
 >
@@ -32,7 +32,7 @@
 >
 > Library source code (for reference): [RumiCar-group/RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib)
 >
-> The local copy under `ArduinoAndESP32/Libraries/` is scheduled for removal in the future.
+> The local copy that used to be under `ArduinoAndESP32/Libraries/` **has been removed**. Older materials may still say "select RumiCar.zip" — that procedure no longer works; please use the Library Manager above.
 
 **If you prefer English, please read** [**Readme English**](https://github.com/RumiCar-group/RumiCar/blob/master/Readme%20English.md).
 
