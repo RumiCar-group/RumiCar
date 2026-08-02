@@ -1,12 +1,12 @@
 {
-  "name": "ニュルブルクリンクGP・レイアウト",
-  "name_en": "Nürburgring GP Layout",
+  "name": "ナローシケイン・レイアウト",
+  "name_en": "Narrow Chicane Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 3,
-  "desc": "現代GPレイアウト (ニュルブルクリンクGP風)。低速シケイン群とシューマッハS字の高速複合コーナーを併設。",
-  "desc_en": "A modern GP layout (Nürburgring GP style). Combines slow chicanes with the fast Schumacher S compound corners.",
+  "desc": "現代GPレイアウト。低速シケイン群と高速S字複合コーナーを併設。",
+  "desc_en": "A modern GP layout. Combines slow chicanes with fast S-shaped compound corners.",
   "centerline": [
     [
       0.709,

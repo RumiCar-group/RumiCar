@@ -1,12 +1,12 @@
 {
-  "name": "鈴鹿・レイアウト",
-  "name_en": "Suzuka Layout",
+  "name": "エッセ・レイアウト",
+  "name_en": "Esses Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
-  "desc": "技術系レイアウト (鈴鹿風)。S字 (esse) の連続・スプーン・最終の高速コーナーを盛り込んだ総合コース。",
-  "desc_en": "A technical layout (Suzuka style). An all-round course featuring the Esses, the Spoon, and a fast final corner.",
+  "desc": "技術系レイアウト。S字 (esse) の連続・大きな低速コーナー・最終の高速コーナーを盛り込んだ総合コース。",
+  "desc_en": "A technical layout. An all-round course featuring continuous esses, a large slow corner, and a fast final corner.",
   "centerline": [
     [
       0.725,

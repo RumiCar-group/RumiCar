@@ -1,12 +1,12 @@
 {
-  "name": "シルバーストン・レイアウト",
-  "name_en": "Silverstone Layout",
+  "name": "フローイング・レイアウト",
+  "name_en": "Flowing Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
-  "desc": "高速フローイングコース (シルバーストン風)。マゴッツ/ベケッツの連続esseとロングコーナー。荷重移動の連続性の確認用。",
-  "desc_en": "A fast, flowing course (Silverstone style). The continuous Maggotts/Becketts esses and long corners. For checking continuity of weight transfer.",
+  "desc": "高速フローイングコース。高速の連続esseとロングコーナー。荷重移動の連続性の確認用。",
+  "desc_en": "A fast, flowing course. Continuous high-speed esses and long corners. For checking continuity of weight transfer.",
   "centerline": [
     [
       0.683,

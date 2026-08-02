@@ -1,12 +1,12 @@
 {
-  "name": "もてぎ・レイアウト",
-  "name_en": "Motegi Layout",
+  "name": "ストップ＆ゴー・レイアウト",
+  "name_en": "Stop-and-Go Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 3,
-  "desc": "ストップ＆ゴー型コース (もてぎ風)。短い直線とタイトヘアピンの繰返し。強い減速と立ち上がりの確認用。",
-  "desc_en": "A stop-and-go course (Motegi style). Short straights and tight hairpins repeated. For checking heavy braking and corner exit.",
+  "desc": "ストップ＆ゴー型コース。短い直線とタイトヘアピンの繰返し。強い減速と立ち上がりの確認用。",
+  "desc_en": "A stop-and-go course. Short straights and tight hairpins repeated. For checking heavy braking and corner exit.",
   "centerline": [
     [
       0.646,

@@ -72,22 +72,22 @@
     "desc": "外周がうねり・内壁は円。外側のうねりへの追従と道幅変化の確認用。"
   },
   {
-    "file": "courses/13-suzuka-simple.json",
-    "name": "鈴鹿風 (簡易)",
+    "file": "courses/13-technical-loop-simple.json",
+    "name": "テクニカル周回 (簡易)",
     "kind": "track",
-    "desc": "うねる連続コーナーの技術系レイアウト (鈴鹿サーキット風の簡易版)。総合的な追従の確認用。"
+    "desc": "うねる連続コーナーの技術系レイアウト (技術系サーキットの簡易版)。総合的な追従の確認用。"
   },
   {
-    "file": "courses/14-monaco-simple.json",
-    "name": "モナコ風 (簡易)",
+    "file": "courses/14-tight-street-simple.json",
+    "name": "タイト市街地 (簡易)",
     "kind": "track",
-    "desc": "狭く技術的な低速コース (モナコ風の簡易版)。低速精度と狭所の確認用。"
+    "desc": "狭く技術的な低速コース (市街地コースの簡易版)。低速精度と狭所の確認用。"
   },
   {
-    "file": "courses/15-indy-oval.json",
-    "name": "インディオーバル風",
+    "file": "courses/15-long-oval.json",
+    "name": "ロングオーバル",
     "kind": "track",
-    "desc": "長方形オーバルの4つのコーナー (インディ風)。高速での連続コーナーの確認用。"
+    "desc": "長方形オーバルの4つのコーナー (高速オーバル)。高速での連続コーナーの確認用。"
   },
   {
     "file": "courses/16-octagon.json",
@@ -102,104 +102,104 @@
     "desc": "3つの鋭角コーナー。鋭い切り返しでの挙動の確認用。"
   },
   {
-    "file": "courses/18-monza.json",
-    "name": "モンツァ・レイアウト",
+    "file": "courses/18-high-speed.json",
+    "name": "ハイスピード・レイアウト",
     "kind": "track",
-    "desc": "高速コース (モンツァ風)。長い直線を2つのシケインで分け、最終はパラボリカの大きな複合コーナー。加減速の切替の確認用。"
+    "desc": "高速コース。長い直線を2つのシケインで分け、最終は大きな複合コーナー。加減速の切替の確認用。"
   },
   {
-    "file": "courses/19-suzuka.json",
-    "name": "鈴鹿・レイアウト",
+    "file": "courses/19-esses.json",
+    "name": "エッセ・レイアウト",
     "kind": "track",
-    "desc": "技術系レイアウト (鈴鹿風)。S字 (esse) の連続・スプーン・最終の高速コーナーを盛り込んだ総合コース。"
+    "desc": "技術系レイアウト。S字 (esse) の連続・大きな低速コーナー・最終の高速コーナーを盛り込んだ総合コース。"
   },
   {
-    "file": "courses/20-monaco.json",
-    "name": "モナコ・レイアウト",
+    "file": "courses/20-street.json",
+    "name": "ストリート・レイアウト",
     "kind": "track",
-    "desc": "市街地ストリートコース (モナコ風)。極端に狭く低速・タイトコーナーと有名なヘアピンを再現。低速精度の確認用。"
+    "desc": "市街地ストリートコース。極端に狭く低速・タイトコーナーと極低速のヘアピンを再現。低速精度の確認用。"
   },
   {
-    "file": "courses/21-silverstone.json",
-    "name": "シルバーストン・レイアウト",
+    "file": "courses/21-flowing.json",
+    "name": "フローイング・レイアウト",
     "kind": "track",
-    "desc": "高速フローイングコース (シルバーストン風)。マゴッツ/ベケッツの連続esseとロングコーナー。荷重移動の連続性の確認用。"
+    "desc": "高速フローイングコース。高速の連続esseとロングコーナー。荷重移動の連続性の確認用。"
   },
   {
-    "file": "courses/22-spa.json",
-    "name": "スパ・レイアウト",
+    "file": "courses/22-long-run.json",
+    "name": "ロングラン・レイアウト",
     "kind": "track",
-    "desc": "長距離・高低差コース (スパ風)。オールージュ風の登りesse・長いストレート・バスストップシケインを再現。"
+    "desc": "長距離・高低差コース。登りの高速esse・長いストレート・低速シケインを再現。"
   },
   {
-    "file": "courses/23-fuji.json",
-    "name": "富士スピードウェイ・レイアウト",
+    "file": "courses/23-long-straight.json",
+    "name": "ロングストレート・レイアウト",
     "kind": "track",
-    "desc": "超ロングストレート＋テクニカルセクション (富士風)。最高速からの大減速とヘアピンの組合せ。"
+    "desc": "超ロングストレート＋テクニカルセクション。最高速からの大減速とヘアピンの組合せ。"
   },
   {
-    "file": "courses/24-interlagos.json",
-    "name": "インテルラゴス・レイアウト",
+    "file": "courses/24-compact.json",
+    "name": "コンパクト・レイアウト",
     "kind": "track",
-    "desc": "反時計回りのコンパクトコース (インテルラゴス風)。セナのS・低速インフィールド・ジュンソンからの登り立ち上がり。"
+    "desc": "反時計回りのコンパクトコース。下りのS字・低速インフィールド・登りの立ち上がり。"
   },
   {
-    "file": "courses/25-hungaroring.json",
-    "name": "ハンガロリンク・レイアウト",
+    "file": "courses/25-twisty.json",
+    "name": "ツイスティ・レイアウト",
     "kind": "track",
-    "desc": "ツイスティな低中速コース (ハンガロリンク風)。直線が短くコーナーが連続する『ゴーカート的』レイアウト。"
+    "desc": "ツイスティな低中速コース。直線が短くコーナーが連続する『ゴーカート的』レイアウト。"
   },
   {
-    "file": "courses/26-redbull-ring.json",
-    "name": "レッドブルリンク・レイアウト",
+    "file": "courses/26-short.json",
+    "name": "ショート・レイアウト",
     "kind": "track",
-    "desc": "短く高速なコース (レッドブルリンク風)。少ないコーナー数・登りの急ブレーキングゾーンが特徴。"
+    "desc": "短く高速なコース。少ないコーナー数・登りの急ブレーキングゾーンが特徴。"
   },
   {
-    "file": "courses/27-cota.json",
-    "name": "アメリカズ・レイアウト",
+    "file": "courses/27-modern.json",
+    "name": "モダン・レイアウト",
     "kind": "track",
-    "desc": "現代的サーキット (COTA風)。急登の1コーナー・マゴッツ風の連続esse・長いバックストレート末のヘアピン。"
+    "desc": "現代的サーキット。急登の1コーナー・高速の連続esse・長いバックストレート末のヘアピン。"
   },
   {
-    "file": "courses/28-motegi.json",
-    "name": "もてぎ・レイアウト",
+    "file": "courses/28-stop-and-go.json",
+    "name": "ストップ＆ゴー・レイアウト",
     "kind": "track",
-    "desc": "ストップ＆ゴー型コース (もてぎ風)。短い直線とタイトヘアピンの繰返し。強い減速と立ち上がりの確認用。"
+    "desc": "ストップ＆ゴー型コース。短い直線とタイトヘアピンの繰返し。強い減速と立ち上がりの確認用。"
   },
   {
-    "file": "courses/29-nurburgring-gp.json",
-    "name": "ニュルブルクリンクGP・レイアウト",
+    "file": "courses/29-narrow-chicane.json",
+    "name": "ナローシケイン・レイアウト",
     "kind": "track",
-    "desc": "現代GPレイアウト (ニュルブルクリンクGP風)。低速シケイン群とシューマッハS字の高速複合コーナーを併設。"
+    "desc": "現代GPレイアウト。低速シケイン群と高速S字複合コーナーを併設。"
   },
   {
-    "file": "courses/30-zandvoort.json",
-    "name": "ザントフォールト・レイアウト",
+    "file": "courses/30-banked.json",
+    "name": "バンク・レイアウト",
     "kind": "track",
-    "desc": "海岸の起伏コース (ザントフォールト風)。バンク付き高速コーナー風の大Rと連続するブラインドコーナー。"
+    "desc": "海岸の起伏コース。バンク付き高速コーナー風の大Rと連続するブラインドコーナー。"
   },
   {
-    "file": "courses/31-touge-yabitsu.json",
-    "name": "峠①ヤビツ風 (緩い下り)",
+    "file": "courses/31-touge-1-gentle.json",
+    "name": "峠① 中速ヘアピン (緩い下り)",
     "kind": "touge",
     "desc": "スタート→ゴールの下り。緩い中速ヘアピン連続。重力で加速するのでコーナー前は制動(BRAKE)が鍵。高速寄りなので重い4WDが有利になりやすい。"
   },
   {
-    "file": "courses/32-touge-akina.json",
-    "name": "峠②秋名風 (タイト下り)",
+    "file": "courses/32-touge-2-tight.json",
+    "name": "峠② タイトヘアピン (急な下り)",
     "kind": "touge",
     "desc": "急ヘアピンの連続する下り。グリップ限界付近の小半径。軽量FRとパワーのある4WDがほぼ互角で速く、立ち上がりの鈍い低出力FFが大きく離される。"
   },
   {
-    "file": "courses/33-touge-tsubaki.json",
-    "name": "峠③椿風 (高速下り)",
+    "file": "courses/33-touge-3-fast.json",
+    "name": "峠③ 高速ヘアピン (大R下り)",
     "kind": "touge",
     "desc": "長い直線と大Rヘアピンの高速下り。直線で速度が乗り、パワーのある4WDと軽量FRがほぼ互角で速い。低出力FFは立ち上がりで離され不利。"
   },
   {
-    "file": "courses/34-wet-suzuka.json",
-    "name": "ウェット鈴鹿風 (雨)",
+    "file": "courses/34-wet-technical.json",
+    "name": "ウェットテクニカル (雨)",
     "kind": "track",
     "desc": "路面ウェット(grip0.5)。攻めるとテールの出る車(ドリフトFR等)はスピンして飛ぶ。アンダーで安全なFFや安定した車が生き残って勝つ——雨は飛ばし屋が自滅する。"
   },

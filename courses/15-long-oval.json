@@ -1,0 +1,15 @@
+{
+  "name": "ロングオーバル",
+  "name_en": "Long Oval",
+  "kind": "track",
+  "shape": "superellipse",
+  "rx": 1.55,
+  "ry": 0.92,
+  "k": 0.62,
+  "width": 0.72,
+  "samples": 110,
+  "desc": "長方形オーバルの4つのコーナー (高速オーバル)。高速での連続コーナーの確認用。",
+  "desc_en": "Four corners of a rectangular oval (a high-speed oval). For checking continuous high-speed corners.",
+  "diff": 1,
+  "beginner": true
+}

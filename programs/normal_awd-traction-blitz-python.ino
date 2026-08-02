@@ -1,5 +1,5 @@
-# Quattro Blitz (Python) — ノーマル 4WD 用  [卓上 Lv2 強みを使う・Python 版]  by Opus 4.8
-# C 版「Quattro Blitz」の Python 移植。ロジックと定数は完全に同一 (=同じ走り)。
+# Traction Blitz (Python) — ノーマル 4WD 用  [卓上 Lv2 強みを使う・Python 版]  by Opus 4.8
+# C 版「Traction Blitz」の Python 移植。ロジックと定数は完全に同一 (=同じ走り)。
 # ★引き出すロジック★ 4WD だけができる「コーナー出口で“誰より早く”フル加速」。
 #   前方距離 C の前回との差 dC を取り、前が開き出した瞬間(dC>0=立ち上がり)に全開へ。
 # 基準(FR)との違い: 速度3段は同じ。そこに「立ち上がり検知 → 即全開」を足しただけ。
