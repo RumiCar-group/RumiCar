@@ -1,12 +1,12 @@
 {
-  "name": "ザントフォールト・レイアウト",
-  "name_en": "Zandvoort Layout",
+  "name": "バンク・レイアウト",
+  "name_en": "Banked Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
-  "desc": "海岸の起伏コース (ザントフォールト風)。バンク付き高速コーナー風の大Rと連続するブラインドコーナー。",
-  "desc_en": "An undulating seaside course (Zandvoort style). Banked-style fast corners with large radii and a series of blind corners.",
+  "desc": "海岸の起伏コース。バンク付き高速コーナー風の大Rと連続するブラインドコーナー。",
+  "desc_en": "An undulating seaside course. Banked-style fast corners with large radii and a series of blind corners.",
   "centerline": [
     [
       0.689,

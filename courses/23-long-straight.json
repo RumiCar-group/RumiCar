@@ -1,12 +1,12 @@
 {
-  "name": "富士スピードウェイ・レイアウト",
-  "name_en": "Fuji Speedway Layout",
+  "name": "ロングストレート・レイアウト",
+  "name_en": "Long-Straight Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 2,
-  "desc": "超ロングストレート＋テクニカルセクション (富士風)。最高速からの大減速とヘアピンの組合せ。",
-  "desc_en": "An ultra-long straight plus a technical section (Fuji style). Combines heavy braking from top speed with hairpins.",
+  "desc": "超ロングストレート＋テクニカルセクション。最高速からの大減速とヘアピンの組合せ。",
+  "desc_en": "An ultra-long straight plus a technical section. Combines heavy braking from top speed with hairpins.",
   "centerline": [
     [
       0.527,

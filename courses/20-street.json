@@ -1,12 +1,12 @@
 {
-  "name": "モナコ・レイアウト",
-  "name_en": "Monaco Layout",
+  "name": "ストリート・レイアウト",
+  "name_en": "Street Layout",
   "kind": "track",
   "shape": "polyline",
   "width": 0.68,
   "smooth": 3,
-  "desc": "市街地ストリートコース (モナコ風)。極端に狭く低速・タイトコーナーと有名なヘアピンを再現。低速精度の確認用。",
-  "desc_en": "A street circuit (Monaco style). Extremely narrow and slow, recreating tight corners and the famous hairpin. For checking low-speed precision.",
+  "desc": "市街地ストリートコース。極端に狭く低速・タイトコーナーと極低速のヘアピンを再現。低速精度の確認用。",
+  "desc_en": "A street circuit. Extremely narrow and slow, recreating tight corners and a very slow hairpin. For checking low-speed precision.",
   "centerline": [
     [
       0.865,

@@ -6,8 +6,8 @@
     "label": "ノーマル FR"
   },
   {
-    "file": "programs/normal_awd-quattro-blitz.ino",
-    "name": "Quattro Blitz",
+    "file": "programs/normal_awd-traction-blitz.ino",
+    "name": "Traction Blitz",
     "carType": "normal_awd",
     "label": "ノーマル 4WD"
   },
@@ -42,8 +42,8 @@
     "label": "ノーマル FR (Python)"
   },
   {
-    "file": "programs/normal_awd-quattro-blitz-python.ino",
-    "name": "Quattro Blitz (Python)",
+    "file": "programs/normal_awd-traction-blitz-python.ino",
+    "name": "Traction Blitz (Python)",
     "carType": "normal_awd",
     "label": "ノーマル 4WD (Python)"
   },

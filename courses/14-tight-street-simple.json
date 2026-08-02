@@ -1,0 +1,14 @@
+{
+  "name": "タイト市街地 (簡易)",
+  "name_en": "Tight Street (Simple)",
+  "kind": "track",
+  "shape": "lobed",
+  "rBase": 0.92,
+  "amp": 0.16,
+  "lobes": 4,
+  "width": 0.4,
+  "samples": 120,
+  "desc": "狭く技術的な低速コース (市街地コースの簡易版)。低速精度と狭所の確認用。",
+  "desc_en": "A narrow, technical low-speed course (a simplified street-circuit style). For checking low-speed precision and tight spots.",
+  "diff": 3
+}

@@ -1,4 +1,4 @@
-// Quattro Blitz — ノーマル 4WD 用  [Fable Racing Line / Lv2 強みを使う]  by Fable 5
+// Traction Blitz — ノーマル 4WD 用  [Fable Racing Line / Lv2 強みを使う]  by Fable 5
 // 試走(ドライ31コース): standard 25/31 完走 / 動力学モデル 24/31・平均 2.11 km/h(最高速級)。
 // 4WDは四輪で路面を掴み発進空転がほぼ無く(spin=0)、加速が最強(accel=1.25)・最高速も上。
 // 弱点はやや重くアンダー寄り(massが大)。
