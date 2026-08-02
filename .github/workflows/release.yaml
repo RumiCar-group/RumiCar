@@ -33,16 +33,16 @@ jobs:
           ref: ${{github.event.inputs.ref}}
           fetch-depth: 1  # last commit. Change to 0 to get all git history
 
-      - name: Create zip from RumiCar folder
-        run: |
-          cd ArduinoAndESP32/Libraries/
-          zip -r RumiCar.zip RumiCar
-
+      # ライブラリの zip 生成ステップは削除しました。
+      # RumiCar ライブラリは Arduino 公式の Library Manager に登録され、ソースは後継リポジトリ
+      # RumiCar-group/RumiCar-lib に移りました。それに伴い ArduinoAndESP32/Libraries/RumiCar/ を
+      # 削除したため、ここで zip を作ることはできません (作れても古いライブラリを配ってしまいます)。
+      # ライブラリのリリースは RumiCar-lib 側で行ってください。
+      # 本ワークフローは教材リポジトリのタグ付け/リリース作成としてそのまま使えます。
       - name: Create Release ${{steps.version.outputs.version}}
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{steps.version.outputs.version}}
           name: Release ${{steps.version.outputs.version}}
-          files: ArduinoAndESP32/Libraries/RumiCar.zip
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
