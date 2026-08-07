@@ -34,7 +34,7 @@
 >
 > The local copy that used to be under `ArduinoAndESP32/Libraries/` **has been removed**. Older materials may still say "select RumiCar.zip" — that procedure no longer works; please use the Library Manager above.
 
-**If you prefer English, please read** [**Readme English**](https://github.com/RumiCar-group/RumiCar/blob/master/Readme%20English.md).
+**日本語** | [English (README.en.md)](README.en.md)
 
 コンピュータモジュールの種類によりプログラムや使用コンピュータ言語が異なります。
 Arduino Nano と ESP32 の場合はフォルダArduinoAndESP32をお使いください。
@@ -119,3 +119,5 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
   - [**RumiCar group**](https://www.facebook.com/groups/rumicar)<br>RumiCarのFaceBookグループです。皆様のご参加をお待ちしてます。
   - [**connpass**](https://rumicar.connpass.com)<br>RumiCarの走行会や開発教室、オンラインセミナーなどイベント告知や参加者募集のページです。RumiCarイベントに参加ご希望の方は是非メンバー登録をお願いいたします。
   - [**RumiCarハンズオン中継の録画**](https://youtu.be/99zH73B8NUo)<br>ALGYANとコラボしたRumiCarイベントのアーカイブです。イベント内でExerciseの解説やデモをしています。
+
+Issue・プルリクエストは**英語でも日本語でも歓迎**します。 / Issues and pull requests are welcome in English or Japanese.
