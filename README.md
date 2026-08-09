@@ -60,7 +60,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
      Edit profile/repos-meta.json in the .github repository to change descriptions/order. -->
 | リポジトリ | 内容 | ★ | 更新 |
 |---|---|---|---|
-| [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | 本体。サンプルプログラム、ハンズオン教材(PDF)、結線図、開発資料、シミュレータ用プログラム/コース | 35 | 2026-08-07 |
+| [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | 本体。サンプルプログラム、ハンズオン教材(PDF)、結線図、開発資料、シミュレータ用プログラム/コース | 35 | 2026-08-09 |
 | [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduino用RumiCarライブラリ(Arduino Library Manager登録済み) | - | 2026-06-22 |
 | [**RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) | ブラウザで動く自動運転シミュレータ(インストール不要・実機互換) | - | 2026-08-07 |
 | [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | 通信量にやさしい写真ストリップ(どのサイトでも使える汎用Web部品・MIT) | - | 2026-08-09 |
