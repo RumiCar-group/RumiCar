@@ -87,6 +87,32 @@ The images below link to YouTube videos — click to watch:
   - [**programs**](https://github.com/RumiCar-group/RumiCar/tree/master/programs)<br>Driving programs for the simulator: six "Fable Racing Line" programs tuned per drivetrain, with their **design rationale, the meaning of every constant, and real-car tuning steps** explained in [programs/README.md](https://github.com/RumiCar-group/RumiCar/tree/master/programs) (each .ino also documents why it is set up the way it is). Modified programs can be contributed to [programs/community](https://github.com/RumiCar-group/RumiCar/tree/master/programs/community) by pull request and become reusable by everyone from the simulator's "🌐 Community" list.
   - [**courses**](https://github.com/RumiCar-group/RumiCar/tree/master/courses)<br>Course data for the simulator: 30 test courses plus user-contributed courses ([courses/community](https://github.com/RumiCar-group/RumiCar/tree/master/courses/community)). See [courses/README.md](https://github.com/RumiCar-group/RumiCar/tree/master/courses) for how to contribute.
 
+### Hardware overview
+
+The vehicle carries **three laser time-of-flight (ToF) distance sensors** (left, centre, right) at the front. A computer module (CM) reads them and drives the steering and drive motors. The CM connects to your PC over USB for programming.
+
+Several CMs are supported, depending on what you want to do:
+
+| CM | Language | Typical use |
+|---|---|---|
+| **Arduino Nano** | C++ | The standard starting point |
+| **ESP32** | C++ | Wi-Fi / Bluetooth / BLE, neural networks (advanced) |
+| **Raspberry Pi Zero W** | Python | Image recognition and AI (advanced) |
+| **Obniz** | — | Covered in the pin-assignment sheet |
+
+Wiring diagrams, the pin-assignment sheet, and the build/verification guides are in the [build documentation folder](https://github.com/RumiCar-group/RumiCar/tree/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99) described above. If you build your own CM, follow the pin-assignment sheet so programs stay compatible.
+
+### Get involved
+
+RumiCar is built by volunteers, and we are looking for people and companies to join us:
+
+- Software (autonomous-driving algorithms, IDE, image recognition, Autoware)
+- Hardware (vehicle development and production, CM development, PCB design)
+- Website editing and administration (WordPress), technical mentoring
+- Outreach (YouTube video editing, event announcements), event organising, fundraising
+
+Send your areas of interest and motivation to **info@RumiCar.com**. We are also planning development, classes, training, and conferences in other countries, and are looking for local partners.
+
 ### Other important links
 
 - [**RumiCar website**](https://www.rumicar.com)<br>We want to keep growing the website — if you would like to help edit it, please get in touch!

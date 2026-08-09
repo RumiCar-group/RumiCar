@@ -132,6 +132,32 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
   - **[programs](https://github.com/RumiCar-group/RumiCar/tree/master/programs)フォルダ**<br>シミュレータ用の走行プログラム集です。車種別に最適化した「Fable Racing Line」6種と、その**設計思想・各定数の意味・実車でのチューニング手順**を [programs/README.md](https://github.com/RumiCar-group/RumiCar/tree/master/programs) に解説しています(各 .ino の冒頭にも「なぜこの設定にしたか」を記載)。利用者が改変したプログラムは [programs/community](https://github.com/RumiCar-group/RumiCar/tree/master/programs/community) に別名で投稿でき(プルリクエスト方式)、シミュレータの「🌐 みんなの投稿」から誰でも再利用できます。
   - **[courses](https://github.com/RumiCar-group/RumiCar/tree/master/courses)フォルダ**<br>シミュレータ用のコースデータです。30種のテストコースと、利用者が投稿したコース([courses/community](https://github.com/RumiCar-group/RumiCar/tree/master/courses/community))が入っています。投稿方法は [courses/README.md](https://github.com/RumiCar-group/RumiCar/tree/master/courses) を参照してください。
 
+### ハードウェア構成
+
+RumiCar 車体は、車体前部に **3 基のレーザー測距（ToF）モジュール**（左・中央・右）を搭載し、その測定値をコンピュータモジュール（CM）が処理して、ステアリングと走行モータを制御します。CM は USB ケーブルで PC に接続してプログラムを書き込みます。
+
+CM は用途に応じて複数の選択肢があります。
+
+| CM | 言語 | 主な用途 |
+|---|---|---|
+| **Arduino Nano** | C++ | 基本構成。これから始める方向け |
+| **ESP32** | C++ | Wi-Fi / Bluetooth・BLE 連携、ニューラルネットワーク等（上級者向け） |
+| **Raspberry Pi Zero W** | Python | 画像認識・AI 等（上級者向け） |
+| **Obniz** | — | ピンアサイン表に対応表を掲載 |
+
+結線図・ピンアサイン表・「RumiCar の作り方」「RumiCar の動作確認方法」は、上の「フォルダの説明」にある[開発用資料フォルダ](https://github.com/RumiCar-group/RumiCar/tree/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99)にあります。自作される場合は、プログラムの互換性確保のため、ピンアサイン表に従って結線してください。
+
+### 参加する（協力者募集）
+
+RumiCar は有志で開発しています。**一緒に RumiCar したい方・企業を募集しています。**
+
+- ソフトウェア（自動運転アルゴリズム、IDE、画像認識、Autoware 導入）
+- ハードウェア（車体開発・量産、CM 開発、PCB 設計）
+- Website 編集・管理（WordPress）、技術アドバイザー
+- 広報（YouTube 動画編集、イベント告知）、イベント運営、資金調達
+
+貢献可能な分野とモチベーションを添えて **info@RumiCar.com** までご連絡ください。各国での開発・教室・トレーニング・カンファレンス開催も計画しており、各国拠点でご協力いただける方を探しています。
+
   ### その他大事なこと
   - [**RumiCar website**](https://www.rumicar.com)<br>RumiCarのwebisteです。今後このwebisteを発展させたいので、websiteの編集をしてくださる方は是非ご連絡ください!
   - [**RumiCar YouTube**](https://www.youtube.com/channel/UCVg3CBSVBcc_00FdC6q2wDg)<br>RumiCarのYouTubeチャンネルです。RumiCarの紹介動画や各種走行動画、開発途中の各種テストの動画などがアップロードされています。是非チャンネル登録をお願いします。また、動画編集をしてくださる方も是非ご連絡ください。
