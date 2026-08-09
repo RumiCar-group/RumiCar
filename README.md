@@ -63,6 +63,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 | [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | 本体。サンプルプログラム、ハンズオン教材(PDF)、結線図、開発資料、シミュレータ用プログラム/コース | 35 |
 | [**RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) | ブラウザで動く自動運転シミュレータ(インストール不要・実機互換) | - |
 | [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | 通信量にやさしい写真ストリップ(どのサイトでも使える汎用Web部品・MIT) | - |
+| [**RumiCar-VideoLoop**](https://github.com/RumiCar-group/RumiCar-VideoLoop) | 動画ダイジェスト小窓(無音ティーザーをランダム連続再生・クリックで本編へ・MIT) | - |
 | [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2対応の実装 | 3 |
 | [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduinoライブラリのソースコード(導入はArduino IDEのライブラリマネージャから。ここからのダウンロードは不要) | - |
 | [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | 関連プロジェクトのfork(派生車体) | - |

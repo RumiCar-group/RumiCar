@@ -47,6 +47,7 @@ The images below link to YouTube videos — click to watch:
 | [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | Main repository: sample programs, hands-on textbooks (PDF), wiring diagrams, build docs, simulator programs and courses | 35 |
 | [**RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) | Browser-based autonomous-driving simulator (no install, real-car compatible) | - |
 | [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | Bandwidth-friendly photo strip for any website (generic web component, MIT) | - |
+| [**RumiCar-VideoLoop**](https://github.com/RumiCar-group/RumiCar-VideoLoop) | Video digest window: silent teasers in random rotation, click through to the full video (MIT) | - |
 | [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2 support for RumiCar | 3 |
 | [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Source of the Arduino library (install via the Arduino IDE Library Manager - no need to download from here) | - |
 | [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | Fork of a related project (derived vehicle) | - |
