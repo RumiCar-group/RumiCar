@@ -42,16 +42,16 @@ The images below link to YouTube videos — click to watch:
      説明文・表示順の変更は .github リポジトリの profile/repos-meta.json を編集してください。
      This table is auto-generated daily from the org's public repositories.
      Edit profile/repos-meta.json in the .github repository to change descriptions/order. -->
-| Repository | Description | ★ | Updated |
-|---|---|---|---|
-| [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | Main repository: sample programs, hands-on textbooks (PDF), wiring diagrams, build docs, simulator programs and courses | 35 | 2026-08-09 |
-| [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduino library for RumiCar (published to the Arduino Library Manager) | - | 2026-06-22 |
-| [**RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) | Browser-based autonomous-driving simulator (no install, real-car compatible) | - | 2026-08-07 |
-| [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | Bandwidth-friendly photo strip for any website (generic web component, MIT) | - | 2026-08-09 |
-| [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2 support for RumiCar | 3 | 2026-05-10 |
-| [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | Fork of a related project (derived vehicle) | - | 2020-09-05 |
-| [**micro-airc**](https://github.com/RumiCar-group/micro-airc) | Fork of a related project (AI RC car) | 1 | 2020-07-19 |
-| [**rumicar-duck**](https://github.com/RumiCar-group/rumicar-duck) | Fork of a related project (duck-style car) | - | 2020-04-25 |
+| Repository | Description | ★ |
+|---|---|---|
+| [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | Main repository: sample programs, hands-on textbooks (PDF), wiring diagrams, build docs, simulator programs and courses | 35 |
+| [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduino library for RumiCar (published to the Arduino Library Manager) | - |
+| [**RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) | Browser-based autonomous-driving simulator (no install, real-car compatible) | - |
+| [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | Bandwidth-friendly photo strip for any website (generic web component, MIT) | - |
+| [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2 support for RumiCar | 3 |
+| [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | Fork of a related project (derived vehicle) | - |
+| [**micro-airc**](https://github.com/RumiCar-group/micro-airc) | Fork of a related project (AI RC car) | 1 |
+| [**rumicar-duck**](https://github.com/RumiCar-group/rumicar-duck) | Fork of a related project (duck-style car) | - |
 <!-- AUTO-REPOS-EN:END -->
 
 ### Folder guide

@@ -58,16 +58,16 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
      説明文・表示順の変更は .github リポジトリの profile/repos-meta.json を編集してください。
      This table is auto-generated daily from the org's public repositories.
      Edit profile/repos-meta.json in the .github repository to change descriptions/order. -->
-| リポジトリ | 内容 | ★ | 更新 |
-|---|---|---|---|
-| [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | 本体。サンプルプログラム、ハンズオン教材(PDF)、結線図、開発資料、シミュレータ用プログラム/コース | 35 | 2026-08-09 |
-| [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduino用RumiCarライブラリ(Arduino Library Manager登録済み) | - | 2026-06-22 |
-| [**RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) | ブラウザで動く自動運転シミュレータ(インストール不要・実機互換) | - | 2026-08-07 |
-| [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | 通信量にやさしい写真ストリップ(どのサイトでも使える汎用Web部品・MIT) | - | 2026-08-09 |
-| [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2対応の実装 | 3 | 2026-05-10 |
-| [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | 関連プロジェクトのfork(派生車体) | - | 2020-09-05 |
-| [**micro-airc**](https://github.com/RumiCar-group/micro-airc) | 関連プロジェクトのfork(AI RCカー) | 1 | 2020-07-19 |
-| [**rumicar-duck**](https://github.com/RumiCar-group/rumicar-duck) | 関連プロジェクトのfork(アヒル型走行車) | - | 2020-04-25 |
+| リポジトリ | 内容 | ★ |
+|---|---|---|
+| [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | 本体。サンプルプログラム、ハンズオン教材(PDF)、結線図、開発資料、シミュレータ用プログラム/コース | 35 |
+| [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduino用RumiCarライブラリ(Arduino Library Manager登録済み) | - |
+| [**RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) | ブラウザで動く自動運転シミュレータ(インストール不要・実機互換) | - |
+| [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | 通信量にやさしい写真ストリップ(どのサイトでも使える汎用Web部品・MIT) | - |
+| [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2対応の実装 | 3 |
+| [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | 関連プロジェクトのfork(派生車体) | - |
+| [**micro-airc**](https://github.com/RumiCar-group/micro-airc) | 関連プロジェクトのfork(AI RCカー) | 1 |
+| [**rumicar-duck**](https://github.com/RumiCar-group/rumicar-duck) | 関連プロジェクトのfork(アヒル型走行車) | - |
 <!-- AUTO-REPOS-JA:END -->
 
 ### フォルダの説明
