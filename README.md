@@ -51,6 +51,25 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 [![RumiCar衝突回避動画](http://img.youtube.com/vi/95pc_4Wf14U/0.jpg)](https://youtu.be/95pc_4Wf14U "RumiCar衝突回避動画")
 [![RumiCarテスト走行動画](http://img.youtube.com/vi/oHujTh9AwAw/0.jpg)](https://www.youtube.com/watch?v=oHujTh9AwAw "RumiCarテスト走行動画")
 [![RumiCar車載カメラ視点動画](http://img.youtube.com/vi/16kOgLMo-Tg/0.jpg)](https://www.youtube.com/watch?v=16kOgLMo-Tg "RumiCar車載カメラ視点動画")
+### 関連リポジトリ（RumiCar ファミリー）
+
+<!-- AUTO-REPOS-JA:START -->
+<!-- この表は自動生成です。手で編集しないでください(毎日、公開リポジトリ一覧から再生成されます)。
+     説明文・表示順の変更は .github リポジトリの profile/repos-meta.json を編集してください。
+     This table is auto-generated daily from the org's public repositories.
+     Edit profile/repos-meta.json in the .github repository to change descriptions/order. -->
+| リポジトリ | 内容 | ★ | 更新 |
+|---|---|---|---|
+| [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | 本体。サンプルプログラム、ハンズオン教材(PDF)、結線図、開発資料、シミュレータ用プログラム/コース | 35 | 2026-08-07 |
+| [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduino用RumiCarライブラリ(Arduino Library Manager登録済み) | - | 2026-06-22 |
+| [**RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) | ブラウザで動く自動運転シミュレータ(インストール不要・実機互換) | - | 2026-08-07 |
+| [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | 通信量にやさしい写真ストリップ(どのサイトでも使える汎用Web部品・MIT) | - | 2026-08-09 |
+| [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2対応の実装 | 3 | 2026-05-10 |
+| [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | 関連プロジェクトのfork(派生車体) | - | 2020-09-05 |
+| [**micro-airc**](https://github.com/RumiCar-group/micro-airc) | 関連プロジェクトのfork(AI RCカー) | 1 | 2020-07-19 |
+| [**rumicar-duck**](https://github.com/RumiCar-group/rumicar-duck) | 関連プロジェクトのfork(アヒル型走行車) | - | 2020-04-25 |
+<!-- AUTO-REPOS-JA:END -->
+
 ### フォルダの説明
 
 - [**ArduinoAndESP32**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)フォルダ<br>RumiCarのコンピュータモジュール(CM)のArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラムが保存されています。RumiCarハンズ用の資料は[**ハンズオン用テキスト**](https://github.com/RumiCar-group/RumiCar/tree/master/%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E7%94%A8%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88)フォルダの下に保存されていますのでまずそちらを参照ください。

@@ -35,6 +35,25 @@ The images below link to YouTube videos — click to watch:
 [![RumiCar test drive](http://img.youtube.com/vi/oHujTh9AwAw/0.jpg)](https://www.youtube.com/watch?v=oHujTh9AwAw "RumiCar test drive")
 [![Onboard camera view](http://img.youtube.com/vi/16kOgLMo-Tg/0.jpg)](https://www.youtube.com/watch?v=16kOgLMo-Tg "Onboard camera view")
 
+### Related repositories (the RumiCar family)
+
+<!-- AUTO-REPOS-EN:START -->
+<!-- この表は自動生成です。手で編集しないでください(毎日、公開リポジトリ一覧から再生成されます)。
+     説明文・表示順の変更は .github リポジトリの profile/repos-meta.json を編集してください。
+     This table is auto-generated daily from the org's public repositories.
+     Edit profile/repos-meta.json in the .github repository to change descriptions/order. -->
+| Repository | Description | ★ | Updated |
+|---|---|---|---|
+| [**RumiCar**](https://github.com/RumiCar-group/RumiCar) | Main repository: sample programs, hands-on textbooks (PDF), wiring diagrams, build docs, simulator programs and courses | 35 | 2026-08-07 |
+| [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduino library for RumiCar (published to the Arduino Library Manager) | - | 2026-06-22 |
+| [**RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) | Browser-based autonomous-driving simulator (no install, real-car compatible) | - | 2026-08-07 |
+| [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | Bandwidth-friendly photo strip for any website (generic web component, MIT) | - | 2026-08-09 |
+| [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2 support for RumiCar | 3 | 2026-05-10 |
+| [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | Fork of a related project (derived vehicle) | - | 2020-09-05 |
+| [**micro-airc**](https://github.com/RumiCar-group/micro-airc) | Fork of a related project (AI RC car) | 1 | 2020-07-19 |
+| [**rumicar-duck**](https://github.com/RumiCar-group/rumicar-duck) | Fork of a related project (duck-style car) | - | 2020-04-25 |
+<!-- AUTO-REPOS-EN:END -->
+
 ### Folder guide
 
 - [**ArduinoAndESP32**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)<br>Sample programs for the Arduino Nano and ESP32 versions of the RumiCar computer module (CM). These are the programs used in our hands-on workshops. The hands-on textbook lives in the [ハンズオン用テキスト (hands-on text)](https://github.com/RumiCar-group/RumiCar/tree/master/%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E7%94%A8%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88) folder — start there.
