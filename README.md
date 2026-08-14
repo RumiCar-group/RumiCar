@@ -66,6 +66,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 | [**RumiCar-VideoLoop**](https://github.com/RumiCar-group/RumiCar-VideoLoop) | 動画ダイジェスト小窓(無音ティーザーをランダム連続再生・クリックで本編へ・MIT) | - |
 | [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2対応の実装 | 3 |
 | [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduinoライブラリのソースコード(導入はArduino IDEのライブラリマネージャから。ここからのダウンロードは不要) | - |
+| [**RumiCar-AutoPost-Guide**](https://github.com/RumiCar-group/RumiCar-AutoPost-Guide) | Publish a WordPress post; What's New and the Facebook Page update automatically. A bilingual methods guide (ja/en) — setup, pitfalls, and log-based verification. | - |
 | [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | 関連プロジェクトのfork(派生車体) | - |
 | [**micro-airc**](https://github.com/RumiCar-group/micro-airc) | 関連プロジェクトのfork(AI RCカー) | 1 |
 | [**rumicar-duck**](https://github.com/RumiCar-group/rumicar-duck) | 関連プロジェクトのfork(アヒル型走行車) | - |
