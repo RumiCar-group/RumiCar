@@ -1,0 +1,83 @@
+name: community index
+
+# コミュニティ投稿ディレクトリの一覧ファイル (index.json) を自動更新する。
+#
+# なぜ要るか:
+#   RumiCar Simulator (RumiCar-group/RumiCar-Simulator) はこれまで投稿一覧を GitHub API で
+#   取得していたが、未認証の API は IP アドレスあたり 60 回/時。シミュレータは 1 回開くごとに
+#   4 回消費するため、教室のように 1 つの回線を大勢で共有すると数人で使い切ってしまい、
+#   投稿コース・プログラム・車種が「取得できませんでした」になっていた (実測: 15 回開くと枯渇)。
+#   raw.githubusercontent.com にはこの制限が無いので、一覧を静的ファイルとして置けば
+#   API を使わずに済む。シミュレータ v7.4.0 以降は index.json があればそちらを優先し、
+#   無ければ従来どおり API を使う (古いクローンやフォークでも壊れない)。
+#
+# 動き: community 配下が変わった push で一覧を作り直し、差分があるときだけコミットする。
+
+on:
+  push:
+    # 既定ブランチ名を変えたらここも直すこと (無音で止まる)
+    branches: [master]
+    paths:
+      # 生成物 (index.json) 自身は除外する。GITHUB_TOKEN による push は新しい実行を
+      # 起動しないという GitHub の仕様のおかげで今はループしないが、checkout を PAT や
+      # GitHub App のトークンに差し替えた瞬間にループする。仕様だけに頼らず paths でも塞ぐ。
+      - 'courses/community/**'
+      - '!courses/community/index.json'
+      - 'programs/community/**'
+      - '!programs/community/index.json'
+      - 'cars/community/**'
+      - '!cars/community/index.json'
+      - 'tools/gen_community_index.mjs'
+      - '.github/workflows/community-index.yaml'
+  # 取りこぼしたときに手動で流せるようにしておく。
+  # ブランチ制限が無いので、master 以外で実行するとそのブランチにコミットが載る。
+  workflow_dispatch:
+
+permissions:
+  contents: write           # index.json をコミットするため
+
+concurrency:                # 連続 push で同時に走って衝突しないようにする
+  group: community-index
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 一覧を生成してコミット
+        # 導入時点 (2026-09-04) の確認: master にブランチ保護は無く、リポジトリの既定
+        # ワークフロー権限は write なので、この直 push は通る。将来どちらかが変わると
+        # ここで落ちるが、そのときはワークフローを消すのではなく、生成物を PR にする形へ
+        # 変えるか、手元で `node tools/gen_community_index.mjs .` を実行して普通の PR に
+        # 含める運用にする。
+        #
+        # 競合したら「rebase して直す」のではなく「最新を取り直して生成し直す」。
+        # index.json は生成物なので、マージするより作り直す方が確実に正しくなる
+        # (rebase で衝突を残すと、誤った内容が上流に残って誰も直さない)。
+        run: |
+          set -eu
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for i in 1 2 3; do
+            git fetch origin "$GITHUB_REF_NAME"
+            git reset --hard "origin/$GITHUB_REF_NAME"
+            node tools/gen_community_index.mjs .
+            # pathspec の意味を git 側に統一する (シェルのグロブは / を跨がないため非対称になる)
+            git add -A -- '*/community/index.json'
+            if git diff --cached --quiet; then
+              echo "変更なし"
+              exit 0
+            fi
+            git commit -m 'community: 投稿一覧 (index.json) を自動更新'
+            if git push; then
+              exit 0
+            fi
+            echo "push が競合した。取り直して生成し直す ($i/3)"
+          done
+          echo "3 回試しても push できなかった" >&2
+          exit 1
