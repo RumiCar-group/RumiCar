@@ -75,7 +75,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 
 ### フォルダの説明
 
-- [**ArduinoAndESP32**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)フォルダ<br>RumiCarのコンピュータモジュール(CM)のArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラムが保存されています。RumiCarハンズ用の資料は[**ハンズオン用テキスト**](https://github.com/RumiCar-group/RumiCar/tree/master/%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E7%94%A8%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88)フォルダの下に保存されていますのでまずそちらを参照ください。
+- [**ArduinoAndESP32**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)フォルダ<br>RumiCarのコンピュータモジュール(CM)のArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラム（Exercise、Exercise-1.1〜3.2）は、RumiCarライブラリ（v0.4.0以降）のスケッチ例に入っています。Arduino IDEの「ファイル」→「スケッチ例」→「RumiCar」から開いてください。このフォルダには上級編（Exercise-A2.3など）とサンプルプログラムがあります。RumiCarハンズオン用の資料は[**ハンズオン用テキスト**](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダの下に保存されていますのでまずそちらを参照ください。
 
   - **Exercise-1 距離を測ってみよう！**<br>RumiCarには車体の前方に3個のレーザー測距モジュールを搭載しています。レーザー測距モジュールは人体に無害のレーザー光線を対象物に当て、その反射光が戻ってくるまでの***時間***を計測することによって距離を測定します。音速はマッハと呼ばれ時速1000km以上の速度ですが、光の速さはその音速の***88万倍***も速いです。その光が反射して返ってくるまでのとても短い時間を計って距離を計測するなんて凄いですね。
   
@@ -115,7 +115,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
    - **Exercise-3 自律走行基礎**
      - **Exercise-3.1 安全に停止する車**   
      - **Exercise-3.2 市街地を走る車**
- - **[ハンズオン用テキスト](https://github.com/RumiCar-group/RumiCar/tree/master/%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B3%E7%94%A8%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88)フォルダ**<br>RumiCarのハンズオン用テキストが保存されているフォルダです。RumiCarの歴史や仕組み、サンプルプログラムを使ってRumiCarを動作させる方法や例が載っています。ハンズオン用テキストはPDF形式で約10MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。
+ - **[ハンズオン用テキスト](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダ**<br>RumiCarのハンズオン用テキストが保存されているフォルダです。RumiCarの歴史や仕組み、サンプルプログラムを使ってRumiCarを動作させる方法や例が載っています。ハンズオン用テキストはPDF形式で約10MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。
 - **[教育機関向け追加課題](https://github.com/RumiCar-group/RumiCar/tree/master/%E6%95%99%E8%82%B2%E6%A9%9F%E9%96%A2%E5%90%91%E3%81%91%E8%BF%BD%E5%8A%A0%E8%AA%B2%E9%A1%8C)フォルダ**<br>RumiCarを教材として教育機関にて授業や演習で利用する場合の追加課題です。Rumicarハンズオンの資料はRumiCarの仕組みや構成を学べるように作られています。学生が自ら更に深く考えて課題を克服し、より良いアルゴリズムを開発できるように研究課題の基礎やグループワークに使えるように追加の課題をまとめました。是非ご利用ください。
 - **[開発用資料](https://github.com/RumiCar-group/RumiCar/tree/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99)フォルダ**<br>RumiCarの車体やCMを自作する場合の開発用資料です。
 
