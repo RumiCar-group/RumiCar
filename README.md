@@ -115,7 +115,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
    - **Exercise-3 自律走行基礎**
      - **Exercise-3.1 安全に停止する車**   
      - **Exercise-3.2 市街地を走る車**
- - **[ハンズオン用テキスト](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダ**<br>RumiCarのハンズオン用テキストが保存されているフォルダです。RumiCarの歴史や仕組み、サンプルプログラムを使ってRumiCarを動作させる方法や例が載っています。ハンズオン用テキストはPDF形式で約10MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。
+ - **[ハンズオン用テキスト](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダ**<br>RumiCarのハンズオン用テキストが保存されているフォルダです。RumiCarの歴史や仕組み、サンプルプログラムを使ってRumiCarを動作させる方法や例が載っています。ハンズオン用テキストはPDF形式で約15MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。
 - **[教育機関向け追加課題](https://github.com/RumiCar-group/RumiCar/tree/master/%E6%95%99%E8%82%B2%E6%A9%9F%E9%96%A2%E5%90%91%E3%81%91%E8%BF%BD%E5%8A%A0%E8%AA%B2%E9%A1%8C)フォルダ**<br>RumiCarを教材として教育機関にて授業や演習で利用する場合の追加課題です。Rumicarハンズオンの資料はRumiCarの仕組みや構成を学べるように作られています。学生が自ら更に深く考えて課題を克服し、より良いアルゴリズムを開発できるように研究課題の基礎やグループワークに使えるように追加の課題をまとめました。是非ご利用ください。
 - **[開発用資料](https://github.com/RumiCar-group/RumiCar/tree/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99)フォルダ**<br>RumiCarの車体やCMを自作する場合の開発用資料です。
 
