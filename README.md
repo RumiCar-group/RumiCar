@@ -66,6 +66,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
 | [**RumiCar-VideoLoop**](https://github.com/RumiCar-group/RumiCar-VideoLoop) | 動画ダイジェスト小窓(無音ティーザーをランダム連続再生・クリックで本編へ・MIT) | - |
 | [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2対応の実装 | 3 |
 | [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduinoライブラリのソースコード(導入はArduino IDEのライブラリマネージャから。ここからのダウンロードは不要) | - |
+| [**RumiCar-Zero2Cam**](https://github.com/RumiCar-group/RumiCar-Zero2Cam) | RumiCar on Raspberry Pi Zero 2 W with camera: onboard C++ driving program, C# PC driving manager, and the standard SD card image | - |
 | [**RumiCar-AutoPost-Guide**](https://github.com/RumiCar-group/RumiCar-AutoPost-Guide) | Publish a WordPress post; What's New and the Facebook Page update automatically. A bilingual methods guide (ja/en) — setup, pitfalls, and log-based verification. | - |
 | [**RumiCar-ReleaseNotes-Guide**](https://github.com/RumiCar-group/RumiCar-ReleaseNotes-Guide) | Publish a GitHub Release, get paired JA/EN WordPress articles automatically — a methods guide with the reference implementation from rumicar.com | - |
 | [**RumiCarEX**](https://github.com/RumiCar-group/RumiCarEX) | 関連プロジェクトのfork(派生車体) | - |
