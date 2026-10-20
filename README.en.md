@@ -21,7 +21,7 @@
 >
 > The local copy that used to be under `ArduinoAndESP32/Libraries/` **has been removed**. Older materials may still say "select RumiCar.zip" — that procedure no longer works; please use the Library Manager above.
 
-RumiCar is a platform to develop autonomous driving algorithms with a palm-sized vehicle. The program and the programming language depend on the computer module (CM) you use: for Arduino Nano and ESP32, use the [ArduinoAndESP32](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32) folder; for Raspberry Pi Zero W, use the [RasPi](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi) folder (the RasPi version is written in Python).
+RumiCar is a platform to develop autonomous driving algorithms with a palm-sized vehicle. The program and the programming language depend on the computer module (CM) you use: for Arduino Nano and ESP32, use the [ArduinoAndESP32](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32) folder; for Raspberry Pi Zero W, use the [RasPi](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi) folder (the RasPi version is written in Python); for Raspberry Pi Zero 2 W with a camera, use the separate [RumiCar-Zero2Cam](https://github.com/RumiCar-group/RumiCar-Zero2Cam) repository (write the SD-card image and go — see the [Zero2Cam](Zero2Cam/README.en.md) folder for a short guide).
 
 The images below link to YouTube videos — click to watch:
 
@@ -79,6 +79,7 @@ The images below link to YouTube videos — click to watch:
   - **Bluetooth**<br>Bluetooth serial (Exercise 1.2 for the ESP32 CM): pair RumiCar with a Windows PC, read distances without a cable, and send single-letter commands to drive it like an RC car. The sample understands `r`, `l`, `f`, `b` (right, left, forward, back — lower case, 0.5 s each), sent from the Serial Monitor.
     - Pairing with Windows 10: Settings → Devices → Bluetooth & other devices → Add Bluetooth or other device → Bluetooth → select **RumiCar_ESP32**; then check Device Manager → Ports (COM & LPT) for "Standard Serial over Bluetooth link (COM #)" (two entries appear), and set Tools → Serial Port in the Arduino IDE to that COM port.
 - [**RasPi**](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi)<br>Sample programs for the Raspberry Pi Zero W version of the CM, written in Python. The exercise line-up mirrors the Arduino one: Exercise 1 (1.1–1.2), Exercise 2 (2.1–2.4), Exercise 3 (3.1–3.2).
+- [**Zero2Cam**](https://github.com/RumiCar-group/RumiCar/tree/master/Zero2Cam)<br>Signpost for the RumiCar with a Raspberry Pi Zero 2 W and a Camera Module 2. The software lives in the separate [**RumiCar-Zero2Cam**](https://github.com/RumiCar-group/RumiCar-Zero2Cam) repository (C++ on the car, a C# driving-manager app on the PC); write the SD-card image from its [Releases](https://github.com/RumiCar-group/RumiCar-Zero2Cam/releases) and the car drives. The PC shows the status and the camera image, records them, and pushes improved decision data back to the car. The wiring is the same as the Raspberry Pi Zero W CM.
 - [**ハンズオン用テキスト (hands-on text)**](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)<br>The hands-on textbook (Japanese): RumiCar's history and mechanics, and how to run the sample programs. It is a PDF of about 15 MB; GitHub may fail to preview it, so download it first.
 - [**教育機関向け追加課題 (extra exercises for schools)**](https://github.com/RumiCar-group/RumiCar/tree/master/%E6%95%99%E8%82%B2%E6%A9%9F%E9%96%A2%E5%90%91%E3%81%91%E8%BF%BD%E5%8A%A0%E8%AA%B2%E9%A1%8C)<br>Additional assignments for classes and seminars that use RumiCar as teaching material — research-project seeds and group-work tasks that push students to think deeper and build better algorithms.
 - [**開発用資料 (build documentation)**](https://github.com/RumiCar-group/RumiCar/tree/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99)<br>Documentation for building your own RumiCar vehicle or CM (Japanese).
@@ -102,6 +103,7 @@ Several CMs are supported, depending on what you want to do:
 | **Arduino Nano** | C++ | The standard starting point |
 | **ESP32** | C++ | Wi-Fi / Bluetooth / BLE, neural networks (advanced) |
 | **Raspberry Pi Zero W** | Python | Image recognition and AI (advanced) |
+| **Raspberry Pi Zero 2 W + camera** | C++ (car) / C# (PC) | Autonomous driving with the camera image streamed to and recorded on the PC, where the decision data is improved. Distributed as an SD-card image → [RumiCar-Zero2Cam](https://github.com/RumiCar-group/RumiCar-Zero2Cam) (same wiring as the Zero W CM) |
 | **Obniz** | — | Covered in the pin-assignment sheet |
 
 Wiring diagrams, the pin-assignment sheet, and the build/verification guides are in the [build documentation folder](https://github.com/RumiCar-group/RumiCar/tree/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99) described above. If you build your own CM, follow the pin-assignment sheet so programs stay compatible.
@@ -129,4 +131,4 @@ Issues and pull requests are welcome **in English or Japanese**.
 
 ---
 
-*Original English translation assistance: Emi Ito. Updated 2026-08-07 to match the current Japanese README.*
+*Original English translation assistance: Emi Ito. Updated 2026-10-20 to match the current Japanese README.*

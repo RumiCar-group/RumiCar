@@ -39,6 +39,7 @@
 コンピュータモジュールの種類によりプログラムや使用コンピュータ言語が異なります。
 Arduino Nano と ESP32 の場合はフォルダArduinoAndESP32をお使いください。
 Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Raspiはコンピュータ言語はPythonです。
+Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2Cam](https://github.com/RumiCar-group/RumiCar-Zero2Cam) をお使いください（SD カードイメージを書き込むだけで走ります。案内は [Zero2Cam](Zero2Cam/README.md) フォルダ）。
 
 画像はYouTubeへのリンクです。クリックしてご覧ください。
 
@@ -116,6 +117,7 @@ Raspberry Pi Zero W の場合はフォルダRasPiをお使いください。Rasp
    - **Exercise-3 自律走行基礎**
      - **Exercise-3.1 安全に停止する車**   
      - **Exercise-3.2 市街地を走る車**
+- **[Zero2Cam](https://github.com/RumiCar-group/RumiCar/tree/master/Zero2Cam)フォルダ**<br>Raspberry Pi Zero 2 W ＋ Camera Module 2 を搭載した RumiCar の案内です。プログラム本体は別リポジトリ [**RumiCar-Zero2Cam**](https://github.com/RumiCar-group/RumiCar-Zero2Cam)（車載は C++、PC の走行管理アプリは C#）にあり、[Releases](https://github.com/RumiCar-group/RumiCar-Zero2Cam/releases) の SD カードイメージを書き込むだけで走ります。PC から状態と車載カメラの画像を見ながら収録し、判断データを改良して車に送れます。配線はラズパイ Zero W 版 CM と同じです。
  - **[ハンズオン用テキスト](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダ**<br>RumiCarのハンズオン用テキストが保存されているフォルダです。RumiCarの歴史や仕組み、サンプルプログラムを使ってRumiCarを動作させる方法や例が載っています。ハンズオン用テキストはPDF形式で約15MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。
 - **[教育機関向け追加課題](https://github.com/RumiCar-group/RumiCar/tree/master/%E6%95%99%E8%82%B2%E6%A9%9F%E9%96%A2%E5%90%91%E3%81%91%E8%BF%BD%E5%8A%A0%E8%AA%B2%E9%A1%8C)フォルダ**<br>RumiCarを教材として教育機関にて授業や演習で利用する場合の追加課題です。Rumicarハンズオンの資料はRumiCarの仕組みや構成を学べるように作られています。学生が自ら更に深く考えて課題を克服し、より良いアルゴリズムを開発できるように研究課題の基礎やグループワークに使えるように追加の課題をまとめました。是非ご利用ください。
 - **[開発用資料](https://github.com/RumiCar-group/RumiCar/tree/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99)フォルダ**<br>RumiCarの車体やCMを自作する場合の開発用資料です。
@@ -147,6 +149,7 @@ CM は用途に応じて複数の選択肢があります。
 | **Arduino Nano** | C++ | 基本構成。これから始める方向け |
 | **ESP32** | C++ | Wi-Fi / Bluetooth・BLE 連携、ニューラルネットワーク等（上級者向け） |
 | **Raspberry Pi Zero W** | Python | 画像認識・AI 等（上級者向け） |
+| **Raspberry Pi Zero 2 W ＋ カメラ** | C++（車載）／C#（PC） | カメラ画像を PC に送って収録し、判断データを改良する自動運転。SD カードイメージで配布 → [RumiCar-Zero2Cam](https://github.com/RumiCar-group/RumiCar-Zero2Cam)（配線は Zero W 版と同じ） |
 | **Obniz** | — | ピンアサイン表に対応表を掲載 |
 
 結線図・ピンアサイン表・「RumiCar の作り方」「RumiCar の動作確認方法」は、上の「フォルダの説明」にある[開発用資料フォルダ](https://github.com/RumiCar-group/RumiCar/tree/master/%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99)にあります。自作される場合は、プログラムの互換性確保のため、ピンアサイン表に従って結線してください。
