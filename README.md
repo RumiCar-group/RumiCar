@@ -77,7 +77,7 @@ Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2
 
 ### フォルダの説明
 
-- [**ArduinoAndESP32**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)フォルダ<br>RumiCarのコンピュータモジュール(CM)のArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラム（Exercise、Exercise-1.1〜3.2）は、RumiCarライブラリ（v0.4.0以降）のスケッチ例に入っています。Arduino IDEの「ファイル」→「スケッチ例」→「RumiCar」から開いてください。このフォルダには上級編（Exercise-A2.3など）とサンプルプログラムがあります。RumiCarハンズオン用の資料は[**ハンズオン用テキスト**](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダの下に保存されていますのでまずそちらを参照ください。
+- [**ArduinoAndESP32**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)フォルダ<br>RumiCarのコンピュータモジュール(CM)のArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラム（Exercise、Exercise-1.1〜4.2）は、RumiCarライブラリ（v0.5.0以降。Exercise-4 はv0.5.0から）のスケッチ例に入っています。Arduino IDEの「ファイル」→「スケッチ例」→「RumiCar」から開いてください。このフォルダには上級編（Exercise-A2.3など）とサンプルプログラムがあります。RumiCarハンズオン用の資料は[**ハンズオン用テキスト**](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダの下に保存されていますのでまずそちらを参照ください。
 
   - **Exercise-1 距離を測ってみよう！**<br>RumiCarには車体の前方に3個のレーザー測距モジュールを搭載しています。レーザー測距モジュールは人体に無害のレーザー光線を対象物に当て、その反射光が戻ってくるまでの***時間***を計測することによって距離を測定します。音速はマッハと呼ばれ時速1000km以上の速度ですが、光の速さはその音速の***88万倍***も速いです。その光が反射して返ってくるまでのとても短い時間を計って距離を計測するなんて凄いですね。
   
@@ -92,6 +92,9 @@ Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2
   - **Exercise-3 自律走行基礎**<br>自律走行の基礎としてセンサ等が取得した情報を元に判断してRumiCarを制御してみます。前方の障害物や左右の壁などの距離を測定し、停止したり左右にハンドルを切りながらRumiCarを走行させてみます。
     - **Exercise-3.1 安全に停止する車**<br>前方に障害物を発見して安全に停止する車を考えます。RumiCarが直進中に前方に障害物を発見したら停止し、障害物が無くなったら走行そ再開します。障害物が近づいてきたら、安全のために後進します。あなたの手を障害物と仮定してRumiCarがあなたの手にぶつからずに停止するか試してみましょう。RumiCarが停止中にあなたの手をRumiCarに近づけたら安全確保のためにRumiCarが後進しますか？
     - **Exercise-3.2 市街地を走る車**<br>このExerciseでは実際に走行コースを設置してRumiCarを走らせます。左右の壁や前方の障害物を検知しながらRumiCarが走行します。
+  - **Exercise-4 AIと一緒にプログラムを改良しよう**<br>やりたいことを日本語で伝えて、AIコーディングエージェント（教材ではGoogleのAntigravity CLI）にスケッチを書き換えてもらいます。方針を考えるのは人、書くのはAI、確かめるのは人。スケッチ例のフォルダにはAIへの約束を書いた`AGENTS.md`が同梱されていて、「名前を付けて保存」すると一緒にコピーされます。解答例（`Exercise-4.1-Answer`、`Exercise-4.2-Answer`）もスケッチ例にあります。
+    - **Exercise-4.1 スリップしない前進と後進**<br>Exercise-2.3の発展問題です。「加減速をもう少しスムースにして」のように頼み、AIが書き換えた差分を読んで承認し、実機で確かめます。
+    - **Exercise-4.2 はまったら切り返す車**<br>Exercise-3.2の車はカーブで壁に斜めに当たると前後に小刻みに動くだけで抜け出せません。「はまったことをどう知るか」（前後切替の回数、距離が変わらない、三方が近い）と「ハンドルを切り返して脱出する手順」を自分で考えてからAIに頼みます。
 - **[ESP32](https://github.com/RumiCar-group/RumiCar/tree/master/ESP32)フォルダ**<br>RumiCarのCMのうち、ESP32はWiFiやBluetoothなどの通信機能を内蔵しています。ここではESP32のBluetooth機能を使ってRumiCarのセンサ測距値を無線で取得して表示させたり、RumiCarをワイヤレスで制御するサンプルプログラムが入っています。
      - **BLEフォルダ**<BR>Bluetooth Low Energy(BLE)での通信。RumiCarのESP32版CMに搭載されているBLEを使ってスマホ(iPhone)と通信してみましょう。3個の測距モジュールでの距離計測値をiPhoneのBLE Scannerとのアプリで表示させています。マルチコネクトが可能なので、個別の機器と接続や切断が不要ですので、一度に複数の機器から1台のRumiCarに接続することができます。展示会などで来場者に各自のスマホからRumiCarに接続してもらい、自分のスマホで計測値を表示させて楽しんでいただくことなどが可能です。
     - **Bluetoothフォルダ**<br>Exercise-1.2はRumiCar ESP32版CM用Bluetoothシリアル通信のサンプルプログラムです。RumiCarをWindows PCとBluetoothで接続してRumiCarのレーザー測距モジュールの測定距離値をパソコンに表示したり、パソコンからコマンドを送ってRumiCarを操作することができます。
