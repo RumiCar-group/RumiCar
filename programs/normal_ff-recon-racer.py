@@ -174,7 +174,7 @@ def loop():
         elif okR==1:
             ovt=0-1
         if told==0 and ovt!=0:
-            Serial.println("traffic ahead: passing on the open side")
+            print("traffic ahead: passing on the open side")
             told=1
     # --- 操舵の向き(壁回避 → 抜き → センタリング)を決める。st=方位デッドレコニング用の意図方向 ---
     turning=1
@@ -243,4 +243,4 @@ def loop():
         if LAPB<1:
             LAPB=1
         phase=1
-        Serial.println("course learned: " + LAPB + " zones")
+        print("course learned:", LAPB, "zones")

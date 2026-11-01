@@ -225,7 +225,7 @@ def loop():
                     w[i]=0.0
                     i=i+1
                 lp=1
-                Serial.println("localizer ready: " + LAPBF + " bins (loop closed)")
+                print("localizer ready:", LAPBF, "bins (loop closed)")
             # 再アンカー: sl を「最小からの走行ぶん」へ (=真スタートから今までの距離)。信念もそこへ。
             sl=sl-mminSl
             bb=sl//BLF
@@ -394,4 +394,4 @@ def loop():
             betaEst=0.7*betaEst+0.3*braw
             betaN=betaN+1
         if (sc%10)==0:
-            Serial.println("pos=bin " + round(estb) + "/" + LAPBF + " conf=" + round(conf*100) + "%")
+            print("pos=bin", round(estb), "/", LAPBF, "conf=", round(conf*100), "%")
