@@ -1,16 +1,14 @@
 import sys
 sys.path.append('..')
 
-import RumiCar
+from RumiCar import *
 import time
 
-if __name__ == "__main__":
-    while True:
-        try:
-            RumiCar.rc_drive(RumiCar.FORWARD, 900000)
-            RumiCar.rc_steer(RumiCar.RIGHT)
-            time.sleep(3)
-            RumiCar.rc_steer(RumiCar.LEFT)
-            time.sleep(3)
-        except KeyboardInterrupt:
-            RumiCar.rc_clear()
+# 走行と操舵を組み合わせてジグザグに走る
+RC_setup()
+while True:
+    RC_drive(FORWARD, 255)
+    RC_steer(RIGHT)
+    time.sleep(0.5)
+    RC_steer(LEFT)
+    time.sleep(0.5)

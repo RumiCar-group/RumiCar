@@ -1,19 +1,15 @@
 import sys
 sys.path.append('..')
 
-import RumiCar
+from RumiCar import *
 import time
 
-if __name__ == "__main__":
-    while True:
-        try:
-            RumiCar.rc_drive(RumiCar.FORWARD, 900000)
-            time.sleep(3)
-            RumiCar.rc_drive(RumiCar.FORWARD, 700000)
-            time.sleep(3)
-            RumiCar.rc_drive(RumiCar.FORWARD, 500000)
-            time.sleep(3)
-            RumiCar.rc_drive(RumiCar.FORWARD, 300000)
-            time.sleep(3)
-        except KeyboardInterrupt:
-            RumiCar.rc_clear()
+# 3 段階の速さで前進する (255 = 全開, 150 = 全開の約 6 割の信号)
+RC_setup()
+while True:
+    RC_drive(FORWARD, 255)
+    time.sleep(0.5)
+    RC_drive(FORWARD, 200)
+    time.sleep(0.5)
+    RC_drive(FORWARD, 150)
+    time.sleep(0.5)

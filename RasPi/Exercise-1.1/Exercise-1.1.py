@@ -1,7 +1,10 @@
 import sys
 sys.path.append('..')
 
-import RumiCar
+from RumiCar import *
 
-if __name__ == "__main__":
-    RumiCar.read_one_sensor()
+# 前方のセンサーの距離を表示する
+# (0〜200 = mm, -1 = タイムアウト, -3 = 20 cm より先には何もない)
+RC_setup()
+while True:
+    print(RC_read(CENTER))
