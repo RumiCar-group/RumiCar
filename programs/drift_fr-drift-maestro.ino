@@ -53,7 +53,7 @@ void loop() {
   if (escRec > 0) { escRec = escRec - 1; RC_steer(CENTER); RC_drive(FORWARD, 90); cur = 90; return; }
 
   // [防御] 後方に追走車 → 約3秒防御を維持 (横に並ばれ後方レイが見失っても解かない)
-  int B = RC_read(BACK);
+  int B = sensor3.readRangeSingleMillimeters();   // 後方(任意装備)の生読取。未装備/範囲外は 8190 (RC_read(REAR) は卓上で 200mm 打ち切り=-3 になるため生値で 650mm を見る)
   if (B >= 0 && B < 650) defOn = 60; else if (defOn > 0) defOn = defOn - 1;
   defT = defT + 1;
   if (DEF_STYLE > 0 && defOn > 0) {

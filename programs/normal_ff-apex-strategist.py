@@ -303,7 +303,7 @@ def loop():
                     p=p+1
                 phase=1
                 armed=0
-                Serial.println("plan ready: " + LAPB + " zones (max curvature " + round(maxcr*100) + "%)")
+                print("plan ready:", LAPB, "zones (max curvature", round(maxcr*100), "%)")
     # ── 本番: 純オドメトリで毎周 sl-=LAPLEN 再アンカー。原点はスタート(tick0)のまま=地図と同一原点で
     #    整合(地図は phase0 の sl-from-start で構築・照会も同じ sl→整合。指紋シフトはしない)。骨格=
     #    エンコーダ距離で周回内高精度(AO10・0.30bin)、周回境界だけ LAPLEN で畳む(ドリフト有界)。──

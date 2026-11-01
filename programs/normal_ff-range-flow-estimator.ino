@@ -68,7 +68,7 @@ void loop() {
   else RC_drive(FORWARD, pwm);
 
   // ---- 姿勢推定(研究): レンジフロー ----  距離は m に直す。範囲外/未装備は無効。
-  int B = RC_read(BACK);                 // 後方(任意装備)。未装備は -2
+  int B = RC_read(REAR);                 // 後方(任意装備)。未装備は -1 (フルスケールは打ち切り無し)
   double enc = RC_wheel_speed(REAR);     // 車輪面速度[m/s](任意装備)。未装備は -1
   double dL = L / 1000.0; double dC = C / 1000.0; double dR = R / 1000.0; double dB = B / 1000.0;
   t = t + 1;
