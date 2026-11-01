@@ -7,19 +7,13 @@
 # Azure IoT Hubサンプル
 # Desired propety でラズパイを制御
 
-import os
+import sys
+sys.path.append('..')
+
 import asyncio
 from six.moves import input
-import threading
 from azure.iot.device.aio import IoTHubDeviceClient
-import pigpio
-
-# DRV8835のピン設定
-BIN1 = 18
-BIN2 = 13
-
-# PWM周波数
-BIN_FREQUENCY = 960
+from RumiCar import *
 
 async def main():
     # The connection string for a device
@@ -27,11 +21,7 @@ async def main():
     # The client object is used to interact with your Azure IoT hub.
     device_client = IoTHubDeviceClient.create_from_connection_string(conn_str)
 
-    pi = pigpio.pi()
-
-    # 各GPIOの初期化
-    pi.set_mode(BIN1, pigpio.OUTPUT)
-    pi.set_mode(BIN2, pigpio.OUTPUT)
+    RC_setup()
 
     # connect the client.
     await device_client.connect()
@@ -45,11 +35,9 @@ async def main():
             command = patch['command']
 
             if command == 'stop':
-                pi.hardware_PWM(BIN1, BIN_FREQUENCY, 0)
-                pi.hardware_PWM(BIN2, BIN_FREQUENCY, 0)
+                RC_drive(FREE, 0)
             elif command == 'forward':
-                pi.hardware_PWM(BIN1, BIN_FREQUENCY, 900000)
-                pi.hardware_PWM(BIN2, BIN_FREQUENCY, 0)
+                RC_drive(FORWARD, 230)
 
     # define behavior for halting the application
     def stdin_listener():
