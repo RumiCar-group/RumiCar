@@ -21,7 +21,7 @@ void loop() {
   RC_steer(CENTER);
 
   if (phase == 0) {                   // 助走 (TC で 18m/s まで)
-    int pwm = (gs + 5) / 110 * 255;
+    int pwm = (int)((gs + 5) / 110 * 255 + 0.5);   // +0.5 で四捨五入 (RC_drive は 0 方向へ切り捨てる＝Arduino の int と同じ)
     RC_drive(FORWARD, pwm);
     if (gs > 18) { phase = 1; odo = 0; }
     return;
@@ -33,7 +33,7 @@ void loop() {
     return;
   }
   if (phase == 2) {                   // 助走 (再び)
-    int pwm = (gs + 5) / 110 * 255;
+    int pwm = (int)((gs + 5) / 110 * 255 + 0.5);   // +0.5 で四捨五入 (RC_drive は 0 方向へ切り捨てる＝Arduino の int と同じ)
     RC_drive(FORWARD, pwm);
     if (gs > 18) { phase = 3; odo = 0; }
     return;

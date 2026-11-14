@@ -397,4 +397,4 @@ def loop():
         if brake==1:
             RC_drive(BRAKE,BRK)
         else:
-            RC_drive(FORWARD,pwm)
+            RC_drive(FORWARD,int(pwm+0.5))   # pwm は加速ガバナで小数になる。+0.5 で四捨五入 (RC_drive は 0 方向へ切り捨てる＝RasPi の int() と同じ)
