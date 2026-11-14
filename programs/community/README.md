@@ -26,8 +26,9 @@
 - **上書きせず別名で**追加してください (同名でもファイルを増やせます)
 - 不要になったファイルの**削除は GitHub 上**で行います
 - 実車でも動くよう Arduino C++ (.ino) 推奨。Python (.py) / JavaScript (.js) も可
-- 走行 API: `RC_setup()` / `RC_drive(FORWARD, pwm)` / `RC_steer(LEFT/CENTER/RIGHT)` /
-  `sensor0/1/2.readRangeSingleMillimeters()`
+- 走行 API: `RC_setup()` / `RC_drive(FORWARD, pwm)` / `RC_steer(LEFT/CENTER/RIGHT[, 強さ 0〜255])` /
+  `sensor0/1/2.readRangeSingleMillimeters()` (`RC_steer` の強さは省くと全舵 (255 と同じ)・0 は CENTER と同じ・
+  CENTER では無視。RumiCar-lib v0.6.0・RasPi RumiCar.py 0.6.0・シミュレータ v11.0.0 以降)
 
 ## 戦術プログラム — 「速さだけが競争ではない」(by Fable 5)
 

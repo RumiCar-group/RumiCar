@@ -4,9 +4,9 @@
 引き出すよう調整した走行プログラムです。C 版 (`.ino`, Arduino C++ 形式) は **実機 RumiCar でも動作**します。
 Python 版 (`.py`) のうち **卓上の Wall Hugger 3 本** (ノーマル FR/4WD/FF) は RumiCar ライブラリの API
 (`RC_setup`／`RC_steer`／`RC_drive`／`RC_read`) だけで書いてあり、Zero2Cam の形 (`def setup()`／`def loop()`) なので
-**RumiCar-Zero2Cam の走行プログラムとしてそのまま使えます**。Raspberry Pi Zero 版 (`RasPi/RumiCar.py`) で動かすときは、
-末尾に `setup()` と `while True: loop()` を書き足してください (回数で数える定数 BACKT／SEEK／HOLD は loop の周期に依存するので、
-周期の違う実機では見直してください)。競技 (フルスケール) の Python 版 3 本 (Recon Racer／Self-Locator／Apex Strategist) は
+**RumiCar-Zero2Cam の走行プログラムとしてそのまま使えます**。Raspberry Pi Zero 版 (`RasPi/RumiCar.py` 0.6.0 以降) でも
+書き換えずに実行コマンドでそのまま動きます (このフォルダで `python3 ../RasPi/RumiCar.py normal_fr-wall-hugger-python.py`。
+`setup()` を 1 回、`loop()` を 50 ms ごと＝シミュレータ・Zero2Cam と同じ 20 Hz で呼び、回数で数える定数 BACKT／SEEK／HOLD はこの周期を前提にしています)。競技 (フルスケール) の Python 版 3 本 (Recon Racer／Self-Locator／Apex Strategist) は
 車輪エンコーダ (`RC_wheel_speed`) など**シミュレータ専用**の機能を使います。
 tuned by **Fable 5**。
 

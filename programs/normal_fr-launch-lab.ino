@@ -35,7 +35,7 @@ void loop() {
     return;
   }
   if (phase == 2) {                   // ② トラクション制御ローンチ
-    int pwm = (gs + 5) / 110 * 255;   // 「接地速度+5m/s」を狙う (110=フルスケール最高速)
+    int pwm = (int)((gs + 5) / 110 * 255 + 0.5);   // 「接地速度+5m/s」を狙う (110=フルスケール最高速)。+0.5 で四捨五入 (RC_drive は 0 方向へ切り捨てる＝Arduino の int と同じ)
     RC_drive(FORWARD, pwm);           //   → 駆動力が摩擦ピーク内に収まりスリップしない
     odo = odo + gs / 20;
     if (t > 50) { Serial.println(odo); RC_setup(); odo = 0; t = 0; phase = 3; }
