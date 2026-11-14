@@ -1,11 +1,14 @@
-import sys
-sys.path.append('..')
-
 from RumiCar import *
 
 # 道なりに走る: 3 つのセンサーで速さと向きを決める
-RC_setup()
-while True:
+# 実行: python3 ../RumiCar.py Exercise-3.2.py
+
+
+def setup():
+    RC_setup()
+
+
+def loop():
     s0 = RC_read(LEFT)
     s1 = RC_read(CENTER)
     s2 = RC_read(RIGHT)

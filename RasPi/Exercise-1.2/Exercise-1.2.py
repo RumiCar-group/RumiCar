@@ -1,11 +1,14 @@
-import sys
-sys.path.append('..')
-
 from RumiCar import *
 
 # 3 つのセンサーの距離を 1 行に表示する
-RC_setup()
-while True:
+# 実行: python3 ../RumiCar.py Exercise-1.2.py
+
+
+def setup():
+    RC_setup()
+
+
+def loop():
     s0 = RC_read(LEFT)
     s1 = RC_read(CENTER)
     s2 = RC_read(RIGHT)
