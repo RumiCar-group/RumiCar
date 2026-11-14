@@ -77,7 +77,7 @@ Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2
 
 ### フォルダの説明
 
-- [**ArduinoAndESP32**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)フォルダ<br>RumiCarのコンピュータモジュール(CM)のArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラム（Exercise、Exercise-1.1〜4.2）は、RumiCarライブラリ（v0.5.0以降。Exercise-4 はv0.5.0から）のスケッチ例に入っています。Arduino IDEの「ファイル」→「スケッチ例」→「RumiCar」から開いてください。このフォルダには上級編（Exercise-A2.3など）とサンプルプログラムがあります。RumiCarハンズオン用の資料は[**ハンズオン用テキスト**](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダの下に保存されていますのでまずそちらを参照ください。
+- [**ArduinoAndESP32**](https://github.com/RumiCar-group/RumiCar/tree/master/ArduinoAndESP32)フォルダ<br>RumiCarのコンピュータモジュール(CM)のArduino Nano版とESP32版用のサンプルプルプグラムです。<br>ハンズオンで使用するプログラム（Exercise、Exercise-1.1〜4.2）は、RumiCarライブラリ（v0.6.0以降。Exercise-4 はv0.5.0から、Exercise-2.5・3.3 とハンドルの強さ（`RC_steer` の第2引数）はv0.6.0から）のスケッチ例に入っています。Arduino IDEの「ファイル」→「スケッチ例」→「RumiCar」から開いてください。このフォルダには上級編（Exercise-A2.3など）とサンプルプログラムがあります。RumiCarハンズオン用の資料は[**ハンズオン用テキスト**](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダの下に保存されていますのでまずそちらを参照ください。
 
   - **Exercise-1 距離を測ってみよう！**<br>RumiCarには車体の前方に3個のレーザー測距モジュールを搭載しています。レーザー測距モジュールは人体に無害のレーザー光線を対象物に当て、その反射光が戻ってくるまでの***時間***を計測することによって距離を測定します。音速はマッハと呼ばれ時速1000km以上の速度ですが、光の速さはその音速の***88万倍***も速いです。その光が反射して返ってくるまでのとても短い時間を計って距離を計測するなんて凄いですね。
   
@@ -89,9 +89,11 @@ Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2
     - **Exercise-2.2 速度制御**<br>RumiCarの走る速度をコントロールしてみましょう。コンピュータモジュールからの命令によって走行用車輪、すなわち後ろのタイヤを回転させます。タイヤの回転速度を変化させることによりRumiCarの走るスピードを変化させることができます。ここではプログラムを使ってタイヤの回転速度を段階的に変化させます。モータの回転音が変わりますのでタイヤの回転を見るのと同時にモータの音の変化にも気をつけてみてください。
     - **Exercise-2.3 前進と後進**<br>実際の自動車は前に進んだり後ろに下がったりします。RumiCarも同様に前進や後進ができます。プログラムを使ってRumiCarを前進させたり後進させてみましょう。RumiCarを走らせる場所が無い時は、RumiCarを手にしっかり持って後ろのタイヤが前進方向に回転したり、後進方向に回転するのを確認しましょう。
     - **Exercise-2.4 ジグザグ走行**<br>RumiCarをジグザグに走行させてみましょう。ハンドルを左右に切りながら前進します。RumiCarを走らせられる場所が無い場合はRumiCarをしっかり手に持って期待通りの動きになっていることを確認しましょう。
+    - **Exercise-2.5 ハンドルの強さを変えてみよう**<br>`RC_steer` には2つ目の値でハンドルの強さ（0〜255）を付けられます。強さ255（いちばん強い）と128（半分）で左右に切り、タイヤの動きの違いを見てみましょう。ハンドルはサーボではなくDCモーターなので、同じ強さでもどれだけ曲がるかは車体や電池で変わります。強さは「3割増し」「半分」のような目安として使います。
   - **Exercise-3 自律走行基礎**<br>自律走行の基礎としてセンサ等が取得した情報を元に判断してRumiCarを制御してみます。前方の障害物や左右の壁などの距離を測定し、停止したり左右にハンドルを切りながらRumiCarを走行させてみます。
     - **Exercise-3.1 安全に停止する車**<br>前方に障害物を発見して安全に停止する車を考えます。RumiCarが直進中に前方に障害物を発見したら停止し、障害物が無くなったら走行そ再開します。障害物が近づいてきたら、安全のために後進します。あなたの手を障害物と仮定してRumiCarがあなたの手にぶつからずに停止するか試してみましょう。RumiCarが停止中にあなたの手をRumiCarに近づけたら安全確保のためにRumiCarが後進しますか？
     - **Exercise-3.2 市街地を走る車**<br>このExerciseでは実際に走行コースを設置してRumiCarを走らせます。左右の壁や前方の障害物を検知しながらRumiCarが走行します。
+    - **Exercise-3.3 なめらかに走る車**<br>Exercise-3.2の車は左右どちらかに必ずハンドルを切るので蛇行します。左右の差が小さければまっすぐ走り、差が大きければ広い側へ切るようにして、ハンドルの強さを走りながら調整します（効かなければ1.3倍、行き過ぎたら半分）。シリアルモニタに表示される強さ（Power）の変化も見てみましょう。
   - **Exercise-4 AIと一緒にプログラムを改良しよう**<br>やりたいことを日本語で伝えて、AIコーディングエージェント（教材ではGoogleのAntigravity CLI）にスケッチを書き換えてもらいます。方針を考えるのは人、書くのはAI、確かめるのは人。スケッチ例のフォルダにはAIへの約束を書いた`AGENTS.md`が同梱されていて、「名前を付けて保存」すると一緒にコピーされます。解答例（`Exercise-4.1-Answer`、`Exercise-4.2-Answer`）もスケッチ例にあります。
     - **Exercise-4.1 スリップしない前進と後進**<br>Exercise-2.3の発展問題です。「加減速をもう少しスムースにして」のように頼み、AIが書き換えた差分を読んで承認し、実機で確かめます。
     - **Exercise-4.2 はまったら切り返す車**<br>Exercise-3.2の車はカーブで壁に斜めに当たると前後に小刻みに動くだけで抜け出せません。「はまったことをどう知るか」（前後切替の回数、距離が変わらない、三方が近い）と「ハンドルを切り返して脱出する手順」を自分で考えてからAIに頼みます。
@@ -108,7 +110,7 @@ Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2
       - サンプルプログラムはコマンド「r」、「l」、「f」、「b」に対応しています。それぞれ右、左、前進、後進を0.5秒実行します。コマンドは全て小文字です。 Arduino IDEのシリアルモニタの送信でコマンドを送ります。
       - ケーブル接続が不要なので、走行中に実際の測距データをPC側で取得したり、PC側からコマンドを送ってラジコンのような操作をすることができるようになります。
 
-- **[RasPi](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi)フォルダ**<br>RumiCarのコンピュータモジュールのラズパイ版のライブラリ（RumiCar.py）とサンプルプログラムです。Pythonで記述されています。関数名・値の意味・戻り値はArduino版のライブラリ（RumiCar-lib）と同じで、Exercise-1.1〜3.2の構成もArduino版と揃えています。ラズパイ版CMを使ってRumiCarを動かす場合にお使いください。
+- **[RasPi](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi)フォルダ**<br>RumiCarのコンピュータモジュールのラズパイ版のライブラリ（RumiCar.py）とサンプルプログラムです。Pythonで記述されています。関数名・値の意味・戻り値はArduino版のライブラリ（RumiCar-lib v0.6.0。ハンドルの強さを含む）と同じで、Exercise-1.1〜3.3の構成もArduino版と揃えています。プログラムはArduinoと同じく`setup()`と`loop()`で書き、`python3 ../RumiCar.py Exercise-1.1.py`のように動かします。ラズパイ版CMを使ってRumiCarを動かす場合にお使いください。
   - **Exercise-1 距離を測ってみよう！**
     - **Exercise-1.1 中央のセンサで測距しよう！**
     - **Exercise-1.2 3つのセンサで測距だ！**   
@@ -117,9 +119,11 @@ Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2
     - **Exercise-2.2 速度制御**
     - **Exercise-2.3 前進と後進**
     - **Exercise-2.4 ジグザグ走行**  
+    - **Exercise-2.5 ハンドルの強さを変えてみよう**
    - **Exercise-3 自律走行基礎**
      - **Exercise-3.1 安全に停止する車**   
      - **Exercise-3.2 市街地を走る車**
+     - **Exercise-3.3 なめらかに走る車**
 - **[Zero2Cam](https://github.com/RumiCar-group/RumiCar/tree/master/Zero2Cam)フォルダ**<br>Raspberry Pi Zero 2 W ＋ Camera Module 2 を搭載した RumiCar の案内です。プログラム本体は別リポジトリ [**RumiCar-Zero2Cam**](https://github.com/RumiCar-group/RumiCar-Zero2Cam)（車載は C++、PC の走行管理アプリは C#）にあり、[Releases](https://github.com/RumiCar-group/RumiCar-Zero2Cam/releases) の SD カードイメージを書き込むだけで走ります。PC から状態と車載カメラの画像を見ながら収録し、判断データを改良して車に送れます。配線はラズパイ Zero W 版 CM と同じです。
  - **[ハンズオン用テキスト](https://github.com/RumiCar-group/RumiCar/tree/master/Hands-on%20text)フォルダ**<br>RumiCarのハンズオン用テキスト（テキスト3.1。日本語版と英語版のPDF）が保存されているフォルダです。RumiCarの歴史や仕組み、サンプルプログラムを使ってRumiCarを動作させる方法や例、AIと一緒にプログラムを改良するExercise-4（声でAIに頼む /voice の使い方を含む）が載っています。ハンズオン用テキストはPDF形式で約10MBほどのファイルサイズです。GitHubから直接参照しようとすると表示できないことがあるようです。一旦ダウンロードしていただいてからご覧ください。
 - **[教育機関向け追加課題](https://github.com/RumiCar-group/RumiCar/tree/master/%E6%95%99%E8%82%B2%E6%A9%9F%E9%96%A2%E5%90%91%E3%81%91%E8%BF%BD%E5%8A%A0%E8%AA%B2%E9%A1%8C)フォルダ**<br>RumiCarを教材として教育機関にて授業や演習で利用する場合の追加課題です。Rumicarハンズオンの資料はRumiCarの仕組みや構成を学べるように作られています。学生が自ら更に深く考えて課題を克服し、より良いアルゴリズムを開発できるように研究課題の基礎やグループワークに使えるように追加の課題をまとめました。是非ご利用ください。
