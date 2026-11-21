@@ -14,18 +14,18 @@ def loop():
     s2 = RC_read(RIGHT)
     print("Sensor0:", s0, " Sensor1:", s1, " Sensor2:", s2)
 
-    if s0 == -3:            # 20 cm より先には何もない = 遠い
-        s0 = 999
+    if s0 == -3:            # -3: 範囲外 = 遠い (-3 は数としては最小なので、比較の前にどの距離 (最大 2000) よりも大きい値に置き換える)
+        s0 = 9999
     if s1 == -3:
-        s1 = 999
+        s1 = 9999
     if s2 == -3:
-        s2 = 999
+        s2 = 9999
 
     if s1 < 100:
         RC_drive(REVERSE, 150)
     elif s1 < 150:
         RC_drive(FORWARD, 150)
-    elif s1 < 200:
+    elif s1 < 250:
         RC_drive(FORWARD, 200)
     else:
         RC_drive(FORWARD, 255)

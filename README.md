@@ -110,7 +110,7 @@ Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2
       - サンプルプログラムはコマンド「r」、「l」、「f」、「b」に対応しています。それぞれ右、左、前進、後進を0.5秒実行します。コマンドは全て小文字です。 Arduino IDEのシリアルモニタの送信でコマンドを送ります。
       - ケーブル接続が不要なので、走行中に実際の測距データをPC側で取得したり、PC側からコマンドを送ってラジコンのような操作をすることができるようになります。
 
-- **[RasPi](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi)フォルダ**<br>RumiCarのコンピュータモジュールのラズパイ版のライブラリ（RumiCar.py）とサンプルプログラムです。Pythonで記述されています。関数名・値の意味・戻り値はArduino版のライブラリ（RumiCar-lib v0.6.0。ハンドルの強さを含む）と同じで、Exercise-1.1〜3.3の構成もArduino版と揃えています。プログラムはArduinoと同じく`setup()`と`loop()`で書き、`python3 ../RumiCar.py Exercise-1.1.py`のように動かします。ラズパイ版CMを使ってRumiCarを動かす場合にお使いください。
+- **[RasPi](https://github.com/RumiCar-group/RumiCar/tree/master/RasPi)フォルダ**<br>RumiCarのコンピュータモジュールのラズパイ版のライブラリ（RumiCar.py）とサンプルプログラムです。Pythonで記述されています。関数名・値の意味・戻り値はArduino版のライブラリ（RumiCar-lib v0.7.0。ハンドルの強さと、RC_readの上限を決めるRC_setReadLimitを含む）と同じで、Exercise-1.1〜3.3の構成もArduino版と揃えています。プログラムはArduinoと同じく`setup()`と`loop()`で書き、`python3 ../RumiCar.py Exercise-1.1.py`のように動かします。ラズパイ版CMを使ってRumiCarを動かす場合にお使いください。
   - **Exercise-1 距離を測ってみよう！**
     - **Exercise-1.1 中央のセンサで測距しよう！**
     - **Exercise-1.2 3つのセンサで測距だ！**   

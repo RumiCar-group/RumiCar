@@ -12,6 +12,7 @@ last_gap = 0            # 前回の左右の差 [mm]
 
 def setup():
     RC_setup()
+    RC_setReadLimit(200)    # RC_read が信じる距離の上限 [mm]。これより先は -3 (遠い)
 
 
 def loop():
@@ -21,7 +22,7 @@ def loop():
     s0 = RC_read(LEFT)
     s1 = RC_read(CENTER)
     s2 = RC_read(RIGHT)
-    if s0 == -3:        # -3: 20 cm 以内に何もない = 開けている
+    if s0 == -3:        # -3: 上限より先 = 開けている (-3 は数としては最小なので、先に置き換える)
         s0 = 250
     if s1 == -3:
         s1 = 250
@@ -33,7 +34,7 @@ def loop():
     if s0 == -1 or s1 == -1 or s2 == -1:
         return          # -1: センサーが応答しない。この回は何もせず、前の動きを続ける
 
-    if s1 < 100:
+    if s1 < 100:        # しきい値は setup() の上限以下にする
         RC_drive(REVERSE, 150)
     elif s1 < 150:
         RC_drive(FORWARD, 150)
