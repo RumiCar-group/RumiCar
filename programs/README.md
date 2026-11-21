@@ -3,19 +3,22 @@
 [RumiCar Simulator](https://www.rumicar.com/simulator/) 用に、各車種の物理特性を最大限に
 引き出すよう調整した走行プログラムです。C 版 (`.ino`, Arduino C++ 形式) は **実機 RumiCar でも動作**します。
 Python 版 (`.py`) のうち **卓上の Wall Hugger 3 本** (ノーマル FR/4WD/FF) は RumiCar ライブラリの API
-(`RC_setup`／`RC_steer`／`RC_drive`／`RC_read`) だけで書いてあり、Zero2Cam の形 (`def setup()`／`def loop()`) なので
-**RumiCar-Zero2Cam の走行プログラムとしてそのまま使えます**。Raspberry Pi Zero 版 (`RasPi/RumiCar.py` 0.6.0 以降) でも
+(`RC_setup`／`RC_setReadLimit`／`RC_steer`／`RC_drive`／`RC_read`) だけで書いてあり、Zero2Cam の形 (`def setup()`／`def loop()`) なので
+**RumiCar-Zero2Cam (v0.7.0 以降) の走行プログラムとしてそのまま使えます**。Raspberry Pi Zero 版 (`RasPi/RumiCar.py` 0.7.0 以降) でも
 書き換えずに実行コマンドでそのまま動きます (このフォルダで `python3 ../RasPi/RumiCar.py normal_fr-wall-hugger-python.py`。
 `setup()` を 1 回、`loop()` を 50 ms ごと＝シミュレータ・Zero2Cam と同じ 20 Hz で呼び、回数で数える定数 BACKT／SEEK／HOLD はこの周期を前提にしています)。競技 (フルスケール) の Python 版 3 本 (Recon Racer／Self-Locator／Apex Strategist) は
 車輪エンコーダ (`RC_wheel_speed`) など**シミュレータ専用**の機能を使います。
 tuned by **Fable 5**。
 
 ### Python 版 (Wall Hugger) の読み方
-`RC_read` は実機のライブラリと同じく **20 cm (200 mm) より先を見ません** (0〜200 = 距離 mm・-3 = 20 cm 以内に何もない・-1 = 読めない)。
-卓上コースの通路は 20 cm より広いので、真ん中を走ると左右とも -3 になります。そこで Python 版は **右の壁に寄って沿う**
+`RC_read` の値をどこまで信じるか (**上限**) は、プログラムが `setup()` の `RC_setReadLimit` で決めます
+(実機のライブラリ RumiCar-lib v0.7.0・`RasPi/RumiCar.py` 0.7.0 と同じ名前・同じ意味)。上限より先は `RC_read` が -3 を返します
+(0〜上限 = 距離 mm・-3 = 範囲外＝遠い・-1 = 読めない)。上限の値の決め方は、シミュレータの物理モデル解説
+[docs/physics_model.md](https://github.com/RumiCar-group/RumiCar-Simulator/blob/main/docs/physics_model.md) §12「上限の決め方」にあります。
+卓上コースの通路はこの上限より広いので、真ん中を走ると左右とも -3 になります。そこで Python 版は **右の壁に寄って沿う**
 (右の壁との距離を一定に保つ・前に壁が見えたら開いている方へ・見失ったら右へ切って探す・詰まったら後退して切り返す) 走り方です。
--3 は数としては最も小さいので、比較の前に `if d == -3: d = 999` のように「遠い」へ置き換えます。
-C 版は Arduino の教材と同じ生の値 (`sensorN.readRangeSingleMillimeters()`・打ち切りなし) と信頼区間 `CONF` を使う従来の書き方です。
+-3 は数としては最も小さいので、比較の前に「`RC_read` が返すどの距離よりも大きい値」(この 3 本は `FAR = 9999`) へ置き換えます。
+C 版は Arduino の教材と同じ生の値 (`sensorN.readRangeSingleMillimeters()`・上限の影響を受けない) と信頼区間 `CONF` を使う従来の書き方です。
 
 ## 一覧 (学習しやすいよう「単純→特性活用」の順)
 | Lv | プログラム | 車種 | 戦略 |
@@ -26,7 +29,7 @@ C 版は Arduino の教材と同じ生の値 (`sensorN.readRangeSingleMillimeter
 | Lv4 状況で技を切替 | **Drift Maestro** | ドリフト FR | 基本はグリップで自制し、行き止まり=切り返し/出口=レイトアペックス/速度過多の深いコーナー=ブレーキドリフト/追走車=ドリフトウォール、と状況で技を切り替える。 |
 | Lv5 技を切替+定数攻め | **Rally Maestro** | ドリフト 4WD | 4WDは滑らせても回頭が増えない(slipYaw小)ので回頭ドリフトは外し、切り返し/レイトアペックス/防御と重量級向け定数(早め進入・広めガード)で攻める。 |
 | Lv6 特殊を管理+技を切替 | **Lift Maestro** | ドリフト FF | 肝のスロットルレート制限(急リフト禁止)は維持しつつ、切り返し/レイトアペックス/防御を追加。FFのドリフトウォールはリフトオフで滑らせる。 |
-| Lv1 基準 (Python) | **Wall Hugger (Python)** | ノーマル FR (Python) | RC_read が 20 cm より先を見ない (-3) 実機と同じ条件で走る Python の基準プログラム。右の壁に寄って沿い、前に壁が見えたら開いている方へ、見失ったら右へ切って探し、詰まったら後退して切り返す。 |
+| Lv1 基準 (Python) | **Wall Hugger (Python)** | ノーマル FR (Python) | setup() の RC_setReadLimit で RC_read の値を信じる距離の上限を決め、上限より先は見えない (-3) 条件で走る Python の基準プログラム。右の壁に寄って沿い、前に壁が見えたら開いている方へ、見失ったら右へ切って探し、詰まったら後退して切り返す。 |
 | Lv2 強みを使う (Python) | **Wall Hugger 4WD (Python)** | ノーマル 4WD (Python) | FR 版「Wall Hugger」の土台に、4WD の弱点 (踏んだまま曲げると大回り) を抑える「曲げるときはアクセルを強く抜く」と「切り始めたら数回は切り続ける (HOLD)」を足し、沿えたら迷わず全開にする。 |
 | Lv3 弱点を補う (Python) | **Wall Hugger FF (Python)** | ノーマル FF (Python) | FR 版「Wall Hugger」の土台に、FF の弱点 (踏んだまま曲げるとほとんど曲がらない) を補う「曲げるときはアクセルを抜く」「切り続ける (HOLD)」「壁に近く寄る」「直線も少し抑える」を足す。 |
 | EX ショー演目 | **Drift Showtime** | ドリフト FR | レースではなくショー。ドーナツ→8の字→バックエントリーを「ドリフト広場」で踊り続ける。動力学モデルでこそ本領 (β>90°のテール進入)。 |
