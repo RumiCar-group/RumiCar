@@ -27,18 +27,22 @@ client = IoTHubDeviceClient.create_from_connection_string(CONNECTION_STRING)
 # Exercise-3.1 と同じ走行 (安全に止まる) をしながら、距離と制御を IoT Hub へ送る
 RC_setup()
 while True:
-    distance = RC_read(CENTER)
-    if distance == -3:          # 20 cm より先には何もない
+    distance = RC_read(CENTER)  # 送る値 (-1 / -3 もそのまま送る)
+    d = distance
+    if d == -3:                 # -3: 範囲外 = 遠い (-3 は数としては最小なので、比較の前にどの距離 (最大 2000) よりも大きい値に置き換える)
+        d = 9999
+    if d < 300:                 # 30 cm より近くに何かある
+        if d > 120:
+            RC_drive(FORWARD, 255)
+            control = 'FORWARD'
+        elif d < 80:
+            RC_drive(REVERSE, 255)
+            control = 'REVERSE'
+        else:
+            RC_drive(BRAKE, 255)
+            control = 'BRAKE'
+    else:
         RC_drive(FREE, 0)
         control = 'FREE'
-    elif distance > 120:
-        RC_drive(FORWARD, 255)
-        control = 'FORWARD'
-    elif distance < 80:
-        RC_drive(REVERSE, 255)
-        control = 'REVERSE'
-    else:
-        RC_drive(BRAKE, 255)
-        control = 'BRAKE'
     message = Message(MSG_TXT.format(distance=distance, control=control))
     client.send_message(message)

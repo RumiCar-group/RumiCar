@@ -28,7 +28,7 @@
 # SOFTWARE.
 #
 # The API (names, constants, values and return values) is the same as the
-# Arduino library RumiCar-lib v0.6.0 (https://github.com/RumiCar-group/RumiCar-lib),
+# Arduino library RumiCar-lib v0.7.0 (https://github.com/RumiCar-group/RumiCar-lib),
 # so a program written for one computer module reads the same on the other:
 #
 #   RC_setup()                 initialize the sensors and the motors (call once)
@@ -36,10 +36,17 @@
 #                                                              -> 1, or 0 for a bad argument
 #   RC_drive(direc, ipwm)      FREE / REVERSE / FORWARD / BRAKE, ipwm 0..255
 #                                                              -> 1, or 0 for a bad argument
-#   RC_read(direc)             LEFT / CENTER / RIGHT / REAR    -> 0..200 = distance [mm]
+#   RC_read(direc)             LEFT / CENTER / RIGHT / REAR    -> 0..limit = distance [mm]
 #                                                                 -1 = timeout (no rear sensor: -1)
 #                                                                 -2 = bad argument
-#                                                                 -3 = out of range (> 200 mm)
+#                                                                 -3 = out of range (above the limit,
+#                                                                      no target, low signal)
+#   RC_setReadLimit(limit_mm)  the limit of RC_read for all directions -> 1
+#   RC_setReadLimit(direc, limit_mm)
+#                              the limit for LEFT / CENTER / RIGHT / REAR only
+#                                                              -> 1, or 0 for a bad direction
+#                              limit_mm 1..2000, 0 = no limit (the default: RC_read returns up
+#                              to 2000 mm); call it in setup().  Readings above it are -3 (far)
 #   RC_params()                params.json next to the program as a dict ({} when absent)
 #   RC_state(name)             name of the current state (printed when it changes)
 #
@@ -56,8 +63,8 @@
 #
 # Structure.  The file has two layers:
 #   - the API layer (the RC_* functions, the constants, the setup()/loop()
-#     runner): checks and normalizes the arguments and gives the same return
-#     values everywhere;
+#     runner): checks and normalizes the arguments, applies the limit of
+#     RC_read (RC_setReadLimit) and gives the same return values everywhere;
 #   - a hardware layer that does the output.  _PigpioHardware drives the
 #     RumiCar chassis with pigpio (Raspberry Pi Zero W); _Zero2CamHardware is
 #     for RumiCar-Zero2Cam, whose core process owns the hardware: there the
@@ -79,12 +86,12 @@ import signal
 import sys
 import time
 
-__version__ = "0.6.0"   # major.minor = the RumiCar-lib API it matches (v0.6.0); the patch is this file's own
+__version__ = "0.7.0"   # major.minor = the RumiCar-lib API it matches (v0.7.0); the patch is this file's own
 
 __all__ = [
     "LEFT", "CENTER", "RIGHT", "REAR",
     "FREE", "REVERSE", "FORWARD", "BRAKE",
-    "RC_setup", "RC_steer", "RC_drive", "RC_read", "RC_params", "RC_state",
+    "RC_setup", "RC_steer", "RC_drive", "RC_read", "RC_setReadLimit", "RC_params", "RC_state",
 ]
 
 # 操舵用の設定 (RC_steer) と測距の方向 (RC_read)
@@ -102,6 +109,10 @@ BRAKE = 3
 PWM_MAX = 255                   # full signal for RC_drive and RC_steer
 LOOP_PERIOD = 0.05              # s between the starts of two loop() calls (20 Hz, as RumiCar-Zero2Cam)
 
+# The largest distance RC_read returns [mm]: the maximum range of the VL53L0X.  Readings above it
+# (including the about 8190 the sensor reports when nothing reflects) are -3 (out of range).
+READ_MAX_MM = 2000
+
 
 # =============================================================================================
 # API layer
@@ -109,6 +120,12 @@ LOOP_PERIOD = 0.05              # s between the starts of two loop() calls (20 H
 
 _hw = None                      # the active hardware layer (_PigpioHardware unless _use_zero2cam was called)
 _warned = set()                 # warnings already printed (each one once, not on every loop)
+
+# The limit of RC_read for each direction [mm] (index LEFT, CENTER, RIGHT, REAR).  0 is no limit
+# (up to READ_MAX_MM), the default.  The laser beam spreads out in a cone, so depending on where
+# the sensor is mounted it picks up the floor at a distance; how far a reading is trusted is
+# decided by the program with RC_setReadLimit, not by the library.  RC_setup does not reset it.
+_read_limit = [0, 0, 0, 0]
 
 
 def _hardware():
@@ -146,6 +163,23 @@ def _pwm(ipwm, function):
     return ipwm
 
 
+def _limit_mm(limit_mm):
+    """0..READ_MAX_MM from the value given to RC_setReadLimit (out-of-range values
+    are clamped; a value that is not a number counts as 0, no limit), as _pwm."""
+    try:
+        limit_mm = int(limit_mm)
+    except (TypeError, ValueError, OverflowError):
+        _warn(("RC_setReadLimit", "limit", repr(limit_mm)),
+              "RC_setReadLimit(..., %r): the limit must be a number 0..%d; 0 (no limit) used"
+              % (limit_mm, READ_MAX_MM))
+        return 0
+    if limit_mm < 0:
+        return 0
+    if limit_mm > READ_MAX_MM:
+        return READ_MAX_MM
+    return limit_mm
+
+
 def RC_setup():
     """RumiCar のセンサとモータの初期化 (最初に 1 回呼ぶ)"""
     _hardware().setup()
@@ -180,10 +214,45 @@ def RC_drive(direc, ipwm):
 
 def RC_read(direc):
     """測距の関数: LEFT / CENTER / RIGHT / REAR
-    戻り値: 0..200 = mm, -1 = タイムアウト (リア非搭載も -1), -2 = 引数エラー, -3 = 範囲外 (200 mm 超)"""
+    戻り値: 0..上限 = mm (上限は既定 2000, RC_setReadLimit で設定した場合はその値),
+            -1 = タイムアウト (リア非搭載も -1), -2 = 引数エラー,
+            -3 = 範囲外 (上限超, 対象物なし, 信号が弱い)。走行では「遠い」として扱う"""
     if not _is_one_of(direc, (LEFT, CENTER, RIGHT, REAR)):
         return -2
-    return _hardware().read(int(direc))
+    direc = int(direc)
+    d = _hardware().read(direc)         # distance [mm], or -1 / -3 from the hardware layer
+    if d < 0:
+        return d
+    if d > READ_MAX_MM:
+        return -3                       # above 2000 mm, no target
+    limit = _read_limit[direc]
+    if limit != 0 and d > limit:
+        return -3                       # above the limit set with RC_setReadLimit
+    return d
+
+
+def RC_setReadLimit(*args):
+    """RC_read の上限 [mm] を決める関数 (setup() で RC_setup() のあとに呼ぶ)
+    RC_setReadLimit(limit_mm)         前・左・右・後ろのすべてに同じ上限
+    RC_setReadLimit(direc, limit_mm)  その方向だけ: LEFT / CENTER / RIGHT / REAR
+    limit_mm: 1..2000, 0 = 上限なし (既定), 範囲外の値は 0..2000 に収める
+    上限を超える値は RC_read が -3 (遠い) を返す。RC_setup() は上限を変えない
+    REAR はリア非搭載車でも設定できる (RC_read(REAR) は -1 のまま)
+    戻り値: 1, 方向が不正なら 0 (何も変えない)"""
+    if len(args) == 1:
+        limit = _limit_mm(args[0])
+        for i in (LEFT, CENTER, RIGHT, REAR):
+            _read_limit[i] = limit
+        return 1
+    if len(args) == 2:
+        direc, limit_mm = args
+        if not _is_one_of(direc, (LEFT, CENTER, RIGHT, REAR)):
+            _warn(("RC_setReadLimit", repr(direc)),
+                  "RC_setReadLimit(%r, ...): not LEFT / CENTER / RIGHT / REAR; ignored" % (direc,))
+            return 0
+        _read_limit[int(direc)] = _limit_mm(limit_mm)
+        return 1
+    raise TypeError("RC_setReadLimit() takes 1 or 2 arguments (%d given)" % len(args))
 
 
 def RC_params():
@@ -267,8 +336,6 @@ class _PigpioHardware:
     DEFAULT_ADDRESS = 0x29      # every VL53L0X powers up here
     REG_MODEL_ID = 0xC0         # reads 0xEE on a VL53L0X
     REG_I2C_ADDRESS = 0x8A      # the register VL53L0X_SetDeviceAddress writes
-
-    RANGE_MAX_MM = 200          # readings above this are not trusted (the beam reaches the floor)
 
     # RC_drive: start kick to overcome static friction (same values as RumiCar-lib)
     KICK_DUTY = 200             # 0..255
@@ -432,6 +499,8 @@ class _PigpioHardware:
     # --- sensors, params, state ---------------------------------------------------------------
 
     def read(self, direc):
+        """The reading in mm, or -1 (timeout, or no rear sensor).  The API layer
+        turns readings above READ_MAX_MM or the limit of RC_setReadLimit into -3."""
         self._require_setup()
         sensor = self.sensors[direc]
         if sensor is None:
@@ -439,8 +508,6 @@ class _PigpioHardware:
         raw = sensor.get_distance()      # -1 on error / timeout; about 8190 when nothing reflects
         if raw < 0:
             return -1
-        if raw > self.RANGE_MAX_MM:
-            return -3
         return int(raw)
 
     def params(self):
@@ -471,8 +538,9 @@ class _Zero2CamHardware:
     `steer`, `steer_pwm`, `drive_dir`, `drive_pwm` and `state` to the core.  The
     values stay until the program changes them, as in an Arduino sketch.
 
-    Values (all already checked by the API layer):
-      tof        [LEFT, CENTER, RIGHT] as RC_read returns them (0..200, -1, -3)
+    Values (all already checked by the API layer, except tof):
+      tof        [LEFT, CENTER, RIGHT] as the core sends them (distance [mm], -1, -3); RC_read
+                 turns distances above READ_MAX_MM or the limit of RC_setReadLimit into -3
       steer      LEFT / CENTER / RIGHT
       steer_pwm  0..255; 0 for CENTER and for RC_steer(LEFT / RIGHT, 0) (neutral)
       drive_dir  FREE / REVERSE / FORWARD / BRAKE
