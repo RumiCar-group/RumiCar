@@ -66,7 +66,7 @@ Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2
 | [**RumiCar-PhotoStrip**](https://github.com/RumiCar-group/RumiCar-PhotoStrip) | 通信量にやさしい写真ストリップ(どのサイトでも使える汎用Web部品・MIT) | - |
 | [**RumiCar-VideoLoop**](https://github.com/RumiCar-group/RumiCar-VideoLoop) | 動画ダイジェスト小窓(無音ティーザーをランダム連続再生・クリックで本編へ・MIT) | - |
 | [**RumiCarRos**](https://github.com/RumiCar-group/RumiCarRos) | ROS 2対応の実装 | 3 |
-| [**RumiCar-Zero2Cam**](https://github.com/RumiCar-group/RumiCar-Zero2Cam) | Raspberry Pi Zero 2 W＋カメラ版。車載プログラム(C++)、PCの走行管理アプリ(C#)、SDカードイメージ(Releasesから入手) | - |
+| [**RumiCar-Zero2Cam**](https://github.com/RumiCar-group/RumiCar-Zero2Cam) | Raspberry Pi Zero 2 W＋カメラ版。車載プログラム(C++)、PCの走行管理アプリ(C#)、SDカードイメージ(Releasesから入手) | 1 |
 | [**RumiCar-lib**](https://github.com/RumiCar-group/RumiCar-lib) | Arduinoライブラリのソースコード(導入はArduino IDEのライブラリマネージャから。ここからのダウンロードは不要) | - |
 | [**RumiCar-AutoPost-Guide**](https://github.com/RumiCar-group/RumiCar-AutoPost-Guide) | Publish a WordPress post; What's New and the Facebook Page update automatically. A bilingual methods guide (ja/en) — setup, pitfalls, and log-based verification. | - |
 | [**RumiCar-ReleaseNotes-Guide**](https://github.com/RumiCar-group/RumiCar-ReleaseNotes-Guide) | Publish a GitHub Release, get paired JA/EN WordPress articles automatically — a methods guide with the reference implementation from rumicar.com | - |
