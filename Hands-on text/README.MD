@@ -4,7 +4,7 @@ RumiCarの全てが解る！ハンズオン用資料です。ダウンロード�
 
 <!-- handson-text:begin -->
 
-日本語版（RumiCarハンズオン）と英語版（RumiCar Hands-on English）があります。どちらもテキスト3.2（各202ページ）です。ハンドルの強さを使う Exercise-2.5・3.3（RumiCar-lib v0.6.0 以上）、Exercise-4「AIと一緒にプログラムを改良しよう」（声でAIに頼む /voice の使い方、数値の根拠と決め方を含む）が載っています。
-Japanese and English editions are available; both are text version 3.2 (202 pages each), including Exercise-2.5 and 3.3 with the steering strength (RumiCar-lib v0.6.0 or later) and Exercise-4 (improving a sketch together with an AI, how to ask the AI by voice with /voice, and the rationale for the numbers).
+日本語版（RumiCarハンズオン）と英語版（RumiCar Hands-on English）があります。どちらもテキスト3.3（各202ページ）です。ハンドルの強さを使う Exercise-2.5・3.3、Exercise-4「AIと一緒にプログラムを改良しよう」（声でAIに頼む /voice の使い方、数値の根拠と決め方を含む）が載っています。Exercise-3.3 と 4.2-Answer は距離の上限を決める RC_setReadLimit を使うので、RumiCar-lib v0.7.0 以上が必要です（Exercise-2.5 は v0.6.0 以上）。
+Japanese and English editions are available; both are text version 3.3 (202 pages each), including Exercise-2.5 and 3.3 with the steering strength and Exercise-4 (improving a sketch together with an AI, how to ask the AI by voice with /voice, and the rationale for the numbers). Exercise-3.3 and 4.2-Answer use RC_setReadLimit (the distance limit for RC_read) and need RumiCar-lib v0.7.0 or later (Exercise-2.5: v0.6.0 or later).
 
 <!-- handson-text:end -->
