@@ -138,7 +138,7 @@ Raspberry Pi Zero 2 W ＋ カメラの場合は別リポジトリ [RumiCar-Zero2
     - 結線図RumiCarG3.1_ESP32.jpg<br>ESP32版CM結線図です。WiFiやBluetooth接続、ニューラルネットワーク(NN)プログラム等に挑戦されたい方向け(上級者向け)。
     - 車体接続結線表.jpg<br>RumiCar車体側の結線図です。車体を自作されたい方は、このインターフェイスに合わせて作製ください。
     - ピンアサインArduino-ESP32-RasPi-Obniz<br>Rumicar車体のインターフェイスと、各CMのArduino nano、ESP32、ラズパイ、Obnizのピンアサインを一つの表にまとめたものです。
-  - **RumiCarの作り方**<br>RumiCar車体の開発方法や各種CMの作製方法が掲載されています。RumiCarの自作を考えられている方は、この資料を参考に是非オリジナルのRumiCarを作製してみてください。作製したRumiCarは「RumiCarの動作確認方法.pdf」の内容に従って動作確認ができます。   
+  - **RumiCarの作り方**（テキスト1.7、[日本語版](%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99/RumiCar%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9.pdf)・[英語版 How to Build a RumiCar](%E9%96%8B%E7%99%BA%E7%94%A8%E8%B3%87%E6%96%99/How%20to%20Build%20a%20RumiCar.pdf)）<br>RumiCar車体の開発方法や各種CMの作製方法が掲載されています。RumiCarの自作を考えられている方は、この資料を参考に是非オリジナルのRumiCarを作製してみてください。作製したRumiCarは「RumiCarの動作確認方法.pdf」の内容に従って動作確認ができます。
   - **RumiCarの動作確認方法**<br>RumiCarを新規に作製した場合や、運送などにより故障が発生していないか、のためにRumiCarが正常に動作するか確認するための手順をまとめた資料です。こちらを参考にRumiCarの動作確認をしましょう。
 
 - **RumiCar Simulator(ブラウザ版シミュレータ)**<br>ブラウザ上で RumiCar の走行プログラムを書いて試せるシミュレータです → [**RumiCar Simulator**](https://www.rumicar.com/simulator/)。実機が無くてもプログラムの動作を確認でき、車種(FF/FR/4WD × ノーマル/ドリフト)ごとの挙動の違いも体験できます。ここで作った Arduino C++ のプログラムは**そのまま実機 RumiCar でも動作**します。ソースコードは [**RumiCar-group/RumiCar-Simulator**](https://github.com/RumiCar-group/RumiCar-Simulator) で公開しています(自分のサーバーで動かす手順も同梱)。
