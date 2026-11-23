@@ -364,7 +364,8 @@ class _PigpioHardware:
             raise RuntimeError("pigpiod is not running: sudo systemctl enable --now pigpiod")
         self.pi = pi
         atexit.register(self.shutdown)
-        signal.signal(signal.SIGINT, self._on_sigint)
+        for signum in (signal.SIGINT, signal.SIGTERM, signal.SIGHUP):   # kill and a closed terminal skip atexit
+            signal.signal(signum, self._on_signal)
 
         for gpio in (self.AIN1, self.AIN2, self.BIN1, self.BIN2) + self.SHDN:
             pi.set_mode(gpio, pigpio.OUTPUT)
@@ -439,7 +440,7 @@ class _PigpioHardware:
             self.pi = None
 
     @staticmethod
-    def _on_sigint(signum, frame):
+    def _on_signal(signum, frame):
         sys.exit(0)        # runs the atexit handler without a traceback
 
     def _require_setup(self):
