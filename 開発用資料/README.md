@@ -1,4 +1,11 @@
 # RumiCarを自作する場合の資料とRumiCarの動作確認用の資料です
+
+「RumiCarの作り方」はテキスト1.7（2026年11月23日版）です。英語版は「[How to Build a RumiCar.pdf](How%20to%20Build%20a%20RumiCar.pdf)」です。
+
+1.7では、切替スイッチの配線の「2番ピン」を「スイッチの2番ピン（中央の端子）」、RasPi Zero W版のピンアサイン表の見出しを「RasPiのピン番号(wiringPi番号)」と明記し、誤記（PQ3RD23、「切り替えスイッチ付きモデル」、「RumiCarの動作確認方法.pdf」へのリンク）を直しました。
+
+The build guide is also available in English: [How to Build a RumiCar.pdf](How%20to%20Build%20a%20RumiCar.pdf) (text version 1.7).
+
 1.RumiCarを自作する場合はまず「RumiCarの作り方」をご覧頂きRumiCarを作製後、作製したコンピュータモジュールとRumiCarが正しく作成できているかの確認のために
 「RumiCarの動作確認方法」の内容に従ってご確認ください
 是非多くの人たちにオリジナルのRumiCarを作成頂きRumiCarの世界を楽しんで頂けると嬉しいです
