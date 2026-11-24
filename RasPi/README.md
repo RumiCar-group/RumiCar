@@ -1,7 +1,7 @@
 # RumiCar (Raspberry Pi 版)
 
 Raspberry Pi Zero W のコンピュータモジュール（CM）で RumiCar を動かす Python のライブラリ（`RumiCar.py`）とサンプルプログラム（`Exercise-*`）です。
-関数名・定数・値の意味・戻り値は Arduino 版のライブラリ [RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib) の v0.7.0 と同じです（`RumiCar.__version__` は `0.7.0`）。サンプルプログラムでの `RC_read()` の値の扱い（判定の順序、`LIMIT_MM`・`FAR_MM`）は、RumiCar-lib v0.7.1 のスケッチ例と同じです（v0.7.1 はスケッチ例と文書だけの変更で、API は v0.7.0 と同じです）。
+関数名・定数・値の意味・戻り値は Arduino 版のライブラリ [RumiCar-lib](https://github.com/RumiCar-group/RumiCar-lib) の v0.7.0 と同じです（`RumiCar.__version__` は `0.7.1`。0.7.1 は終了時の処理の修正だけで、API は 0.7.0 と同じです）。サンプルプログラムでの `RC_read()` の値の扱い（判定の順序、`LIMIT_MM`・`FAR_MM`）は、RumiCar-lib v0.7.1 のスケッチ例と同じです（v0.7.1 はスケッチ例と文書だけの変更で、API は v0.7.0 と同じです）。
 CM を Arduino から Raspberry Pi に変えても、`RC_drive(FORWARD, 150)` が「全開の約 6 割（150/255）の信号を駆動モーターへ送る」という意味は変わりません。
 プログラムは Arduino と同じく `setup()` と `loop()` で書き、`python3 RumiCar.py プログラム.py` で動かします（[動かし方](#動かし方)）。
 
@@ -114,7 +114,7 @@ def loop():
 * `RC_drive()` の値は**信号の割合**です。150 なら 150/255（約 59 %）のデューティの PWM を出します。CM によって PWM の周波数やモーターの特性が異なるため、同じ値でも速さは同じとは限りません。駆動はスローデケイで、停止や逆方向から走り出すときは 200/255 を 20 ms 出してから目標の値にします（RumiCar-lib と同じ）。`BRAKE` は両入力 HIGH の全ブレーキ（値は無視）、`FREE` は惰行です。
 * 方向に `True` / `False` は使えません（不正な引数として扱います）。強さや速さに数でない値を渡したときは 0 として扱います。不正な引数は、そのつど止まらずに最初の 1 回だけ警告を表示します（Zero2Cam と同じ扱い）。
 * 後方の VL53L0X（任意搭載。XSHUT 無しで I2C に直結）は `RC_setup()` が自動で検出し、`RC_read(REAR)` で読めます。無い車両では `-1` が返るので、同じプログラムがどちらの車両でもそのまま動きます。
-* `RC_setup()` が終了時（Ctrl+C やプログラムのエラーを含む）にモーターを止める処理を登録するので、プログラムに後始末は要りません。`RC_setup()` より前に `RC_steer()` などを呼ぶとエラーで止まります。
+* `RC_setup()` が終了時（Ctrl+C、プログラムのエラー、`kill`・`systemctl stop`（SIGTERM）、SSH の切断（SIGHUP）を含む）にモーターを止める処理を登録するので、プログラムに後始末は要りません。`nohup` で起動した場合も、SIGHUP を受けるとモーターを止めて終了します。`kill -9`（SIGKILL）や電源断では止める処理が走らず、pigpiod は最後の出力を保ちます（0.7.0 までは SIGTERM・SIGHUP でも同じでした）。`RC_setup()` より前に `RC_steer()` などを呼ぶとエラーで止まります。
 * 実行には pigpiod（上記）が必要です。起動していなければ `RC_setup()` がエラーで止まります。
 
 ### `RC_setReadLimit()`
@@ -132,7 +132,7 @@ VL53L0X は 2 m 先まで測れますが、レーザーはコーン状に広が�
 
 * 数値はプログラムの 1 か所、先頭の定数 `LIMIT_MM` にだけ書き、`setup()` で `RC_setReadLimit(LIMIT_MM)` と呼びます。走行のロジックのしきい値はその上限以下にし、そのことをコメントに書いておくと、あとで上限を変えるときに直すのはその定数だけになります（Exercise-3.3）。
 * `REAR` は後方センサーが無い車両でも設定できます（`RC_read(REAR)` は `-1` のままです）。
-* RumiCar-Zero2Cam が取り込む `RumiCar.py` は Zero2Cam の版ごとに固定されています。`drive.py` で `RC_setReadLimit()` を使えるのは、この 0.7.0 を取り込んだ Zero2Cam 0.7.0 以降です。
+* RumiCar-Zero2Cam が取り込む `RumiCar.py` は Zero2Cam の版ごとに固定されています。`drive.py` で `RC_setReadLimit()` を使えるのは、`RC_setReadLimit()` を追加した 0.7.0 を取り込んだ Zero2Cam 0.7.0 以降です。
 
 ### 上限の決め方
 
