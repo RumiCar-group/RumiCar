@@ -86,7 +86,7 @@ import signal
 import sys
 import time
 
-__version__ = "0.7.0"   # major.minor = the RumiCar-lib API it matches (v0.7.0); the patch is this file's own
+__version__ = "0.7.1"   # major.minor = the RumiCar-lib API it matches (v0.7.0); the patch is this file's own
 
 __all__ = [
     "LEFT", "CENTER", "RIGHT", "REAR",
